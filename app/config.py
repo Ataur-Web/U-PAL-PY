@@ -14,9 +14,9 @@ DATA_DIR     = PROJECT_ROOT / "app" / "data"
 
 
 # we load .env with override=True so values in the file win over anything
-# already set in the OS environment. Claude Code's shell sometimes sets
-# ANTHROPIC_API_KEY="" to avoid leaking keys, which would otherwise hide
-# the real key in .env.
+# already set in the OS environment. some shells inject an empty
+# ANTHROPIC_API_KEY for safety which would otherwise hide the real key
+# we put in .env.
 # ref: https://pypi.org/project/python-dotenv/
 load_dotenv(PROJECT_ROOT / ".env", override=True)
 

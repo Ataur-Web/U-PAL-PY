@@ -57,8 +57,6 @@ frontend/.env
 frontend/.env.local
 frontend/.env.*.local
 frontend/feedback.json
-frontend/.claude/
-frontend/.firecrawl/
 # Local-only startup scripts in frontend (may contain tokens)
 frontend/start-ollama.bat
 frontend/demo-setup.bat
