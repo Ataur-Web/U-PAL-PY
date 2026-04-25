@@ -1,0 +1,62 @@
+# ── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ── Virtualenvs ──────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Environment / secrets ────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Chroma vector store ──────────────────────────────────
+chroma_db/
+*.chroma
+
+# ── Generated dataset caches (fetched locally, not in repo) ─
+app/data/openorca-qa.json
+app/data/naturalquestions-qa.json
+app/data/welsh-chat-qa.json
+
+# ── IDE ──────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ── Testing / coverage ───────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Jupyter ──────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Runtime logs (from start-everything.bat) ─────────────
+backend.log
+backend.err.log
+.cf_tunnel.log
+
+# ── Node / Next.js (frontend/ subfolder) ─────────────────
+frontend/node_modules/
+frontend/.next/
+frontend/.vercel/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+frontend/feedback.json
+# Local-only startup scripts in frontend (may contain tokens)
+frontend/start-ollama.bat
+frontend/demo-setup.bat
