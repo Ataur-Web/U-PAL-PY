@@ -1,0 +1,35 @@
+# ── Web framework ────────────────────────────────────────
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+
+# ── LangChain + LLM ──────────────────────────────────────
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-ollama>=0.1.0
+langchain-chroma>=0.1.0
+langchain-anthropic>=0.3.0      # Claude, cloud generation provider
+rank-bm25>=0.2.2                # BM25 keyword retrieval for hybrid search
+
+# ── Vector store + embeddings ────────────────────────────
+chromadb>=0.5.0
+sentence-transformers>=2.7.0
+
+# ── NLP + language detection ─────────────────────────────
+langdetect>=1.0.9
+rapidfuzz>=3.6.0          # fast fuzzy matching for intent classifier
+numpy>=1.26.0
+scikit-learn>=1.4.0       # TF-IDF, Naive Bayes (matches Node classifier)
+
+# ── HTTP + utilities ─────────────────────────────────────
+httpx>=0.27.0
+python-dotenv>=1.0.0
+orjson>=3.10.0
+
+# ── Dataset tooling (scripts only) ───────────────────────
+datasets>=2.19.0          # HuggingFace datasets — used by fetch_openorca.py
+
+# ── Testing (dev) ────────────────────────────────────────
+pytest>=8.0.0
+pytest-asyncio>=0.23.0

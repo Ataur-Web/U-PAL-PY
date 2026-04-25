@@ -1,0 +1,21 @@
+{
+  "name": "u-pal-rag",
+  "version": "2.0.0",
+  "description": "U-Pal — bilingual UWTSD student assistant (Next.js)",
+  "private": true,
+  "scripts": {
+    "dev":   "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "mongodb": "^7.1.1",
+    "natural":  "^6.10.4",
+    "next":     "^14.2.5",
+    "react":    "^18.3.1",
+    "react-dom":"^18.3.1"
+  }
+}
