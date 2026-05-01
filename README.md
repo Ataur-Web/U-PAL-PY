@@ -20,7 +20,7 @@ The repo holds both halves of the system:
 | ----- | ---- |
 | Frontend | Next.js 14, React 18, hosted on Vercel |
 | Backend | FastAPI + Uvicorn (Python 3.11 / 3.12) |
-| LLM (primary) | Anthropic Claude 3.5 Haiku via `langchain-anthropic` |
+| LLM (primary) | Anthropic Claude Haiku 4.5 (`claude-haiku-4-5-20251001`) via `langchain-anthropic` |
 | LLM (fallback) | Ollama Llama 3.1 8B (local, via ngrok static domain) |
 | Retrieval | Hybrid, ChromaDB dense + BM25, merged with LangChain `EnsembleRetriever` |
 | Embeddings | `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` |
@@ -219,8 +219,8 @@ References for the datasets:
 
 ## LLM configuration
 
-Default provider is Anthropic Claude 3.5 Haiku. The runtime provider and
-model can be swapped without a restart via:
+Default provider is Anthropic Claude Haiku 4.5 (`claude-haiku-4-5-20251001`).
+The runtime provider and model can be swapped without a restart via:
 
 ```bash
 curl -X POST http://localhost:3001/api/llm-config \

@@ -48,9 +48,9 @@ const STEPS = [
   },
   {
     n: '04', total: '/ 5',
-    title: 'LLM generation (Claude 3.5 Haiku)',
-    desc: 'The top passages are passed to Anthropic Claude 3.5 Haiku, a fast, inexpensive model that handles Welsh and English fluently. A single fixed model is used so every user gets an identical, fair experience. Ollama Llama 3.1 8B is available as a local fallback for offline demos.',
-    tags: ['Claude 3.5 Haiku', 'Ollama 3.1 8B', 'fixed model'],
+    title: 'LLM generation (Claude Haiku 4.5)',
+    desc: 'The top passages are passed to Anthropic Claude Haiku 4.5, a fast, inexpensive model that handles Welsh and English fluently. A single fixed model is used so every user gets an identical, fair experience. Ollama Llama 3.1 8B is available as a local fallback for offline demos.',
+    tags: ['Claude Haiku 4.5', 'Ollama 3.1 8B', 'fixed model'],
   },
   {
     n: '05', total: '/ 5',
@@ -69,9 +69,9 @@ const FEATURES = [
   },
   {
     iconKey: 'nollm',
-    title: 'Fixed LLM (Claude 3.5 Haiku)',
-    desc: 'Anthropic Claude 3.5 Haiku powers every reply, fast, inexpensive, and fluent in both Welsh and English. One fixed model so every student gets the same answer quality. Ollama Llama 3.1 8B is available as a local fallback for offline demos.',
-    meta: 'Claude 3.5 Haiku · fixed model',
+    title: 'Fixed LLM (Claude Haiku 4.5)',
+    desc: 'Anthropic Claude Haiku 4.5 powers every reply, fast, inexpensive, and fluent in both Welsh and English. One fixed model so every student gets the same answer quality. Ollama Llama 3.1 8B is available as a local fallback for offline demos.',
+    meta: 'Claude Haiku 4.5 · fixed model',
   },
   {
     iconKey: 'edge',
@@ -215,7 +215,7 @@ function IntroDoc() {
   return (
     <>
       <h1 className="doc-title">Introduction</h1>
-      <p className="doc-lede">U-Pal is a bilingual Welsh and English student assistant for UWTSD. It pairs hybrid retrieval (ChromaDB dense embeddings + BM25 sparse keyword scores, fused via Reciprocal Rank Fusion) with Claude 3.5 Haiku for fluent grounded replies.</p>
+      <p className="doc-lede">U-Pal is a bilingual Welsh and English student assistant for UWTSD. It pairs hybrid retrieval (ChromaDB dense embeddings + BM25 sparse keyword scores, fused via Reciprocal Rank Fusion) with Claude Haiku 4.5 for fluent grounded replies.</p>
 
       <h2 className="doc-h2"><span className="num">01</span>What is U-Pal?</h2>
       <p>U-Pal answers student questions using a FastAPI Python backend. Every answer is grounded in retrieved passages from the UWTSD corpus and the public datasets we enrich it with, the LLM rephrases rather than invents. A bilingual detector routes Welsh and English queries to the correct language, and a live translate button lets users see either version on demand.</p>
@@ -227,7 +227,7 @@ function IntroDoc() {
         <li><strong>History filtering</strong>, prior turns in the other language are stripped so they cannot bias the LLM into code-mixing.</li>
         <li><strong>Query augmentation</strong>, Welsh terms get English glosses appended so the English-heavy corpus still matches.</li>
         <li><strong>Hybrid retrieval</strong>, Chroma dense vectors + BM25 sparse scores fused with Reciprocal Rank Fusion (Cormack 2009). English queries exclude cy-tagged passages, Welsh queries restrict to them.</li>
-        <li><strong>LLM generation</strong>, Claude 3.5 Haiku by default, with a per-turn language lock wrapped at the head and tail of the prompt. Ollama Llama 3.1 8B is an optional self-hosted fallback.</li>
+        <li><strong>LLM generation</strong>, Claude Haiku 4.5 by default, with a per-turn language lock wrapped at the head and tail of the prompt. Ollama Llama 3.1 8B is an optional self-hosted fallback.</li>
         <li><strong>Output validation</strong>, the reply is detected and, if the language drifted, translated back via the same translate prompt the public endpoint uses.</li>
       </ol>
       <Callout label="NOTE">Retrieval and language detection run on the operator's own backend. The LLM call is the only external request.</Callout>
@@ -238,7 +238,7 @@ function IntroDoc() {
         rows={[
           ['Frontend', 'Next.js 14 + React 18 on Vercel'],
           ['Backend', 'FastAPI + Uvicorn (Python 3.11 / 3.12)'],
-          ['LLM (primary)', 'Anthropic Claude 3.5 Haiku via langchain-anthropic'],
+          ['LLM (primary)', 'Anthropic Claude Haiku 4.5 via langchain-anthropic'],
           ['LLM (fallback)', 'Ollama Llama 3.1 8B, self-hosted, operator-only'],
           ['Dense retrieval', 'ChromaDB with paraphrase-multilingual-MiniLM-L12-v2 embeddings'],
           ['Sparse retrieval', 'rank-bm25 in-memory index, refreshed on each ingest'],
@@ -624,7 +624,7 @@ function ConsentModal({ onConsent }) {
 
         <ul className="consent-points">
           <li>This is a research prototype built by <strong>Ataur Rahman</strong> as part of a BSc dissertation at the University of Wales Trinity Saint David (UWTSD).</li>
-          <li>U-Pal provides bilingual Welsh and English student support using hybrid retrieval (ChromaDB + BM25) with Claude 3.5 Haiku as the LLM.</li>
+          <li>U-Pal provides bilingual Welsh and English student support using hybrid retrieval (ChromaDB + BM25) with Claude Haiku 4.5 as the LLM.</li>
           <li>Anonymised interaction data, including satisfaction ratings and feedback comments, may be used in academic research.</li>
           <li>No personally identifying information is collected or stored during your session.</li>
           <li>Participation is entirely voluntary, you may stop at any time without consequence.</li>
@@ -1403,7 +1403,7 @@ export default function Home() {
                       <div className="eyebrow">Live demo · v0.4.2</div>
                       <h1 className="demo-title">Ask <em>anything</em> about UWTSD</h1>
                       <p className="demo-sub">
-                        A bilingual student assistant built for UWTSD, supporting academic needs in Welsh and English. Powered by Claude 3.5 Haiku, hybrid retrieval, and a Welsh-aware detector.
+                        A bilingual student assistant built for UWTSD, supporting academic needs in Welsh and English. Powered by Claude Haiku 4.5, hybrid retrieval, and a Welsh-aware detector.
                       </p>
                     </div>
                     <div className="demo-meta">
