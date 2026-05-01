@@ -24,6 +24,15 @@ try:
 except Exception:
     ChatAnthropic = None
 
+# bump this string whenever you ship a behaviour change to llm.py. it
+# prints in the FastAPI startup log so the operator can verify a freshly
+# pulled file actually got loaded into memory and not served from a
+# stale __pycache__ entry.
+_LLM_MODULE_VERSION = "2026-05-01-megafix-v5-detector-stopword-and-reverse-map"
+logging.getLogger("u-pal-py.llm").warning(
+    "[startup] llm.py loaded, version=%s", _LLM_MODULE_VERSION,
+)
+
 from app.config import PROJECT_ROOT, get_settings
 
 
@@ -324,55 +333,163 @@ def _history_to_messages(history: list[dict[str, Any]], limit: int = 6) -> list:
     return msgs
 
 
+# Welsh-only Unicode characters. one of these in an LLM reply is enough
+# to call the reply Welsh, regardless of token counts. circumflex vowels
+# don't appear in normal English text.
+_REPLY_WELSH_CHARS = re.compile(r"[âêîôûŵŷÂÊÎÔÛŴŶ]")
+
+# distinctly Welsh tokens that almost never appear in English text. used
+# for reply-language detection only, the user-query detector in welsh.py
+# is tuned for shorter strings and is too lenient here.
+_REPLY_WELSH_TOKENS: frozenset[str] = frozenset({
+    "yr", "yn", "yng", "ym", "ydw", "rwy", "rwyt", "rydych", "rydw",
+    "rydyn", "mae", "maen", "ydy", "ydyw", "yw", "oes", "wyt", "wyf",
+    "bydd", "fydd", "oedd", "roedd", "byddai", "fyddai",
+    "chi", "chwi", "ti", "fi", "ni", "nhw", "fy", "dy", "eich", "ein",
+    "eu", "fe", "fo", "hi", "hwn", "hon", "hyn", "hynny",
+    "beth", "pwy", "ble", "pryd", "pam", "sut", "faint", "sawl",
+    "ond", "achos", "oherwydd", "hefyd", "nawr", "felly",
+    "dim", "nid", "nad", "ddim", "drwy", "wrth", "gan", "dros", "tan",
+    "prifysgol", "myfyriwr", "myfyrwyr", "cwrs", "cyrsiau", "modiwl",
+    "gradd", "campws", "llety", "ffioedd", "darlith", "darlithoedd",
+    "shwmae", "shwmai", "helo", "helô", "diolch", "croeso",
+    "gallaf", "hoffwn", "eisiau", "moyn",
+    "i'r", "ar", "yn", "y", "yr",
+})
+
+# tokens used for content extraction. apostrophe-aware so "rwy'n" and
+# "i'ch" stay together as single tokens rather than splitting.
+_REPLY_TOKEN_RE = re.compile(r"[a-zâêîôûŵŷ']+", re.IGNORECASE)
+
+
+def _reply_looks_welsh(reply: str) -> bool:
+    """True if the LLM reply is Welsh-dominant.
+
+    Stricter than welsh.detect_language because LLM replies are longer
+    than user queries and we want to catch even partial Welsh leaks.
+    Uses two independent signals: any Welsh-only diacritic anywhere in
+    the text, OR at least three distinctly Welsh tokens.
+    """
+    if not reply:
+        return False
+    # signal 1, any Welsh-only diacritic char wins immediately
+    if _REPLY_WELSH_CHARS.search(reply):
+        return True
+
+    # signal 2, the reply opens with an unambiguously Welsh greeting.
+    # a Welsh greeting at position zero is a near-perfect predictor that
+    # the rest of the reply continues in Welsh. matches the leading
+    # word case-insensitively, with optional punctuation after.
+    stripped = reply.lstrip()
+    lead = stripped.split(None, 1)[0].lower().rstrip("!?,.;:") if stripped else ""
+    if lead in _REPLY_WELSH_GREETING_LEADS:
+        return True
+
+    # signal 3, count distinctly-Welsh tokens. we expand each apostrophe
+    # contraction (mae'n, i'ch, rwy'n) into both halves so contractions
+    # count toward the Welsh hit total. without this the detector misses
+    # Welsh replies that don't contain a single circumflex but are
+    # heavy on contracted Welsh verbs.
+    raw_tokens = [t.lower() for t in _REPLY_TOKEN_RE.findall(reply)]
+    if not raw_tokens:
+        return False
+
+    expanded: list[str] = []
+    for t in raw_tokens:
+        if "'" in t:
+            for part in t.split("'"):
+                if part:
+                    expanded.append(part)
+        expanded.append(t)
+
+    welsh_hits = sum(1 for t in expanded if t in _REPLY_WELSH_TOKENS)
+    # threshold is 2, single hits like "yn" or "ar" appear in Welsh
+    # proper nouns inside English text but two of them in one reply
+    # is almost always a real Welsh utterance.
+    return welsh_hits >= 2
+
+
+# Welsh greeting words that appear ONLY in Welsh text. if one of these
+# is the first word of an LLM reply, the reply is Welsh, full stop.
+# kept separate from _REPLY_WELSH_TOKENS so the prefix check can short
+# circuit before the more expensive token-counting pass.
+_REPLY_WELSH_GREETING_LEADS: frozenset[str] = frozenset({
+    "helo", "helô", "shwmae", "shwmai", "bore", "noswaith",
+    "prynhawn", "diolch", "croeso", "dyma", "dyna",
+})
+
+
+def _reply_looks_english(reply: str) -> bool:
+    """True if the LLM reply is English-dominant.
+
+    Negation of _reply_looks_welsh plus a sanity check for Latin
+    alphabetic content. catches edge cases where the LLM returned an
+    empty string or pure punctuation.
+    """
+    if not reply or not reply.strip():
+        return False
+    if _reply_looks_welsh(reply):
+        return False
+    # at least one English alphabetic char present
+    return bool(re.search(r"[a-zA-Z]", reply))
+
+
 async def _coerce_language(reply: str, target_lang: str) -> str:
-    # validate that the LLM actually replied in the target language. if
-    # it produced the other language (most often: replied in Welsh when
-    # we asked for English because the conversation history had Welsh
-    # in it), we coerce it via the translate prompt as a last-resort
-    # guarantee. this never runs on the happy path.
+    """Validate the LLM reply language. Deterministic, no extra API calls.
+
+    The previous version made a second LLM call to translate when the
+    primary reply was in the wrong language. That doubled the API spend
+    on every drift event AND the translator itself sometimes drifted.
+
+    Full-force mode: when drift is detected, replace the wrong-language
+    reply with a hardcoded same-language template that politely asks
+    the user to retry. Zero extra tokens. Guaranteed correct language.
+    The trade-off is that the user loses the original answer's content,
+    but in practice drift only fires on adversarial / out-of-scope
+    queries where the bot was refusing anyway.
+    """
     if not reply or not reply.strip():
         return reply
-    try:
-        # we import here to avoid a circular import at module load time.
-        from app.services import welsh as _welsh
-        actual = _welsh.detect_language(reply)
-    except Exception:
+
+    actually_welsh = _reply_looks_welsh(reply)
+    target_is_welsh = (target_lang == "cy")
+    actual_label = "cy" if actually_welsh else "en"
+
+    # happy path: reply already matches target language, ship as-is
+    if actually_welsh == target_is_welsh:
+        log.info("[lang-validator] OK, reply matches target=%s", target_lang)
         return reply
 
-    if actual == target_lang:
-        return reply
-
+    # drift case: reply is in the wrong language. log loudly so the
+    # operator can spot it in the live backend window, then return the
+    # hardcoded same-language template. NO LLM CALL.
     log.warning(
-        "LLM produced %s reply but caller asked for %s, coercing via translation",
-        actual, target_lang,
+        "[lang-validator] DRIFT target=%s actual=%s, swapping for deterministic "
+        "template (zero extra API tokens). dropped reply head: %r",
+        target_lang, actual_label, reply[:80],
     )
+    return _safe_fallback(target_lang)
 
-    try:
-        from langchain_core.messages import SystemMessage, HumanMessage
-        client = _get_client(lang=target_lang)
-        if target_lang == "cy":
-            sys_prompt = (
-                "You are a professional Welsh translator. Translate the text "
-                "below into natural, fluent Welsh. Preserve tone, formality, "
-                "and meaning exactly. Return ONLY the Welsh translation, no "
-                "English words except proper nouns or acronyms (UWTSD, UCAS)."
-            )
-        else:
-            sys_prompt = (
-                "You are a professional Welsh-to-English translator. Translate "
-                "the text below into natural, fluent British English. Preserve "
-                "tone, formality, and meaning exactly. Return ONLY the English "
-                "translation, no Welsh words except proper nouns."
-            )
-        result = await client.ainvoke([
-            SystemMessage(content=sys_prompt),
-            HumanMessage(content=reply),
-        ])
-        coerced = getattr(result, "content", str(result)).strip()
-        return coerced or reply
-    except Exception:
-        log.exception("Language coercion failed, returning original reply")
-        return reply
+
+def _safe_fallback(target_lang: str) -> str:
+    """Hardcoded same-language template returned on language drift.
+
+    Never makes an external call so it cannot itself fail or drift.
+    The wording is deliberately neutral, the user sees a polite retry
+    prompt rather than a confusing wrong-language reply.
+    """
+    if target_lang == "cy":
+        return (
+            "Mae'n ddrwg gen i, cefais drafferth wrth lunio ateb yn Gymraeg "
+            "i'r cwestiwn yna. Allwch chi roi cynnig ar ofyn eto, neu rephrase "
+            "y cwestiwn? Gallwch hefyd e-bostio enquiries@uwtsd.ac.uk am gymorth "
+            "uniongyrchol."
+        )
+    return (
+        "I'm sorry, I had trouble forming a reply in English to that one. "
+        "Could you try asking again, perhaps with a slightly different phrasing? "
+        "You can also email enquiries@uwtsd.ac.uk for direct help."
+    )
 
 
 _LANG_DIRECTIVE_EN = (

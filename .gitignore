@@ -49,6 +49,13 @@ backend.log
 backend.err.log
 .cf_tunnel.log
 
+# ── Local benchmarks, kept off GitHub by choice ──────────
+# the benchmark scripts and their JSON outputs live on the
+# operator's machine only. they reference the live ngrok
+# URL and produce raw response dumps that don't belong in
+# the public repo.
+benchmarks/
+
 # ── Node / Next.js (frontend/ subfolder) ─────────────────
 frontend/node_modules/
 frontend/.next/

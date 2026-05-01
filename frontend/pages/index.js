@@ -548,8 +548,8 @@ function EnvDoc() {
         headers={['Variable', 'Required', 'Description']}
         rows={[
           ['LLM_PROVIDER', 'No', 'Either "anthropic" (default, cloud) or "ollama" (local). Runtime-switchable via /api/llm-config.'],
-          ['ANTHROPIC_API_KEY', 'If using Claude', 'Anthropic API key from console.anthropic.com. Claude 3.5 Haiku is cheap and fast.'],
-          ['ANTHROPIC_MODEL', 'No', 'Model ID. Defaults to claude-3-5-haiku-latest. Other options: claude-3-5-sonnet-latest.'],
+          ['ANTHROPIC_API_KEY', 'If using Claude', 'Anthropic API key from console.anthropic.com. Claude Haiku 4.5 is cheap and fast.'],
+          ['ANTHROPIC_MODEL', 'No', 'Model ID. Defaults to claude-haiku-4-5-20251001. Other options: claude-3-5-sonnet-latest, claude-sonnet-4-5.'],
           ['OLLAMA_URL', 'If using Ollama', 'Local Ollama URL. For LAN-only use http://localhost:11434. For remote access expose it via your own ngrok static domain.'],
           ['OLLAMA_MODEL', 'No', 'Ollama model tag. Defaults to llama3.1:8b-instruct-q5_K_M.'],
         ]}

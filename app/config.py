@@ -39,7 +39,7 @@ class Settings(BaseSettings):
     # Welsh fine, so we picked it as the default.
     # ref: https://docs.claude.com/en/docs/about-claude/models
     anthropic_api_key:         str  = Field(default="")
-    anthropic_model:           str  = Field(default="claude-3-5-haiku-latest")
+    anthropic_model:           str  = Field(default="claude-haiku-4-5-20251001")
     anthropic_temperature:     float = Field(default=0.4)
     anthropic_timeout_seconds: int  = Field(default=60)
     anthropic_max_tokens:      int  = Field(default=1024)

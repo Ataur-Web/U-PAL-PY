@@ -112,6 +112,15 @@ _ENGLISH_STOPWORDS: frozenset[str] = frozenset({
     "deadline", "exam", "exams", "essay", "essays", "assignment",
     "assignments", "lecture", "lectures", "tutor", "tutors",
     "computing", "engineering", "business", "law", "art", "design",
+    # tech / brand / general words that show up in bilingual borrowings
+    # as well, listed here so they do not double-count toward Welsh
+    "write", "twitter", "data", "python", "script", "scrape", "code",
+    "programme", "program", "api", "api'r", "json", "csv", "html", "css",
+    "javascript", "java", "ruby", "rust", "linux", "windows", "mac",
+    "internet", "web", "website", "url", "link", "click", "open", "close",
+    "google", "facebook", "instagram", "linkedin", "youtube", "reddit",
+    "video", "audio", "image", "photo", "file", "folder", "document",
+    "ucas", "uwtsd", "pcydds", "bbc", "nhs", "uk", "us",
 })
 
 
@@ -259,27 +268,35 @@ def detect_language(text: str) -> str:
     if not _state.vocab:
         return "en"
 
-    # only count vocab hits that are NOT also common English words. this
-    # stops English questions like "What are the entry requirements?"
-    # from being misclassified as Welsh because "what" happens to have
-    # a Welsh entry in the bilingual map.
+    # only count vocab hits that are NOT also common English words AND
+    # NOT English-side bilingual entries. this stops English questions
+    # like "Write me a Python script to scrape Twitter data" from being
+    # misclassified as Welsh because the bilingual map happens to
+    # contain "twitter", "data" or "write" as Welsh borrowings.
+    # _state.reverse maps English-side -> Welsh-side, any token in there
+    # is provably an English word with a known Welsh translation.
     hits = sum(
         1 for t in tokens
-        if t in _state.vocab and t not in _ENGLISH_STOPWORDS
+        if t in _state.vocab
+        and t not in _ENGLISH_STOPWORDS
+        and t not in _state.reverse
     )
 
-    # signal 4/5, vocab coverage. for very short queries we require at
-    # least 2 hits (or one diacritic / orthography signal already would
-    # have returned cy above). single-hit cy detection caused English
-    # words like "hi" or "no" to flip the language because the bilingual
-    # map contains them as Welsh pronouns / particles.
+    # signal 4 + 5, vocab coverage. previously this said "Welsh if 20%
+    # of tokens hit the vocab" which was too lenient, English queries
+    # with 1-2 brand-name hits (twitter, python) crossed the threshold.
+    # we now need a clear Welsh majority before flipping a query that
+    # has zero diacritics, zero word-initial Welsh ortho clusters and
+    # zero Welsh function words. a real Welsh query trips at least one
+    # of those earlier signals so it never reaches this fallback.
     if len(tokens) < 4:
         return "cy" if hits >= 2 else "en"
 
     ratio = hits / len(tokens)
-    # 0.20 was picked by eyeballing the test set. the Node version
-    # used 0.25 but that missed some valid Welsh queries.
-    return "cy" if ratio >= 0.20 else "en"
+    # 0.50 means more than half the non-stopword tokens have to be
+    # distinctly Welsh. real Welsh queries with no function-word hits
+    # are extremely rare so the false-negative cost is near zero.
+    return "cy" if ratio >= 0.50 else "en"
 
 
 def augment_query(text: str, lang: str) -> str:

@@ -28,7 +28,7 @@ log = logging.getLogger("u-pal-py.llm_config")
 # operator can pick one without typing. keeping them here means we don't
 # have to call the provider's list-models endpoint on every request.
 _ANTHROPIC_MODELS = [
-    {"id": "claude-3-5-haiku-latest",  "label": "Claude 3.5 Haiku, cheapest (recommended)"},
+    {"id": "claude-haiku-4-5-20251001", "label": "Claude Haiku 4.5, cheapest (recommended)"},
     {"id": "claude-3-5-sonnet-latest", "label": "Claude 3.5 Sonnet, balanced"},
     {"id": "claude-sonnet-4-5",        "label": "Claude Sonnet 4.5, newer balanced"},
     {"id": "claude-opus-4-1",          "label": "Claude Opus 4.1, premium reasoning"},
