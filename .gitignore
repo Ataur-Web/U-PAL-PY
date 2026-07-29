@@ -1,0 +1,64 @@
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# virtualenvs
+.venv/
+venv/
+env/
+ENV/
+
+# environment / secrets (NEVER commit .env files!)
+.env
+.env.local
+.env.*.local
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# chroma vector store
+chroma_db/
+*.chroma
+
+# generated dataset caches
+app/data/openorca-qa.json
+app/data/naturalquestions-qa.json
+app/data/welsh-chat-qa.json
+
+# ide
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# jupyter
+.ipynb_checkpoints/
+
+# runtime logs
+backend.log
+backend.err.log
+.cf_tunnel.log
+
+# benchmarks
+benchmarks/
+
+# node / next.js (frontend)
+frontend/node_modules/
+frontend/.next/
+frontend/.vercel/
+frontend/feedback.json
+frontend/start-ollama.bat
+frontend/demo-setup.bat

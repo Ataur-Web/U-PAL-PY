@@ -1,0 +1,1 @@
+# Spiders for UWTSD corpus
