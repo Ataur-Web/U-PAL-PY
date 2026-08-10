@@ -690,6 +690,11 @@ code, .mono { font-family: var(--mono); font-size: 0.88em; }
   font-size: 15.5px;
   line-height: 1.6;
   color: var(--ink);
+  /* preserve the line breaks the model produces. without this the browser
+     collapses them, so numbered steps and the wellbeing signpost ran together
+     into a single unreadable paragraph. pre-wrap keeps the breaks but still
+     wraps long lines to the bubble width. */
+  white-space: pre-wrap;
 }
 .msg-content strong { font-weight: 600; }
 .msg-content a { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }

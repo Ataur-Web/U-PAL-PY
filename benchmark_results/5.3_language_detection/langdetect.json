@@ -1,0 +1,822 @@
+{
+  "n": 100,
+  "n_english": 40,
+  "n_welsh": 60,
+  "correct": 99,
+  "accuracy": 0.99,
+  "welsh_recall": 0.9833333333333333,
+  "english_recall": 1.0,
+  "task_prompts_unset": 4,
+  "errors": [
+    {
+      "source": "sample",
+      "label": "10",
+      "gold": "cy",
+      "query": "pa swydd",
+      "predicted": "en",
+      "correct": false
+    }
+  ],
+  "per_query": [
+    {
+      "source": "sample",
+      "label": "1",
+      "gold": "en",
+      "query": "my assignment is not going well who do I contact",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "2",
+      "gold": "en",
+      "query": "Swansea College of Art location",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "3",
+      "gold": "cy",
+      "query": "ffioedd y flwyddyn",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "4",
+      "gold": "cy",
+      "query": "cymorth dyslecsia",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "5",
+      "gold": "en",
+      "query": "when does applications close",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "6",
+      "gold": "cy",
+      "query": "sut mae ymgeisio",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "7",
+      "gold": "en",
+      "query": "can I talk to a staff member about my assignment",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "8",
+      "gold": "cy",
+      "query": "campws Llambed PCYDDS",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "9",
+      "gold": "en",
+      "query": "I need to speak to someone at UWTSD",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "10",
+      "gold": "cy",
+      "query": "pa swydd",
+      "predicted": "en",
+      "correct": false
+    },
+    {
+      "source": "sample",
+      "label": "11",
+      "gold": "cy",
+      "query": "ailosod cyfrinair PCYDDS",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "12",
+      "gold": "cy",
+      "query": "ble alla i fyw fel myfyriwr yn PCYDDS",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "13",
+      "gold": "cy",
+      "query": "ble alla i ddod o hyd i e-bost",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "14",
+      "gold": "en",
+      "query": "password reset",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "15",
+      "gold": "cy",
+      "query": "yn teimlo'n bryderus",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "16",
+      "gold": "cy",
+      "query": "pa gyrsiau ôl raddedig sydd ar gael yn PCYDDS",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "17",
+      "gold": "en",
+      "query": "sports scholarship",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "18",
+      "gold": "en",
+      "query": "I need money urgently",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "19",
+      "gold": "en",
+      "query": "where can I print",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "20",
+      "gold": "cy",
+      "query": "a oes gan PCYDDS flwyddyn sylfaen",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "21",
+      "gold": "en",
+      "query": "virtual learning environment",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "22",
+      "gold": "cy",
+      "query": "oes llety ar gampws Caerfyrddin",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "23",
+      "gold": "en",
+      "query": "dont want to be alive",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "24",
+      "gold": "en",
+      "query": "how do I get feedback on my project",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "25",
+      "gold": "en",
+      "query": "how much are the fees for home students?",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "26",
+      "gold": "en",
+      "query": "can I still get into university",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "27",
+      "gold": "en",
+      "query": "student wellbeing service",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "28",
+      "gold": "cy",
+      "query": "sut mae cael mynediad i bopeth ar lein",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "29",
+      "gold": "cy",
+      "query": "beth sy'n digwydd os dw i'n teimlo fel lladd fy hun heno?",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "30",
+      "gold": "en",
+      "query": "I don't know what to do after uni",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "31",
+      "gold": "en",
+      "query": "who can I talk to if I am struggling",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "32",
+      "gold": "cy",
+      "query": "ardderchog diolch",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "33",
+      "gold": "en",
+      "query": "year in industry",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "34",
+      "gold": "en",
+      "query": "how do I apply for my graduation ceremony",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "35",
+      "gold": "cy",
+      "query": "ymgeisio am gwrs",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "36",
+      "gold": "cy",
+      "query": "sut mae talu r ffioedd dysgu fel myfyriwr o Gymru",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "37",
+      "gold": "cy",
+      "query": "sut mae cysylltu â fy ngoruchwyliwr traethawd hir",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "38",
+      "gold": "cy",
+      "query": "sut i wneud cais",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "39",
+      "gold": "cy",
+      "query": "sut i reoli pryder yn ystod cyfnod arholiadau",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "40",
+      "gold": "cy",
+      "query": "rwy'n graddio eleni — sut mae cofrestru ar gyfer y seremoni raddio",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "41",
+      "gold": "cy",
+      "query": "beth sydd ar gampws Llambed",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "42",
+      "gold": "cy",
+      "query": "sut i argraffu",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "43",
+      "gold": "cy",
+      "query": "pwy all fy helpu gyda fy ngradd",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "44",
+      "gold": "en",
+      "query": "study schedule help",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "45",
+      "gold": "en",
+      "query": "support for dyspraxia",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "46",
+      "gold": "en",
+      "query": "How much are postgraduate fees for home students?",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "47",
+      "gold": "cy",
+      "query": "pa mor ddrud yw astudio yn PCYDDS fel myfyriwr rhyngwladol",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "48",
+      "gold": "cy",
+      "query": "gwneud cais am gwrs PCYDDS",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "49",
+      "gold": "cy",
+      "query": "beth yw llawn enw PCYDDS",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "50",
+      "gold": "cy",
+      "query": "pam alla i ddim gweld fy modiwlau ar Moodle",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "51",
+      "gold": "cy",
+      "query": "a allaf ymgeisio am fenthyciad cynhaliaeth",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "52",
+      "gold": "cy",
+      "query": "sut mae ymgeisio am gwrs TAR",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "53",
+      "gold": "cy",
+      "query": "sut mae gwneud cais i gronfa galedi",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "54",
+      "gold": "cy",
+      "query": "pwy ddylwn i gysylltu â nhw",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "55",
+      "gold": "cy",
+      "query": "sut mae ad dalu benthyciad myfyrwyr",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "56",
+      "gold": "en",
+      "query": "gap year then apply",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "57",
+      "gold": "cy",
+      "query": "dw i n cael trafferth ymdopi â r llwyth gwaith",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "58",
+      "gold": "cy",
+      "query": "sut hwyl",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "59",
+      "gold": "cy",
+      "query": "a oes ariannu ar gael ar gyfer ôl raddedigion",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "60",
+      "gold": "en",
+      "query": "carmarthen library address",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "61",
+      "gold": "en",
+      "query": "how to apply for scholarship",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "62",
+      "gold": "en",
+      "query": "nice one",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "63",
+      "gold": "cy",
+      "query": "dyddiadau seremoni raddio PCYDDS",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "64",
+      "gold": "en",
+      "query": "I am graduating this year — how do I register for the ceremony",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "65",
+      "gold": "cy",
+      "query": "sut mae dechrau cais UCAS",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "66",
+      "gold": "cy",
+      "query": "dw i n cael trafferth gyda deunydd y cwrs",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "67",
+      "gold": "en",
+      "query": "I want to check if I have done my project correctly",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "68",
+      "gold": "cy",
+      "query": "ble mae r llyfrgell",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "69",
+      "gold": "cy",
+      "query": "gofynion lefel a",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "70",
+      "gold": "en",
+      "query": "I want to hurt myself",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "71",
+      "gold": "cy",
+      "query": "sut mae cyrraedd Abertawe ar drên",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "72",
+      "gold": "cy",
+      "query": "llyfrgell",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "73",
+      "gold": "en",
+      "query": "is there a human I can talk to",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "74",
+      "gold": "en",
+      "query": "how much does a masters cost for UK students?",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "75",
+      "gold": "en",
+      "query": "dissertation support",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "76",
+      "gold": "cy",
+      "query": "sut mae archebu lle ar ddiwrnod agored PCYDDS",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "77",
+      "gold": "en",
+      "query": "tuition fees Wales England",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "78",
+      "gold": "en",
+      "query": "speak with an agent",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "79",
+      "gold": "cy",
+      "query": "bywyd cymdeithasol PCYDDS",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "80",
+      "gold": "cy",
+      "query": "dychwelyd i addysg",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "81",
+      "gold": "en",
+      "query": "citation help",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "82",
+      "gold": "cy",
+      "query": "oriau llyfrgell Abertawe",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "83",
+      "gold": "cy",
+      "query": "faint yw llety",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "84",
+      "gold": "cy",
+      "query": "a allaf siarad ag aelod o staff am fy aseiniad",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "85",
+      "gold": "en",
+      "query": "library at carmarthen campus",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "86",
+      "gold": "en",
+      "query": "How much are the fees for international postgraduate students?",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "87",
+      "gold": "cy",
+      "query": "cais tramor",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "88",
+      "gold": "cy",
+      "query": "pa gyrsiau ôl-raddedig sydd ar gael yn PCYDDS",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "89",
+      "gold": "cy",
+      "query": "campws dinas abertawe",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "90",
+      "gold": "cy",
+      "query": "sut mae cysylltu â gwasanaethau myfyrwyr",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "91",
+      "gold": "cy",
+      "query": "angen siarad â rhywun am fy iechyd meddwl",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "92",
+      "gold": "en",
+      "query": "study in wales as international",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "93",
+      "gold": "cy",
+      "query": "dw i eisiau siarad â rhywun byw",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "94",
+      "gold": "en",
+      "query": "what do you know about",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "95",
+      "gold": "cy",
+      "query": "cyrsiau amser llawn PCYDDS",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "96",
+      "gold": "en",
+      "query": "how much are halls",
+      "predicted": "en",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "97",
+      "gold": "cy",
+      "query": "dw i n teimlo n llethu",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "98",
+      "gold": "cy",
+      "query": "cymorth argyfwng",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "99",
+      "gold": "cy",
+      "query": "a oes llety hunangynhwysol ar gael",
+      "predicted": "cy",
+      "correct": true
+    },
+    {
+      "source": "sample",
+      "label": "100",
+      "gold": "cy",
+      "query": "amserlen myfyrwyr PCYDDS",
+      "predicted": "cy",
+      "correct": true
+    }
+  ]
+}

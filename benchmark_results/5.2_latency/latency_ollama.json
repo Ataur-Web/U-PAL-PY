@@ -1,0 +1,304 @@
+{
+  "provider": "ollama",
+  "model": "",
+  "n_requests": 30,
+  "n_failed": 0,
+  "summary": {
+    "All": {
+      "n": 30,
+      "mean": 6.051233333333333,
+      "median": 4.992000000000001,
+      "p95": 10.183,
+      "min": 2.204,
+      "max": 13.575
+    },
+    "English": {
+      "n": 15,
+      "mean": 3.5974,
+      "median": 3.524,
+      "p95": 4.2,
+      "min": 2.204,
+      "max": 4.496
+    },
+    "Welsh": {
+      "n": 15,
+      "mean": 8.505066666666666,
+      "median": 7.763,
+      "p95": 12.746,
+      "min": 5.488,
+      "max": 13.575
+    }
+  },
+  "per_query": [
+    {
+      "language": "en",
+      "query": "Where is the SA1 campus?",
+      "latency_s": 2.204,
+      "status": 200,
+      "reply_lang": "en",
+      "n_sources": 2,
+      "reply_chars": 333
+    },
+    {
+      "language": "cy",
+      "query": "Ble mae campws SA1?",
+      "latency_s": 7.763,
+      "status": 200,
+      "reply_lang": "cy",
+      "n_sources": 2,
+      "reply_chars": 393
+    },
+    {
+      "language": "en",
+      "query": "How much are the tuition fees?",
+      "latency_s": 3.239,
+      "status": 200,
+      "reply_lang": "en",
+      "n_sources": 3,
+      "reply_chars": 345
+    },
+    {
+      "language": "cy",
+      "query": "Faint yw'r ffioedd dysgu?",
+      "latency_s": 7.047,
+      "status": 200,
+      "reply_lang": "cy",
+      "n_sources": 3,
+      "reply_chars": 332
+    },
+    {
+      "language": "en",
+      "query": "How do I apply for accommodation?",
+      "latency_s": 4.095,
+      "status": 200,
+      "reply_lang": "en",
+      "n_sources": 3,
+      "reply_chars": 535
+    },
+    {
+      "language": "cy",
+      "query": "Sut ydw i'n gwneud cais am lety?",
+      "latency_s": 10.15,
+      "status": 200,
+      "reply_lang": "cy",
+      "n_sources": 3,
+      "reply_chars": 685
+    },
+    {
+      "language": "en",
+      "query": "What are the library opening hours?",
+      "latency_s": 3.807,
+      "status": 200,
+      "reply_lang": "en",
+      "n_sources": 1,
+      "reply_chars": 453
+    },
+    {
+      "language": "cy",
+      "query": "Beth yw oriau agor y llyfrgell?",
+      "latency_s": 7.352,
+      "status": 200,
+      "reply_lang": "cy",
+      "n_sources": 1,
+      "reply_chars": 335
+    },
+    {
+      "language": "en",
+      "query": "How do I apply to UWTSD?",
+      "latency_s": 3.813,
+      "status": 200,
+      "reply_lang": "en",
+      "n_sources": 3,
+      "reply_chars": 469
+    },
+    {
+      "language": "cy",
+      "query": "Sut mae gwneud cais i PCYDDS?",
+      "latency_s": 10.183,
+      "status": 200,
+      "reply_lang": "cy",
+      "n_sources": 2,
+      "reply_chars": 677
+    },
+    {
+      "language": "en",
+      "query": "How do I apply for student finance?",
+      "latency_s": 3.515,
+      "status": 200,
+      "reply_lang": "en",
+      "n_sources": 2,
+      "reply_chars": 464
+    },
+    {
+      "language": "cy",
+      "query": "Sut mae gwneud cais am gyllid myfyrwyr?",
+      "latency_s": 13.575,
+      "status": 200,
+      "reply_lang": "cy",
+      "n_sources": 3,
+      "reply_chars": 1008
+    },
+    {
+      "language": "en",
+      "query": "When is graduation?",
+      "latency_s": 3.459,
+      "status": 200,
+      "reply_lang": "en",
+      "n_sources": 2,
+      "reply_chars": 372
+    },
+    {
+      "language": "cy",
+      "query": "Pryd mae'r seremoni raddio?",
+      "latency_s": 8.3,
+      "status": 200,
+      "reply_lang": "cy",
+      "n_sources": 3,
+      "reply_chars": 426
+    },
+    {
+      "language": "en",
+      "query": "How do I travel between campuses?",
+      "latency_s": 3.524,
+      "status": 200,
+      "reply_lang": "en",
+      "n_sources": 3,
+      "reply_chars": 364
+    },
+    {
+      "language": "cy",
+      "query": "Sut allaf deithio rhwng campysau?",
+      "latency_s": 7.495,
+      "status": 200,
+      "reply_lang": "cy",
+      "n_sources": 3,
+      "reply_chars": 366
+    },
+    {
+      "language": "en",
+      "query": "What wellbeing support is available?",
+      "latency_s": 4.2,
+      "status": 200,
+      "reply_lang": "en",
+      "n_sources": 2,
+      "reply_chars": 899
+    },
+    {
+      "language": "cy",
+      "query": "Pa gefnogaeth lles sydd ar gael?",
+      "latency_s": 12.746,
+      "status": 200,
+      "reply_lang": "cy",
+      "n_sources": 3,
+      "reply_chars": 1192
+    },
+    {
+      "language": "en",
+      "query": "What courses does the university offer?",
+      "latency_s": 3.239,
+      "status": 200,
+      "reply_lang": "en",
+      "n_sources": 3,
+      "reply_chars": 370
+    },
+    {
+      "language": "cy",
+      "query": "Pa gyrsiau mae'r brifysgol yn eu cynnig?",
+      "latency_s": 6.899,
+      "status": 200,
+      "reply_lang": "cy",
+      "n_sources": 3,
+      "reply_chars": 290
+    },
+    {
+      "language": "en",
+      "query": "How do I contact my personal tutor?",
+      "latency_s": 3.35,
+      "status": 200,
+      "reply_lang": "en",
+      "n_sources": 2,
+      "reply_chars": 359
+    },
+    {
+      "language": "cy",
+      "query": "Sut ydw i'n cysylltu â'm tiwtor personol?",
+      "latency_s": 6.296,
+      "status": 200,
+      "reply_lang": "cy",
+      "n_sources": 3,
+      "reply_chars": 268
+    },
+    {
+      "language": "en",
+      "query": "What can I do at the students' union?",
+      "latency_s": 4.496,
+      "status": 200,
+      "reply_lang": "en",
+      "n_sources": 2,
+      "reply_chars": 694
+    },
+    {
+      "language": "cy",
+      "query": "Beth alla i ei wneud yn undeb y myfyrwyr?",
+      "latency_s": 5.488,
+      "status": 200,
+      "reply_lang": "cy",
+      "n_sources": 3,
+      "reply_chars": 155
+    },
+    {
+      "language": "en",
+      "query": "How do I get IT support?",
+      "latency_s": 3.374,
+      "status": 200,
+      "reply_lang": "en",
+      "n_sources": 3,
+      "reply_chars": 379
+    },
+    {
+      "language": "cy",
+      "query": "Sut ydw i'n cael cymorth TG?",
+      "latency_s": 7.164,
+      "status": 200,
+      "reply_lang": "cy",
+      "n_sources": 2,
+      "reply_chars": 363
+    },
+    {
+      "language": "en",
+      "query": "What financial hardship support exists?",
+      "latency_s": 3.963,
+      "status": 200,
+      "reply_lang": "en",
+      "n_sources": 2,
+      "reply_chars": 604
+    },
+    {
+      "language": "cy",
+      "query": "Pa gymorth caledi ariannol sydd ar gael?",
+      "latency_s": 8.273,
+      "status": 200,
+      "reply_lang": "cy",
+      "n_sources": 2,
+      "reply_chars": 477
+    },
+    {
+      "language": "en",
+      "query": "How do I report extenuating circumstances?",
+      "latency_s": 3.683,
+      "status": 200,
+      "reply_lang": "en",
+      "n_sources": 3,
+      "reply_chars": 491
+    },
+    {
+      "language": "cy",
+      "query": "Sut ydw i'n rhoi gwybod am amgylchiadau esgusodol?",
+      "latency_s": 8.845,
+      "status": 200,
+      "reply_lang": "cy",
+      "n_sources": 3,
+      "reply_chars": 542
+    }
+  ]
+}

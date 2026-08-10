@@ -54,7 +54,8 @@
         "Helo! U-Pal ydw i, eich cynorthwyydd myfyrwyr PCYDDS. Gallaf eich helpu gyda derbyniadau, cyrsiau, ffioedd, llety, cymorth TG, lles a mwy. Beth hoffech chi wybod?",
         "Shwmae! Croeso i U-Pal, eich canllaw i bopeth am PCYDDS. Gofynnwch unrhyw beth am fywyd myfyrwyr, cyrsiau neu wasanaethau'r brifysgol."
       ]
-    }
+    },
+    "source_url": null
   },
   {
     "tag": "capabilities",
@@ -120,7 +121,8 @@
         "Ydw, gallaf eich deall chi! Rwy'n U-Pal, cynorthwyydd myfyrwyr PCYDDS. Gallaf helpu gyda: derbyniadau a cheisiadau, gwybodaeth am gyrsiau, ffioedd dysgu a chyllid myfyrwyr, llety, lleoliadau campws, cymorth TG, gwasanaethau llyfrgell, lles myfyrwyr, gyrfaoedd, a mwy. Gofynnwch gwestiwn i mi!",
         "Rwy'n U-Pal, yma i helpu myfyrwyr a ymgeiswyr PCYDDS. Gallwch ofyn i mi am dderbyniadau, cyrsiau, ffioedd, llety, cymorth TG, lleoliadau campws, y llyfrgell, gwasanaethau lles, undeb y myfyrwyr, graddio, a llawer mwy. Beth hoffech chi ei wybod?"
       ]
-    }
+    },
+    "source_url": null
   },
   {
     "tag": "goodbye",
@@ -175,7 +177,8 @@
         "Da boch chi! Pob lwc gyda'ch astudiaethau ym PCYDDS. Croeso i ddod nôl os oes gennych fwy o gwestiynau.",
         "Hwyl fawr! Os oes angen unrhyw beth arall arnoch chi, mae U-Pal bob amser yma i helpu."
       ]
-    }
+    },
+    "source_url": null
   },
   {
     "tag": "thanks",
@@ -227,7 +230,8 @@
         "Croeso! Oes unrhyw beth arall y gallaf eich helpu ag ef?",
         "Hapus i helpu! Rhowch wybod os oes gennych gwestiynau eraill am PCYDDS."
       ]
-    }
+    },
+    "source_url": null
   },
   {
     "tag": "how_are_you",
@@ -267,7 +271,8 @@
         "Rydw i'n iawn diolch! U-Pal ydw i, chatbot cymorth myfyrwyr ar gyfer myfyrwyr PCYDDS. Gallaf ateb cwestiynau am dderbyniadau, cyrsiau, ffioedd, llety, bywyd campws, lles, TG a mwy.",
         "Chatbot ydw i felly bob amser yn barod i helpu! U-Pal ydw i, wedi fy hyfforddi i ateb cwestiynau am fywyd prifysgol PCYDDS. Gofynnwch!"
       ]
-    }
+    },
+    "source_url": null
   },
   {
     "tag": "admissions_apply",
@@ -348,7 +353,8 @@
         "I wneud cais i PCYDDS, gallwch wneud cais yn uniongyrchol trwy pcydds.ac.uk/study neu trwy UCAS (ucas.com) ar gyfer cyrsiau israddedig. Ewch i pcydds.ac.uk/study a dewis eich cwrs i ddechrau. Gall y tîm derbyniadau helpu ar 01267 676767 neu admissions@uwtsd.ac.uk.",
         "Mae gwneud cais i PCYDDS yn syml. Ar gyfer y rhan fwyaf o gyrsiau israddedig, gwnewch gais trwy UCAS (ucas.com). Ar gyfer mynediad ôl-raddedig neu uniongyrchol, ewch i pcydds.ac.uk/study."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/how-apply"
   },
   {
     "tag": "admissions_requirements",
@@ -412,7 +418,8 @@
         "Mae gofynion mynediad yn amrywio yn ôl cwrs ym PCYDDS. Mae'r rhan fwyaf o gyrsiau israddedig yn gofyn am 80-120 pwynt UCAS. Mae PCYDDS hefyd yn ystyried myfyrwyr aeddfed, cymwysterau Mynediad i AU, a BTECs.",
         "Mae gofynion yn amrywio yn ôl cwrs. Mae PCYDDS yn croesawu myfyrwyr â lefelau A, BTECs, Mynediad i AU, Uwch Raddau Albanaidd, a Bagloriaeth Cymru. Mae opsiynau blwyddyn sylfaen hefyd ar gael."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/apply/undergraduate/advice-applicants"
   },
   {
     "tag": "admissions_deadline",
@@ -468,7 +475,8 @@
         "Y prif ddyddiad cau UCAS ar gyfer y rhan fwyaf o gyrsiau israddedig fel arfer yw diwedd Ionawr ar gyfer mynediad ym mis Medi. Mae PCYDDS hefyd yn derbyn ceisiadau trwy UCAS Extra a Chlirio ar ôl y dyddiad hwn.",
         "Dyddiad cau allweddol: Y prif ddyddiad cau UCAS fel arfer yw 29 Ionawr ar gyfer mynediad ym mis Medi. Mae PCYDDS yn cymryd rhan mewn Clirio o ganol mis Awst. Cysylltwch â admissions@uwtsd.ac.uk am fanylion penodol."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/how-apply"
   },
   {
     "tag": "admissions_international",
@@ -524,7 +532,8 @@
         "Mae myfyrwyr rhyngwladol yn fwy na chroesawus ym PCYDDS! Gwnewch gais yn uniongyrchol trwy pcydds.ac.uk/international. Bydd angen Fisa Myfyriwr arnoch os ydych chi o'r tu allan i'r DU. Cysylltwch â international@uwtsd.ac.uk.",
         "Mae PCYDDS yn croesawu myfyrwyr o dros 50 gwlad. Gofynion allweddol: tystiolaeth o hyfedredd yn y Saesneg (fel arfer IELTS 6.0+), trawsgrifiadau academaidd, pasbort dilys."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/how-apply/international-applications"
   },
   {
     "tag": "admissions_foundation",
@@ -575,7 +584,8 @@
         "Mae PCYDDS yn cynnig rhaglenni Blwyddyn Sylfaen ar gyfer myfyrwyr nad ydynt yn bodloni'r gofynion mynediad safonol. Ar ôl cwblhau'r Flwyddyn Sylfaen yn llwyddiannus, byddwch yn symud i Flwyddyn 1 eich gradd ddewisol.",
         "Mae Blwyddyn Sylfaen PCYDDS yn gam gwych i mewn i'r brifysgol. Ar ôl pasio, byddwch yn symud yn uniongyrchol i Flwyddyn 1. Gofynnwch i dderbyniadau ar admissions@uwtsd.ac.uk am opsiynau blwyddyn sylfaen."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/apply/undergraduate/applying-foundation-degree"
   },
   {
     "tag": "courses_general",
@@ -640,7 +650,8 @@
         "Mae PCYDDS yn cynnig ystod enfawr o gyrsiau gan gynnwys Celf a Dylunio, Busnes, Cyfrifiadureg, Addysg, Peirianneg, Iechyd a Gofal Cymdeithasol, Dyniaethau, y Gyfraith, Nyrsio, Seicoleg, Gwyddor Chwaraeon, Gwaith Cymdeithasol, Cymraeg a llawer mwy. Browiwch y rhestr lawn ar pcydds.ac.uk/study.",
         "Mae gan PCYDDS dros 100 o gyrsiau ar draws ei champysau. Ymwelwch â pcydds.ac.uk/study a hidlwch yn ôl pwnc, lefel, neu gampws."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study"
   },
   {
     "tag": "courses_computing",
@@ -701,7 +712,8 @@
         "Mae PCYDDS yn cynnig graddau Cyfrifiadureg a TG yn bennaf ar gampws SA1 Abertawe. Mae cyrsiau'n cynnwys BSc Gwyddor Cyfrifiadur, BSc Peirianneg Meddalwedd, BSc Seiberddiogelwch. Ewch i pcydds.ac.uk/study a chwiliwch am 'cyfrifiadureg'.",
         "Mae gan PCYDDS adran Cyfrifiadureg gref yn Abertawe. Mae cyrsiau'n ymdrin â rhaglennu, rhwydweithio, seiberddiogelwch, datblygu meddalwedd, a gwyddor data."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/stem"
   },
   {
     "tag": "courses_nursing",
@@ -762,7 +774,8 @@
         "Mae gan PCYDDS enw da rhagorol am Nyrsio a Gwyddorau Iechyd. Mae cyrsiau'n cynnwys Nyrsio Oedolion (BSc), Nyrsio Iechyd Meddwl (BSc), a rhaglenni Iechyd a Gofal Cymdeithasol. Mae cyrsiau Nyrsio wedi'u lleoli'n bennaf ar gampws Abertawe.",
         "Mae Nyrsio ym PCYDDS yn cael ei ystyried yn uchel. Mae rhaglenni BSc Nyrsio yn cynnwys lleoliadau clinigol go iawn ar draws GIG Cymru. Gweler pcydds.ac.uk/nyrsio am fanylion."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study"
   },
   {
     "tag": "courses_education",
@@ -824,7 +837,8 @@
         "Mae PCYDDS yn un o sefydliadau hyfforddi athrawon blaenllaw Cymru. Mae cyrsiau'n cynnwys BA Addysg (Cynradd), TAR Cynradd, TAR Uwchradd (pynciau amrywiol), a BA Astudiaethau Plentyndod. Campws Caerfyrddin yw'r prif ganolfan ar gyfer Addysg.",
         "Mae hyfforddiant athrawon ym PCYDDS wedi'i leoli'n bennaf ar gampws Caerfyrddin. Gallwch hyfforddi i ddysgu mewn ysgolion cyfrwng Cymraeg neu Saesneg. Mae rhaglenni'n cynnwys y TAR a BA Addysg israddedig."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study"
   },
   {
     "tag": "fees_tuition",
@@ -900,7 +914,8 @@
         "Mae ffioedd dysgu ym PCYDDS ar gyfer myfyrwyr cartref (DU) ar hyn o bryd yn £9,000 y flwyddyn ar gyfer y rhan fwyaf o gyrsiau israddedig amser llawn. Efallai y bydd myfyrwyr Cymreig yn gymwys am Fenthyciad Ffi Dysgu gan Gyllid Myfyrwyr Cymru. Gweler yr amserlen ffioedd lawn: uwtsd.ac.uk/study/fees-and-finance/tuition-fee-schedule.",
         "Mae PCYDDS yn codi £9,000 y flwyddyn ar gyfer cyrsiau israddedig amser llawn. Gall myfyrwyr sy'n byw yng Nghymru wneud cais am Fenthyciad Ffi Dysgu i dalu hyn yn llawn. Gweler yr amserlen ffioedd lawn: uwtsd.ac.uk/study/fees-and-finance/tuition-fee-schedule."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/fees-and-finance/tuition-fee-schedule"
   },
   {
     "tag": "fees_student_loan",
@@ -957,7 +972,8 @@
         "Mae Cyllid Myfyrwyr Cymru (cyllidmyfyrwyrcymru.co.uk) yn darparu Benthyciadau Ffi Dysgu a Benthyciadau Cynhaliaeth ar gyfer myfyrwyr cymwys sy'n byw yng Nghymru. Dim ond ar ôl ennill dros £25,000 y byddwch yn ad-dalu. Ffoniwch 0300 200 4050.",
         "Gall myfyrwyr Cymreig sy'n astudio ym PCYDDS wneud cais i Gyllid Myfyrwyr Cymru am: 1) Benthyciad Ffi Dysgu, 2) Benthyciad Cynhaliaeth. Ymgeisiwch ar cyllidmyfyrwyrcymru.co.uk."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/fees-and-finance/undergraduate-fees/undergraduate-funding-support"
   },
   {
     "tag": "fees_scholarships",
@@ -1014,7 +1030,8 @@
         "Mae PCYDDS yn cynnig ystod o ysgoloriaethau a bwrsariaethau gan gynnwys ysgoloriaethau chwaraeon, ysgoloriaethau iaith Gymraeg, bwrsariaethau penodol i bynciau, a bwrsariaethau gofalwyr. Ewch i pcydds.ac.uk/ysgoloriaethau.",
         "Mae sawl cyfle cyllido ym PCYDDS: bwrsariaethau astudio cyfrwng Cymraeg, ysgoloriaethau perfformiad chwaraeon, bwrsariaethau pwnc, a chronfeydd caledi. Edrychwch ar pcydds.ac.uk/ysgoloriaethau a gwnewch gais yn gynnar."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/fees-and-finance/undergraduate-fees/undergraduate-funding-support/undergraduate-bursaries"
   },
   {
     "tag": "it_portal",
@@ -1078,7 +1095,8 @@
         "Porth myfyrwyr PCYDDS yw MyTSD, y gellir ei gyrchu ar mytsd.uwtsd.ac.uk (mewngofnodiad uniongyrchol: mytsd.uwtsd.ac.uk/urd/sits.urd/run/siw_lgn). Defnyddiwch eich rhif myfyriwr a chyfrinair cofrestru. Drwy MyTSD gallwch weld amserlenni, gwirio canlyniadau modiwlau, rheoli tasgau cofrestru, a gweld hysbysiadau. Os oes problemau mewngofnodi, cysylltwch â Gwasanaethau TG ar 01792 481 111.",
         "MyTSD (mytsd.uwtsd.ac.uk) yw eich prif borth myfyrwyr PCYDDS, wedi'i bweru gan system wybodaeth myfyrwyr SITS. Mewngofnodwch gyda'ch rhif myfyriwr a'ch cyfrinair i gyrchu canlyniadau modiwlau, tasgau cofrestru, amserlenni, a gwybodaeth am eich cais. Wedi anghofio eich cyfrinair? Defnyddiwch y ddolen 'Anghofio Cyfrinair' ar y dudalen mewngofnodi."
       ]
-    }
+    },
+    "source_url": null
   },
   {
     "tag": "it_moodle",
@@ -1149,7 +1167,8 @@
         "Mae PCYDDS yn defnyddio Moodle fel ei Amgylchedd Dysgu Rhithwir ar moodle.uwtsd.ac.uk. Mewngofnodwch gyda'ch enw defnyddiwr a chyfrinair myfyrwyr. Os oes trafferth cyflwyno aseiniad, cysylltwch â'ch darlithydd neu arweinydd cwrs yn uniongyrchol yn gyntaf, ac yna â Gwasanaethau TG yn itservices@uwtsd.ac.uk am broblemau technegol.",
         "Moodle (moodle.uwtsd.ac.uk) yw platfform dysgu ar-lein PCYDDS. Mae'ch holl gynnwys cwrs, rhestrau darllen, recordiadau, a phortholau cyflwyno yno. Os na allwch gyflwyno gwaith, rhowch wybod i'ch darlithydd ar unwaith — gallant roi estyniad neu dderbyn gwaith dros e-bost. Am broblemau mewngofnodi, cysylltwch â Gwasanaethau TG yn itservices@uwtsd.ac.uk."
       ]
-    }
+    },
+    "source_url": null
   },
   {
     "tag": "it_helpdesk",
@@ -1228,7 +1247,8 @@
         "Am gymorth TG ym PCYDDS, cysylltwch â Gwasanaethau TG: Ffôn 01792 481 111, e-bost itservices@uwtsd.ac.uk, neu ewch i Ddesg Gwasanaeth TG ar y campws. Gallant helpu gydag ailosod cyfrineiriau, mynediad meddalwedd, problemau wifi, a phroblemau gliniadur.",
         "Gellir cysylltu â Gwasanaethau TG PCYDDS ar itservices@uwtsd.ac.uk neu 01792 481 111. Maent yn ymdrin â phopeth o broblemau mewngofnodi a mynediad Moodle i wifi ac argraffu."
       ]
-    }
+    },
+    "source_url": null
   },
   {
     "tag": "it_wifi",
@@ -1284,7 +1304,8 @@
         "Mae campysau PCYDDS yn defnyddio rhwydwaith wifi eduroam. I gysylltu: dewiswch 'eduroam' ar eich dyfais a rhowch eich cyfeiriad e-bost PCYDDS llawn a'ch cyfrinair myfyrwyr. Problemau cysylltu? Cysylltwch â Gwasanaethau TG ar 01792 481 111.",
         "Wifi y campws yw eduroam, ar gael ar draws holl adeiladau PCYDDS. Defnyddiwch eich e-bost myfyrwyr a chyfrinair i gysylltu. Mae eduroam hefyd yn gweithio yn y rhan fwyaf o brifysgolion yn y DU."
       ]
-    }
+    },
+    "source_url": null
   },
   {
     "tag": "accommodation_general",
@@ -1400,7 +1421,8 @@
         "Mae PCYDDS yn cynnig llety myfyrwyr ar sawl campws. Ymgeisiwch drwy HallPad ar uwtsd.ac.uk/accommodation. Mae ystafelloedd ar gael yng Nghaerfyrddin a Llambed. E-bostiwch accommodation@uwtsd.ac.uk am ymholiadau penodol.",
         "Mae neuaddau preswyl ar gael yng Nghaerfyrddin a Llambed. Ewch i uwtsd.ac.uk/accommodation i wirio argaeledd ac ymgeisio drwy HallPad. Am gwestiynau am gostau, mathau o ystafelloedd, neu eich cais, e-bostiwch accommodation@uwtsd.ac.uk."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/accommodation"
   },
   {
     "tag": "accommodation_cost",
@@ -1461,7 +1483,8 @@
         "Mae prisiau llety ym PCYDDS yn amrywio yn ôl campws a math o ystafell, yn gyffredinol oddeutu £90 i £140 yr wythnos am ystafell safonol mewn neuaddau. Mae ystafelloedd en-suite ychydig yn fwy. Edrychwch ar pcydds.ac.uk/llety am y cyfraddau diweddaraf.",
         "Mae llety PCYDDS fel arfer yn costio £90 i £140 yr wythnos yn dibynnu ar fath yr ystafell a'r campws. Mae'r rhan fwyaf o ystafelloedd yn cynnwys wifi, dŵr, gwres a thrydan yn y pris."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/experience-facilities/accommodation/frequently-asked-questions"
   },
   {
     "tag": "campuses_general",
@@ -1520,7 +1543,8 @@
         "Mae gan PCYDDS dri phrif gampws: 1) Abertawe Glanfa SA1, y mwyaf yng nghanol dinas Abertawe. 2) Caerfyrddin, campws traddodiadol gyda rhaglenni addysg a chwaraeon cryf. 3) Llanbedr Pont Steffan, campws hanesyddol mewn tref fach. Mae campws Caerdydd hefyd ar gyfer rhai cyrsiau proffesiynol.",
         "Mae PCYDDS yn gweithredu yn: SA1 Abertawe (prif gampws), Caerfyrddin (campws tref), Llanbedr Pont Steffan (campws hanesyddol yng Ngheredigion), a Chaerdydd (cyrsiau dethol)."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/campuses"
   },
   {
     "tag": "campuses_swansea",
@@ -1572,7 +1596,8 @@
         "Mae campws Abertawe wedi'i leoli yn Glanfa SA1, wrth ymyl y dociau yng nghanol Abertawe, cod post SA1 8EW. Mae'n hawdd ei gyrraedd ar fws a thrên. Mae gan y campws gyfleusterau modern gan gynnwys labordai cyfrifiadur, stiwdios, llyfrgell, a mannau cymdeithasol.",
         "Mae PCYDDS Abertawe yn Glanfa SA1, campws modern wrth ymyl y bae. Yn agos at siopau canol dinas Abertawe, cysylltiadau trafnidiaeth, a llety."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/swansea"
   },
   {
     "tag": "campuses_carmarthen",
@@ -1617,7 +1642,8 @@
         "Mae campws Caerfyrddin yn safle traddodiadol PCYDDS yn nhref farchnad Caerfyrddin, Gorllewin Cymru, cyfeiriad SA31 3EP. Mae'n adnabyddus am raglenni Addysg, Blynyddoedd Cynnar, a Gwyddor Chwaraeon.",
         "Mae campws Caerfyrddin PCYDDS ar fryn uwchben y dref, lleoliad hardd. Mae'n gartref i Addysg, Chwaraeon, Drama, a chyrsiau cyfrwng Cymraeg. Mae llety ar y campws a chyfleusterau chwaraeon."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/carmarthen"
   },
   {
     "tag": "campuses_lampeter",
@@ -1665,7 +1691,8 @@
         "Mae campws Llanbedr Pont Steffan yng Ngheredigion yn gampws hynaf a lleiaf PCYDDS, un o'r sefydliadau dyfarnu graddau hynaf yn y DU. Campws gwledig hardd sy'n adnabyddus am Ddyniaethau, Crefydd, Archaeoleg, ac Astudiaethau Cymraeg.",
         "Mae Llanbedr Pont Steffan yn gampws unigryw, hanesyddol yng nghefn gwlad Gorllewin Cymru, a sefydlwyd ym 1822. Adnabyddus am Ddyniaethau, Diwinyddiaeth, a chyrsiau cyfrwng Cymraeg."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/campuses"
   },
   {
     "tag": "library",
@@ -1773,7 +1800,8 @@
         "Mae llyfrgelloedd PCYDDS ar bob campws gyda llyfrau, e-lyfrau, a chyfnodolion academaidd. Chwiliwch y catalog ar library.uwtsd.ac.uk gyda'ch mewngofnodiad myfyrwyr. Gallwch fenthyca hyd at 6 llyfr a defnyddio cannoedd o gyfnodolion ar-lein. E-bostiwch library@uwtsd.ac.uk am help.",
         "Mae'r llyfrgell yn cynnig llyfrau, e-lyfrau, cyfnodolion, cronfeydd data, a mannau astudio. Cyrchwch y cyfan ar-lein ar library.uwtsd.ac.uk. Angen help dod o hyd i ffynonellau? Cysylltwch â staff y llyfrgell."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/library"
   },
   {
     "tag": "wellbeing_general",
@@ -1928,7 +1956,8 @@
         "Does dim rhaid i chi ymdopi ar eich pen eich hun. Mae tîm Lles PCYDDS yma i chi — e-bostiwch wellbeingsupport@uwtsd.ac.uk neu galwch heibio Gwasanaethau Myfyrwyr. Maent yn cynnig cwnsela, cymorth iechyd meddwl, a chlust i wrando. Os ydych chi mewn argyfwng, ffoniwch Health Assured am ddim ar 0800 028 3766 (24/7).",
         "Cysylltwch â Gwasanaeth Lles PCYDDS — maent yn darparu cwnsela cyfrinachol am ddim a chymorth iechyd meddwl. E-bostiwch wellbeingsupport@uwtsd.ac.uk i drefnu apwyntiad."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/student-support-and-wellbeing"
   },
   {
     "tag": "wellbeing_crisis",
@@ -2019,7 +2048,8 @@
         "Mae'n ddrwg iawn gennyf glywed eich bod chi'n teimlo fel hyn. Gofynnwch am help nawr. Samaritans: 116 123 (am ddim, 24/7). Llinell Destun Argyfwng: tecstiwch SHOUT i 85258. Lles PCYDDS: wellbeingsupport@uwtsd.ac.uk. GIG 111 am help meddygol brys. PAPYRUS (o dan 35): 0800 068 4141. Nid ydych chi ar eich pen eich hun, a gall pethau wella.",
         "Rydych chi'n bwysig, ac mae help ar gael nawr. Cysylltwch â: Samaritans 116 123 (24/7, am ddim), tecstiwch SHOUT i 85258, neu ewch i'ch Adran Achosion Brys agosaf os ydych chi mewn perygl uniongyrchol."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/student-support-and-wellbeing"
   },
   {
     "tag": "wellbeing_disability",
@@ -2086,7 +2116,8 @@
         "Mae gan PCYDDS Wasanaeth Cymorth Dysgu Ychwanegol (CCYA) i helpu myfyrwyr ag anableddau, dyslecsia, cyflyrau iechyd meddwl, ac anawsterau dysgu eraill. Cysylltwch ag alss@uwtsd.ac.uk i drefnu asesiad.",
         "Mae tîm CCYA ym PCYDDS yn cefnogi myfyrwyr â: dyslecsia, ADHD, awtistiaeth, anableddau corfforol, cyflyrau iechyd meddwl, a mwy. Mae cymorth yn gyfrinachol ac wedi'i bersonoli. Cysylltwch ag alss@uwtsd.ac.uk."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/experience-facilities/student-support-wellbeing/disability-support"
   },
   {
     "tag": "students_union",
@@ -2148,7 +2179,8 @@
         "Mae Undeb Myfyrwyr PCYDDS ar uwtsdsu.co.uk. Maent yn trefnu digwyddiadau, clybiau, cymdeithasau, ac yn cynrychioli buddiannau myfyrwyr i'r brifysgol. O glybiau chwaraeon i gymdeithasau celf, mae rhywbeth i bawb.",
         "Undeb y Myfyrwyr yw calon bywyd cymdeithasol myfyrwyr ym PCYDDS. Dewch o hyd i glybiau a chymdeithasau ar uwtsdsu.co.uk. Maent yn rhedeg digwyddiadau gwyrddion, timau chwaraeon, cymdeithasau diwylliannol, ac yn darparu cynrychiolaeth myfyrwyr."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/experience-facilities/students-union"
   },
   {
     "tag": "graduation",
@@ -2221,7 +2253,8 @@
         "Mae seremonïau graddio PCYDDS fel arfer yn cael eu cynnal yn yr haf (Gorffennaf) a'r gaeaf (Rhagfyr/Ionawr). Byddwch yn derbyn gwahoddiad pan fyddwch chi wedi cwblhau eich gradd. Edrychwch ar pcydds.ac.uk/graddio am ddyddiadau seremoni.",
         "Mae graddio ym PCYDDS yn ddathliad gwych. Mae seremonïau fel arfer yn yr haf. Bydd angen i chi gofrestru eich presenoldeb a threfnu llogi gŵn. Gweler pcydds.ac.uk/graddio am y wybodaeth ddiweddaraf."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/graduation"
   },
   {
     "tag": "results_grades",
@@ -2282,7 +2315,8 @@
         "Mae eich canlyniadau a graddau ar gael drwy borth MyTSD ar mytsd.uwtsd.ac.uk (mewngofnodiad: mytsd.uwtsd.ac.uk/urd/sits.urd/run/siw_lgn). Gallwch weld canlyniadau modiwlau, adborth aseiniad, a'ch cofnod academaidd cyffredinol yno.",
         "Gwiriwch eich graddau ar MyTSD (mytsd.uwtsd.ac.uk). Dosbarthiadau gradd DU: Dosbarth Cyntaf (70%+), 2:1 (60-69%), 2:2 (50-59%), Trydedd (40-49%). Os ydych chi'n credu bod marc yn anghywir, gallwch apelio'n ffurfiol."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/about/governance-and-management/academic-office"
   },
   {
     "tag": "welsh_language",
@@ -2337,7 +2371,8 @@
         "Mae PCYDDS yn brifysgol ddwyieithog falch. Mae llawer o gyrsiau ar gael trwy gyfrwng y Gymraeg, yn enwedig ar gampysau Caerfyrddin a Llanbedr Pont Steffan. Cysylltwch â cymraeg@uwtsd.ac.uk am fwy o wybodaeth.",
         "Mae'r Gymraeg wrth galon PCYDDS. Mae'r brifysgol yn cynnig addysgu cyfrwng Cymraeg a dwyieithog ar draws llawer o bynciau. Cysylltwch â cymraeg@uwtsd.ac.uk. Mae cyrsiau gwella Cymraeg hefyd ar gael."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/welsh-opportunities-uwtsd"
   },
   {
     "tag": "uwtsd_about",
@@ -2393,7 +2428,8 @@
         "Sefydlwyd PCYDDS (Prifysgol Cymru Y Drindod Dewi Sant) yn 2010 drwy uno Coleg Prifysgol y Drindod Caerfyrddin a Phrifysgol Fetropolitan Abertawe, gyda threftadaeth yn dyddio'n ôl i 1822 yn Llanbedr Pont Steffan. Mae'n adnabyddus am ansawdd addysgu rhagorol a boddhad myfyrwyr.",
         "Mae PCYDDS yn brifysgol Gymreig falch gyda 200 mlynedd o hanes. Yn adnabyddus am addysgu cryf, cyrsiau ymarferol, a ffocws ar les myfyrwyr. Mae PCYDDS wedi'i achredu gan yr Asiantaeth Sicrhau Ansawdd (QAA)."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/about"
   },
   {
     "tag": "contact_general",
@@ -2498,7 +2534,8 @@
         "Prif gysylltiadau PCYDDS: Ymholiadau cyffredinol: 01267 676767 neu enquiries@uwtsd.ac.uk. Derbyniadau: admissions@uwtsd.ac.uk. Gwasanaethau Myfyrwyr: studentservices@uwtsd.ac.uk. Gwasanaethau TG: itservices@uwtsd.ac.uk neu 01792 481 111. Lles: wellbeingsupport@uwtsd.ac.uk. I ddod o hyd i e-bost aelod penodol o staff, ewch i pcydds.ac.uk a chwiliwch am eu henw yn y cyfeiriadur staff.",
         "Prif gyswllt PCYDDS: Ffôn 01267 676767, gwefan pcydds.ac.uk, e-bost enquiries@uwtsd.ac.uk. I gysylltu â darlithydd neu diwtor penodol, edrychwch ar gyfeiriadur staff pcydds.ac.uk neu cysylltwch â swyddfa'r adran yn uniongyrchol."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/contact-us"
   },
   {
     "tag": "career_services",
@@ -2594,7 +2631,8 @@
         "Gall Gwasanaeth Gyrfaoedd PCYDDS helpu gydag ysgrifennu CV, paratoi ar gyfer cyfweliad, chwilio am swyddi, a chynllunio gyrfa. E-bostiwch careers@uwtsd.ac.uk i drefnu apwyntiad un-i-un.",
         "Mae'r Gwasanaeth Gyrfaoedd yn cynnig canllawiau personol am brofiad gwaith, lleoliadau, a swyddi graddedigion. Maent yn cynnal clinigau CV, cyfweliadau ymarfer, a digwyddiadau cyflogwyr. E-bostiwch careers@uwtsd.ac.uk."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/student-support-and-wellbeing/careers-service"
   },
   {
     "tag": "student_stress",
@@ -2690,7 +2728,8 @@
         "Mae straen arholiadau ac aseiniad yn effeithio ar y rhan fwyaf o fyfyrwyr. Mae cymorth PCYDDS yn cynnwys: eich tiwtor personol, Lles ar wellbeingsupport@uwtsd.ac.uk am gwnsela, a gweithdai sgiliau astudio trwy'r llyfrgell.",
         "Cwestiwn gwych — mae rheoli amser yn un o'r sgiliau mwyaf gwerthfawr ym mhrifysgol! Dyma rai strategaethau profedig: 1) Defnyddiwch ddyddiadur neu galendr (Google Calendar, Outlook) i neilltuo amser astudio ar gyfer pob modiwl. 2) Rhannwch aseiniadau mawr yn filltirfeini wythnosol. 3) Rhowch gynnig ar dechneg Pomodoro: 25 munud o waith wedi'i ffocysu, 5 munud o seibiant. 4) Blaenoriaethwch yn ôl dyddiad cau ac anhawster. 5) Gall tîm Sgiliau Astudio PCYDDS a'ch tiwtor personol helpu — studentservices@uwtsd.ac.uk neu 01792 481 111."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/student-support-and-wellbeing"
   },
   {
     "tag": "timetable",
@@ -2789,7 +2828,8 @@
         "Mae eich amserlen ar borth MyTSD — ewch i mytsd.uwtsd.ac.uk a mewngofnodwch gyda'ch rhif myfyriwr a chyfrinair. Unwaith i chi fewngofnodi, edrychwch am yr adran 'Amserlen' yn y ddewislen. Os nad yw eich amserlen yn ymddangos, cysylltwch â'r cofrestrfa: registry@uwtsd.ac.uk.",
         "I weld eich amserlen, mewngofnodwch i MyTSD ar mytsd.uwtsd.ac.uk gyda'ch manylion myfyriwr. Mae eich amserlen bersonol yn dangos eich holl ddarlithoedd, seminarau a sesiynau labordy. Os oes gwrthdrawiad neu rywbeth o'i le, siaradwch â'ch Cyfarwyddwr Rhaglen neu e-bostiwch registry@uwtsd.ac.uk."
       ]
-    }
+    },
+    "source_url": null
   },
   {
     "tag": "printing",
@@ -2846,7 +2886,8 @@
         "Mae PCYDDS yn darparu cyfleusterau argraffu ar draws pob campws mewn llyfrgelloedd a labordai cyfrifiadur. Mae argraffu'n cael ei godi i gyfrif credyd argraffu. Cysylltwch â Gwasanaethau TG ar itservices@uwtsd.ac.uk am help.",
         "Mae argraffu ar gael mewn llyfrgelloedd a labordai cyfrifiadur PCYDDS. Bydd angen credydau argraffu arnoch chi ar eich cyfrif myfyrwyr, y gellir eu prynu ar y campws."
       ]
-    }
+    },
+    "source_url": null
   },
   {
     "tag": "student_services",
@@ -2899,7 +2940,8 @@
         "Gwasanaethau Myfyrwyr ym PCYDDS yw eich canolfan cymorth, yn ymdrin â: Lles a chwnsela, Cymorth anabledd a dysgu ychwanegol, Cyngor gyrfaoedd, Caledi ariannol, Cymorth myfyrwyr rhyngwladol, ac Ymholiadau llety. Anfonwch e-bost at studentservices@uwtsd.ac.uk.",
         "Mae Gwasanaethau Myfyrwyr PCYDDS yn ymdrin â bron popeth y tu allan i'ch astudiaethau. Cysylltwch â studentservices@uwtsd.ac.uk. Peidiwch ag oedi cyn cysylltu, maent yno i'ch helpu chi i lwyddo."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/experience-facilities/student-support-wellbeing/student-hwb"
   },
   {
     "tag": "english_language_support",
@@ -2958,7 +3000,8 @@
         "Mae PCYDDS yn cynnig cymorth iaith Saesneg academaidd trwy'r llyfrgell a thimau Cymorth Dysgu. Mae cymorth yn cynnwys gweithdai ysgrifennu academaidd, cymorth gramadeg, ac ymgynghoriadau ysgrifennu un-i-un. Cysylltwch â learningsupport@uwtsd.ac.uk.",
         "Oes angen help arnoch chi gyda'ch ysgrifennu academaidd? Mae tîm Cymorth Dysgu PCYDDS yn rhedeg gweithdai a sesiynau galw-i-mewn. Cysylltwch ag alss@uwtsd.ac.uk neu library@uwtsd.ac.uk."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/how-apply/international-applications/english-language-requirements"
   },
   {
     "tag": "fees_and_finance",
@@ -2995,7 +3038,8 @@
         "Ffioedd israddedig amser llawn: £9,535 y flwyddyn am 2025/26. Ffioedd ôl-radd addysgu: £7,800 ar y campws neu £6,800 ar-lein. Mae ffioedd rhyngwladol yn amrywio. Am fanylion llawn, ewch i www.uwtsd.ac.uk/study/fees-and-finance.",
         "Ffioedd israddedig: £9,535 y flwyddyn. Ffioedd ôl-radd: £7,800 ar y campws neu £6,800 ar-lein. Mae myfyrwyr rhyngwladol yn talu cyfraddau gwahanol. Am restr ffioedd gyflawn, gwiriwch www.uwtsd.ac.uk/study/fees-and-finance"
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/fees-and-finance"
   },
   {
     "tag": "financial_support",
@@ -3067,7 +3111,8 @@
         "Mae cymorth ariannol ar gael i fyfyrwyr sy'n wynebu caledi. Cysylltwch â'r tîm Cymorth Arian ar moneysupport@uwtsd.ac.uk neu ewch i Wasanaethau Myfyrwyr ar y campws. Mae cronfeydd caledi, grantiau brys, a bwrsariaethau ar gael.",
         "Os ydych chi'n cael trafferth yn ariannol, gall y tîm Cymorth Arian helpu. E-bostiwch moneysupport@uwtsd.ac.uk. Mae cronfeydd brys a bwrsariaethau ar gael i fyfyrwyr cymwys."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/fees-and-finance/undergraduate-fees/undergraduate-funding-support"
   },
   {
     "tag": "how_to_apply",
@@ -3102,7 +3147,8 @@
         "Mae myfyrwyr israddedig fel arfer yn gwneud cais drwy UCAS. Mae myfyrwyr ôl-radd yn gallu gwneud cais yn uniongyrchol i PCYDDS. Ewch i www.uwtsd.ac.uk/study/how-apply am arweiniad cam-wrth-gam.",
         "Ar gyfer myfyrwyr israddedig, defnyddiwch UCAS. Ar gyfer cyrsiau ôl-radd, gwneud cais yn uniongyrchol i ni."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/how-apply"
   },
   {
     "tag": "postgraduate_courses",
@@ -3142,7 +3188,8 @@
         "Mae PCYDDS yn cynnig amrywiaeth o raglenni ôl-radd gan gynnwys graddau Master, cyrsiau PGCE, a graddau ymchwil. Ewch i www.uwtsd.ac.uk/study/postgraduate-and-pgce",
         "Mae opsiynau ôl-radd yn cynnwys graddau Master ar draws 20+ pwnc a chyrsiau hyfforddi athrawon."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/apply/postgraduate"
   },
   {
     "tag": "campus_locations",
@@ -3176,7 +3223,8 @@
         "Mae gan PCYDDS chwe champws: Aberteifi (prif campws), Abertawe, Llambed, Caerdydd, Llundain, ac Birmingham. Mae gwahanol raglenni ar gael mewn gwahanol leoliadau. Ewch i www.uwtsd.ac.uk am fanylion campws penodol.",
         "Ein chwe champws yw: Aberteifi, Abertawe, Llambed (Cymru), ac yna Llundain, Birmingham, a Chaerdydd."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/campuses"
   },
   {
     "tag": "undergraduate_courses",
@@ -3214,7 +3262,8 @@
         "Mae PCYDDS yn cynnig graddau israddedig ar draws 20+ maes pwnc gan gynnwys Busnes, Peirianneg, Celfyddydau Creadigol, Addysg, a mwy. Ewch i www.uwtsd.ac.uk/programme-search",
         "Rydym yn cynnig graddau Bachelor (BA, BSc) a Graddau Sylfaen mewn 20+ pwnc."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/apply/undergraduate"
   },
   {
     "tag": "library_swansea",
@@ -3260,7 +3309,8 @@
         "Enw llyfrgell campws SA1 Abertawe yw Y Fforwm. Fe'i lleolir ar Island Rd drws nesaf i'r prif faes parcio. Y cyfeiriad llawn: Y Fforwm Library, UWTSD, Island Rd, Swansea SA1 8EW.",
         "Ar gampws SA1 Abertawe, mae'r llyfrgell yn cael ei galw'n Y Fforwm — y gwrs wrth y maes parcio ar Island Rd. Cyfeiriad: Y Fforwm Library, UWTSD, Island Rd, Swansea SA1 8EW."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/library"
   },
   {
     "tag": "library_carmarthen",
@@ -3297,7 +3347,8 @@
         "Mae llyfrgell campws Caerfyrddin ar brif gampws Caerfyrddin ar College Road. Cyfeiriad: UWTSD Carmarthen Library, College Road, Carmarthen SA31 3EP.",
         "Mae llyfrgell Caerfyrddin ar College Road yng nghanol y campws. Cyfeiriad llawn: UWTSD Carmarthen Library, College Road, Carmarthen SA31 3EP."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/library"
   },
   {
     "tag": "library_lampeter",
@@ -3328,7 +3379,8 @@
         "Enw llyfrgell Llambed yw Llyfrgell y Sylfaenwyr — llyfrgell hanesyddol ar brif gampws Llambed. Cyfeiriad: UWTSD Lampeter Founders Library, College Street, Lampeter SA48 7ED.",
         "Mae gan Llambed Lyfrgell y Sylfaenwyr yn UWTSD Lampeter, College Street, Lampeter SA48 7ED."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/library"
   },
   {
     "tag": "enrolment_tasks",
@@ -3400,7 +3452,8 @@
         "Mae cofrestru yn PCYDDS yn cael ei gwblhau drwy borth MyTSD ar mytsd.uwtsd.ac.uk. Mewngofnodwch i ddod o hyd i'ch tasgau cofrestru o dan yr adran 'Manylion Cofrestru'. Bydd angen i chi fel arfer uwchlwytho prawf adnabod a chymwysterau, cadarnhau eich manylion personol, a chwblhau unrhyw dasgau sy'n weddill.",
         "I gofrestru, mewngofnodwch i MyTSD ar mytsd.uwtsd.ac.uk/urd/sits.urd/run/siw_lgn. Mae eich porth yn cynnwys popeth sydd ei angen arnoch: tasgau cofrestru, uwchlwytho dogfennau, newidiadau data, gwybodaeth ymgeisydd, canlyniadau arholiad, a cheisiadau graddio. Am gymorth, cysylltwch â Chofrestrfa'r Myfyrwyr ar registry@uwtsd.ac.uk."
       ]
-    }
+    },
+    "source_url": null
   },
   {
     "tag": "human_agent",
@@ -3459,7 +3512,8 @@
         "U-Pal ydw i, chatbot awtomatig — nid wyf yn gallu eich cysylltu ag asiant byw ar hyn o bryd, ond mae hon yn nodwedd yr ydym yn edrych i'w gwella yn y dyfodol. Yn y cyfamser, gallwch gysylltu â pherson go iawn yn PCYDDS drwy anfon e-bost at enquiries@uwtsd.ac.uk, ffonio 01792 481 111, neu ymweld â derbynfa eich campws agosaf.",
         "Nid yw cymorth asiant byw yn rhywbeth y gallaf ei ddarparu eto — mae U-Pal yn gynorthwyydd awtomatig ac mae'r gallu hwn wedi'i gynllunio ar gyfer datblygiad yn y dyfodol. Am help brys gan berson go iawn, cysylltwch â PCYDDS yn uniongyrchol: enquiries@uwtsd.ac.uk neu 01792 481 111."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/contact-us"
   },
   {
     "tag": "uwtsd_digital_systems",
@@ -3507,7 +3561,8 @@
         "Mae PCYDDS yn defnyddio sawl system ddigidol allweddol: MyTSD (mytsd.uwtsd.ac.uk) yw eich porth gwybodaeth myfyrwyr ar gyfer cofrestru, canlyniadau, amserlenni, a thasgau. Moodle (moodle.uwtsd.ac.uk) yw'r Amgylchedd Dysgu Rhithwir ar gyfer deunyddiau cwrs a chyflwyniadau. Cynorthwyo TG ar itservices@uwtsd.ac.uk neu 01792 481 111.",
         "Y prif lwyfannau sydd eu hangen arnoch fel myfyriwr PCYDDS yw: MyTSD (mytsd.uwtsd.ac.uk) ar gyfer eich cofnod academaidd a thasgau — Moodle (moodle.uwtsd.ac.uk) ar gyfer cynnwys cwrs a chyflwyniadau — Microsoft 365 ar gyfer e-bost — a gwefan PCYDDS (pcydds.ac.uk) am wybodaeth gyffredinol."
       ]
-    }
+    },
+    "source_url": null
   },
   {
     "tag": "dissertation_support",
@@ -3560,7 +3615,8 @@
         "Mae'n swnio fel eich bod chi'n gweithio ar eich traethawd hir — mae hwnnw'n ymgymeriad mawr ac mae'n gwbl normal i fod angen cymorth! Eich goruchwyliwr traethawd hir yw eich prif bwynt cyswllt ar gyfer cynnwys a strwythur. Gallwch ddod o hyd i'w manylion ar Moodle neu MyTSD (mytsd.uwtsd.ac.uk). Os ydych chi'n poeni am ddyddiad cau, cysylltwch â'ch gweinyddwr rhaglen neu Wasanaethau Myfyrwyr: studentservices@uwtsd.ac.uk | 01792 481 111.",
         "Mae straen traethawd hir yn real iawn — nid chi yw'r unig un sy'n teimlo hyn! Eich pobl allweddol yw: (1) eich goruchwyliwr traethawd hir am arweiniad academaidd, (2) eich Tiwtor Personol am gefnogaeth, a (3) y tîm Lles (wellbeingsupport@uwtsd.ac.uk) os yw'n anodd. Am estyniad dyddiad cau, siaradwch â'ch gweinyddwr rhaglen cyn gynted â phosibl."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/student-support-and-wellbeing"
   },
   {
     "tag": "academic_support",
@@ -3620,7 +3676,8 @@
         "Mae PCYDDS yn cynnig rhwydwaith cymorth cryf i fyfyrwyr sydd angen cymorth academaidd. Eich cam cyntaf yw eich Tiwtor Personol — mae ef/hi yno i helpu gydag unrhyw bryderon academaidd. Gallwch ddod o hyd i'w manylion ar Moodle neu MyTSD (mytsd.uwtsd.ac.uk). Am gymorth dysgu ychwanegol (gan gynnwys dyslecsia, sgiliau astudio), cysylltwch ag ALSS: alss@uwtsd.ac.uk | 01792 481 111.",
         "Yn cael hi'n anodd? Mae hynny'n iawn — mae cysylltu â phobl yn gam doeth! Eich Tiwtor Personol ac arweinwyr modiwlau yw eich pwynt cyswllt cyntaf. Mae Gwasanaeth Cymorth Dysgu Ychwanegol (ALSS) PCYDDS hefyd yn cynnig cymorth un-i-un a sgiliau astudio: alss@uwtsd.ac.uk. Gall Gwasanaethau Myfyrwyr ar studentservices@uwtsd.ac.uk hefyd eich helpu."
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/student-support-and-wellbeing"
   },
   {
     "tag": "staff_contact_query",
@@ -3660,6 +3717,7 @@
         "Wrth gwrs — mae siarad â rhywun wyneb yn wyneb yn aml y ffordd orau! Yn dibynnu ar yr hyn sydd ei angen arnoch: ar gyfer materion academaidd, eich Tiwtor Personol neu arweinydd modiwl (manylion ar Moodle/MyTSD); ar gyfer cymorth lles, yr Hwb Lles ar eich campws neu wellbeingsupport@uwtsd.ac.uk; ar gyfer ymholiadau cyffredinol, Gwasanaethau Myfyrwyr: studentservices@uwtsd.ac.uk | 01792 481 111.",
         "Wrth gwrs! Mae PCYDDS yn cynnig cymorth personol gwych. Am help academaidd, dechreuwch gyda'ch Tiwtor Personol (ar MyTSD). Am les, mae'r Hwb Lles ar y campws yn fan croesawgar i alw heibio. Am bopeth arall, mae Gwasanaethau Myfyrwyr ar agor Llun–Gwener, 9am–5pm. Dywedwch ychydig mwy am yr hyn yr hoffech ei drafod!"
       ]
-    }
+    },
+    "source_url": "https://www.uwtsd.ac.uk/contact-us"
   }
 ]

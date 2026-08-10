@@ -492,6 +492,43 @@ def _safe_fallback(target_lang: str) -> str:
     )
 
 
+# keeps the model on the turn actually in front of it. the conversation history
+# is there so it can follow references ("is it expensive?"), not so it can
+# repeat the previous answer.
+_FOCUS_DIRECTIVE_EN = (
+    "[ANSWER THE CURRENT MESSAGE] Respond to the student's most recent message "
+    "only. The conversation history is context for understanding what they mean, "
+    "not material to repeat.\n"
+    "- Match your length to theirs. A thank-you gets one or two warm sentences; "
+    "a detailed question gets a detailed answer. Never pad a short reply out "
+    "with information they did not ask for.\n"
+    "- If the message is small talk - thanks, wow, ok, a greeting - just respond "
+    "to it like a person would. Do NOT restate your previous answer, list "
+    "courses, or raise a new topic.\n"
+    "- Use common sense. If something is obvious from the conversation, act on "
+    "it rather than asking them to repeat it.\n"
+    "- Speak like an experienced member of UWTSD student support: warm, direct "
+    "and practical. Say plainly when you do not know something and point them "
+    "to who does, rather than guessing or padding."
+)
+
+_FOCUS_DIRECTIVE_CY = (
+    "[ATEBWCH Y NEGES BRESENNOL] Ymatebwch i neges ddiweddaraf y myfyriwr yn "
+    "unig. Mae hanes y sgwrs yno i'ch helpu i ddeall yr ystyr, nid i'w "
+    "ailadrodd.\n"
+    "- Cydwedwch hyd eich ateb â'u neges nhw. Mae diolch yn haeddu un neu ddwy "
+    "frawddeg gynnes; mae cwestiwn manwl yn haeddu ateb manwl. Peidiwch byth "
+    "ag ymestyn ateb byr gyda gwybodaeth na ofynnwyd amdani.\n"
+    "- Os yw'r neges yn fân siarad - diolch, waw, iawn, cyfarchiad - atebwch fel "
+    "y byddai person yn ei wneud. PEIDIWCH ag ailadrodd eich ateb blaenorol, "
+    "rhestru cyrsiau, na chodi pwnc newydd.\n"
+    "- Defnyddiwch synnwyr cyffredin. Os yw rhywbeth yn amlwg o'r sgwrs, "
+    "gweithredwch arno yn hytrach na gofyn iddynt ei ailadrodd.\n"
+    "- Siaradwch fel aelod profiadol o dîm cymorth myfyrwyr PCYDDS: cynnes, "
+    "uniongyrchol ac ymarferol. Dywedwch yn blaen pan nad ydych yn gwybod "
+    "rhywbeth a chyfeiriwch nhw at rywun sy'n gwybod."
+)
+
 _LANG_DIRECTIVE_EN = (
     "[CRITICAL LANGUAGE LOCK] The student's CURRENT message is in ENGLISH. "
     "You MUST reply 100% in English. Do NOT use Welsh greetings, words, or "
@@ -549,6 +586,14 @@ async def generate(
     ]
     if intent_tag:
         blocks.append(f"LIKELY INTENT: {intent_tag}")
+
+    # recency directive. an 8B quantised model given a history dominated by one
+    # topic will regress to it: after a long answer about courses, "thanks" and
+    # "wow" were both answered with fresh course listings. the earlier blocks
+    # now avoid *feeding* it that topic, but the model still has the previous
+    # turns in context, so it needs telling explicitly what to answer. placed
+    # near the tail for the same attention reason as lang_lock.
+    blocks.append(_FOCUS_DIRECTIVE_CY if lang == "cy" else _FOCUS_DIRECTIVE_EN)
     blocks.append(lang_lock)
 
     system_text = "\n\n".join(b for b in blocks if b)

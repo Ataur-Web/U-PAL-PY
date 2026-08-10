@@ -47,7 +47,9 @@ class Settings(BaseSettings):
     # Ollama (local fallback)
     ollama_url:             str  = Field(default="http://localhost:11434")
     ollama_model:           str  = Field(default="llama3.1:8b-instruct-q5_K_M")
-    ollama_num_ctx:         int  = Field(default=4096)
+    # Welsh prompts assemble to ~5k tokens (longer cy system prompt + poorer
+    # BPE efficiency on Welsh), so a 4096 window truncated every cy request.
+    ollama_num_ctx:         int  = Field(default=8192)
     ollama_timeout_seconds: int  = Field(default=60)
 
     # Chroma vector store (for RAG retrieval)

@@ -1457,9 +1457,11 @@ export default function Home() {
                               </div>
                             )}
                             {msg.role === 'bot' && msg.sources && msg.sources.length > 0 && (() => {
-                              // Only show sources with valid UWTSD URLs
+                              // The backend cites UWTSD pages only, so anything
+                              // arriving here is followable. This guard is kept
+                              // as a defensive check rather than a filter.
                               const validSources = msg.sources.filter(src =>
-                                src.url && src.url.startsWith('https://www.uwtsd.ac.uk')
+                                src.url && /^https?:\/\//.test(src.url)
                               );
                               return validSources.length > 0 ? (
                                 <details className="msg-sources">
@@ -1475,7 +1477,15 @@ export default function Home() {
                                         </div>
                                         <div className="msg-source-excerpt">{src.excerpt}</div>
                                         <a href={src.url} target="_blank" rel="noopener noreferrer" className="msg-source-link">
-                                          View full page →
+                                          {msg.lang === 'cy'
+                                            // UWTSD publishes far less in Welsh, so a Welsh answer is
+                                            // often cited against the English page. Say so plainly
+                                            // rather than letting the student click through to an
+                                            // unexpected change of language.
+                                            ? (src.language === 'cy'
+                                                ? 'Gweld y dudalen →'
+                                                : 'Gweld y dudalen (Saesneg) →')
+                                            : 'View full page →'}
                                         </a>
                                       </div>
                                     ))}

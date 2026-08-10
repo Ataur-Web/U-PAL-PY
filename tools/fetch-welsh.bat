@@ -5,6 +5,10 @@ rem and query augmenter have an up-to-date vocab.
 title Fetch BydTermCymru Welsh Terms
 setlocal
 
+rem this launcher lives in tools/ but every path below is relative to the
+rem project root, so step up one level first.
+cd /d "%~dp0.."
+
 set "VENV_PY=.venv\Scripts\python.exe"
 
 if not exist "%VENV_PY%" (

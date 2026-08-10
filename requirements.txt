@@ -6,7 +6,8 @@ pydantic-settings>=2.2.0
 
 # ── LangChain + LLM ──────────────────────────────────────
 langchain>=0.2.0
-langchain-community>=0.2.0
+langchain-classic>=1.0.0        # EnsembleRetriever, moved out of langchain core in 1.x
+langchain-community>=0.2.0      # BM25Retriever wrapper over rank_bm25
 langchain-ollama>=0.1.0
 langchain-chroma>=0.1.0
 langchain-anthropic>=0.3.0      # Claude, cloud generation provider

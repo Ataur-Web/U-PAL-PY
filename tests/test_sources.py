@@ -2,12 +2,32 @@
 sources with title, category, excerpt, and language fields."""
 from __future__ import annotations
 
+import pytest
 from fastapi.testclient import TestClient
 
 from app.main import app
+from app.services import llm
 
 
 client = TestClient(app)
+
+
+@pytest.fixture(autouse=True)
+def _fresh_llm_client():
+    """Drop the cached chat client between tests.
+
+    llm._client is a module-level singleton, which is correct under uvicorn
+    where the whole process shares one long-lived event loop. TestClient
+    however spins up a new event loop per request, so a client cached during
+    the first test holds an httpx connection pool bound to a loop that has
+    since closed, and the next test fails with "Event loop is closed". Reset
+    the singleton so each test builds its own client.
+    """
+    llm._client = None
+    llm._active_provider = "unknown"
+    yield
+    llm._client = None
+    llm._active_provider = "unknown"
 
 
 def test_chat_sources_shape():

@@ -1,0 +1,617 @@
+{
+  "timestamp": "2026-08-07T15:12:35.367019",
+  "backend_url": "http://localhost:3001",
+  "total_queries": 20,
+  "successful": 20,
+  "failed": 0,
+  "success_rate": "100%",
+  "avg_sources_per_query": "2.9",
+  "queries": [
+    {
+      "query": "What courses does UWTSD offer?",
+      "language": "en",
+      "success": true,
+      "elapsed_ms": 3730.548858642578,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "courses_general",
+          "category": "Study",
+          "excerpt": "UWTSD has over 100 courses across its campuses. Highlights include Education, Nursing, Art and Design, Business, Welsh medium courses, and Sustainabil",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study"
+        },
+        {
+          "title": "Job Applicant Privacy Notice | University of Wales Trinity Saint David",
+          "category": "Job Applicant Privacy Notice",
+          "excerpt": ". We are committed to being transparent about how we collect and use your data and to meeting our data protection obligations. 1. What information doe",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/about/jobs-and-working-uwtsd/job-applicant-privacy-notice"
+        },
+        {
+          "title": "Register Your Interest for  Clearing 2026 | Get Updates & Advice",
+          "category": "Clearing",
+          "excerpt": ". We will: keep you informed about Clearing contact you with advice when courses become available explain your options and what to do next, if you wan",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/clearing"
+        }
+      ],
+      "response": "UWTSD offers over 100 courses across a really broad range of subjects — Art and Design, Business, Computing, Education, Engineering, Health and Social Care, Humanities, Law, Nursing, Psychology, Sport"
+    },
+    {
+      "query": "How do I apply to UWTSD?",
+      "language": "en",
+      "success": true,
+      "elapsed_ms": 3091.7203426361084,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "admissions_apply",
+          "category": "How Apply",
+          "excerpt": "To apply to UWTSD, you can apply directly through uwtsd.ac.uk/study or through UCAS (ucas.com) for undergraduate courses. International students can a",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/how-apply"
+        },
+        {
+          "title": "How to Apply Through  Clearing 2026 | Step-by-Step Guide",
+          "category": "Applying Through Clearing",
+          "excerpt": ". Our advisers can explain: what to do next when to apply where to get further support You do not need your student finance in place before you speak",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/clearing/applying-through-clearing"
+        },
+        {
+          "title": "career_services",
+          "category": "Careers Service",
+          "excerpt": "UWTSD has a Careers and Employability service helping with job searching, CV writing, interview preparation, and career planning. Available throughout",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/student-support-and-wellbeing/careers-service"
+        }
+      ],
+      "response": "You can apply in two ways:\n\nDirect application — go to uwtsd.ac.uk/study, choose your course, check the entry requirements, and submit your application online.\n\nThrough UCAS — apply via ucas.com for u"
+    },
+    {
+      "query": "What student support services are available?",
+      "language": "en",
+      "success": true,
+      "elapsed_ms": 3712.867259979248,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "Withdrawing or Interrupting Your Studies | University of Wales Trinity Saint David",
+          "category": "Withdrawing Or Interrupting Your Studies",
+          "excerpt": ". Student Services We have professional counsellors and mental health advisors available to you; our Student Finance advisors can help you if you are",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/finance/withdrawing-or-interrupting-your-studies"
+        },
+        {
+          "title": "financial_support",
+          "category": "Undergraduate Funding Support",
+          "excerpt": "If you're struggling financially, the Money Support team can help. Email moneysupport@uwtsd.ac.uk or drop into Student Services. Emergency funds and b",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/fees-and-finance/undergraduate-fees/undergraduate-funding-support"
+        },
+        {
+          "title": "Student Hwb | University of Wales Trinity Saint David",
+          "category": "Student Hwb",
+          "excerpt": ". The Student Services department is a collection of practical professional services designed to enable and support all our students to reach their fu",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/experience-facilities/student-support-wellbeing/student-hwb"
+        }
+      ],
+      "response": "UWTSD has a really comprehensive Student Services department designed to support you across all areas of student life. Here's what's available:\n\nWellbeing — Professional counsellors and mental health "
+    },
+    {
+      "query": "How much do courses cost?",
+      "language": "en",
+      "success": true,
+      "elapsed_ms": 3381.5557956695557,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "Alumni Postgraduate Taught Discount | University of Wales Trinity Saint David",
+          "category": "Alumni Postgraduate",
+          "excerpt": ". How to Apply The discount will be applied automatically for eligible alumni. Additional Information The fee discount will be awarded pro-rata with t",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/fees-and-finance/postgraduate-fees/postgraduate-funding-and-support/alumni-postgraduate"
+        },
+        {
+          "title": "International Alumni Postgraduate Taught Discount | University of Wales Trinity Saint David",
+          "category": "International Alumni",
+          "excerpt": ". How to Apply The discount will be applied automatically for eligible alumni. Additional Information This fee reduction will be awarded pro-rata with",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/fees-and-finance/international-fees/international-funding-and-support/international-alumni"
+        },
+        {
+          "title": "Course Costs Bursary | University of Wales Trinity Saint David",
+          "category": "Undergraduate Bursaries 3",
+          "excerpt": ". Course-related costs may include specialist books, specialist equipment etc. Whilst students can make more than one application where the support re",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/fees-and-finance/undergraduate-fees/undergraduate-funding-support/undergraduate-bursaries/undergraduate-bursaries-3"
+        }
+      ],
+      "response": "That depends on the course level and whether you're a UK or international student. Most undergraduate degrees at UWTSD are around £9,250 per year for UK students, and postgraduate taught courses typic"
+    },
+    {
+      "query": "International student services",
+      "language": "en",
+      "success": true,
+      "elapsed_ms": 3056.7784309387207,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "International Funding and Support | University of Wales Trinity Saint David",
+          "category": "International Funding And Support",
+          "excerpt": ". International Student Refund Policy International Student Refund Policy.pdf 95.82 KB, PDF International Scholarships and Bursaries International Sch",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/fees-and-finance/international-funding-and-support"
+        },
+        {
+          "title": "International | University of Wales Trinity Saint David",
+          "category": "International",
+          "excerpt": ". Contact our International Team I am an International Student looking to Study at UWTSD Play video: Welcome to a world of decision-makers. Internatio",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/international"
+        },
+        {
+          "title": "admissions_international",
+          "category": "International Applications",
+          "excerpt": "International students are very welcome at UWTSD! Apply directly through uwtsd.ac.uk/international. You'll likely need a Student Visa if from outside",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/how-apply/international-applications"
+        }
+      ],
+      "response": "Hi! I'm happy to help with international student services at UWTSD.\n\nUWTSD has a dedicated International Office that supports students from outside the UK with visa guidance, language requirements, an"
+    },
+    {
+      "query": "Entry requirements for students",
+      "language": "en",
+      "success": true,
+      "elapsed_ms": 3386.432647705078,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "admissions_requirements",
+          "category": "Advice Applicants",
+          "excerpt": "Entry requirements vary by course at UWTSD. Most undergraduate courses require 80-120 UCAS points (roughly 2-3 A-levels at grade C or above). UWTSD al",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/apply/undergraduate/advice-applicants"
+        },
+        {
+          "title": "International Student Life | University of Wales Trinity Saint David",
+          "category": "International Student Life",
+          "excerpt": ". English Language Requirements All International Students seeking entry to the University are required to demonstrate their English Language proficie",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/international/international-student-life"
+        },
+        {
+          "title": "English Language Requirements | University of Wales Trinity Saint David",
+          "category": "English Language Requirements",
+          "excerpt": ". English Language Entry Requirements Policy 512.29 KB, PDF The English language entry requirements are as follows: International Foundation Programme",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/how-apply/international-applications/english-language-requirements"
+        }
+      ],
+      "response": "Hi there! I'd be happy to help with entry requirements.\n\nTo give you the most useful answer, could you let me know:\n\n- What course are you interested in? (e.g. Computing, Business, Nursing, etc.)\n- Wh"
+    },
+    {
+      "query": "Student accommodation options",
+      "language": "en",
+      "success": true,
+      "elapsed_ms": 4082.139492034912,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "Student Journey | University of Wales Trinity Saint David",
+          "category": "Student Journey",
+          "excerpt": ". The next thing to consider is, where will you be staying during your studies? Our accommodation page sets out the different accommodation options av",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/apply/undergraduate/student-journey"
+        },
+        {
+          "title": "Accommodation | University of Wales Trinity Saint David",
+          "category": "Accommodation",
+          "excerpt": ". To discover more about your options, please follow the individual campus link below. For guidance and assistance please contact the accommodation te",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/accommodation"
+        },
+        {
+          "title": "Cardiff Accommodation | University of Wales Trinity Saint David",
+          "category": "Cardiff Accommodation",
+          "excerpt": ". The accommodation office will be available to support and provide advice as to where UWTSD students stay so you can be around students studying with",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/experience-facilities/accommodation/cardiff-accommodation"
+        }
+      ],
+      "response": "Great question! UWTSD offers several accommodation options across our campuses to suit different needs and budgets.\n\nOn-campus halls are available at Carmarthen, Lampeter, and Swansea, offering a full"
+    },
+    {
+      "query": "Counselling and wellbeing services",
+      "language": "en",
+      "success": true,
+      "elapsed_ms": 6103.636264801025,
+      "num_sources": 2,
+      "sources": [
+        {
+          "title": "wellbeing_general",
+          "category": "Student Support And Wellbeing",
+          "excerpt": "Your wellbeing matters at UWTSD. The Student Wellbeing service offers counselling, mental health support, and crisis guidance. Email wellbeingsupport@",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/student-support-and-wellbeing"
+        },
+        {
+          "title": "Student Hwb | University of Wales Trinity Saint David",
+          "category": "Student Hwb",
+          "excerpt": ". Wellbeing Support You may be coming to university with a diagnosed mental health condition or develop difficulties with your mental health or wellbe",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/experience-facilities/student-support-wellbeing/student-hwb"
+        }
+      ],
+      "response": "Hi there! It sounds like you're looking for information about counselling and wellbeing support at UWTSD.\n\nYou're in the right place. UWTSD's Wellbeing team offers free counselling, mental health supp"
+    },
+    {
+      "query": "Research opportunities at UWTSD",
+      "language": "en",
+      "success": true,
+      "elapsed_ms": 3435.1489543914795,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "career_services",
+          "category": "Careers Service",
+          "excerpt": "UWTSD has a Careers and Employability service helping with job searching, CV writing, interview preparation, and career planning. Available throughout",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/student-support-and-wellbeing/careers-service"
+        },
+        {
+          "title": "Troy Wilkinson - Ancient History (PhD) | University of Wales Trinity Saint David",
+          "category": "Troy Wilkinson",
+          "excerpt": "? Having also done my BA and MRes degrees at Lampeter Campus I have spent my entire career of soon to be 10 years in higher education at UWTSD! My tim",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/experience-facilities/student-stories/history-and-archaeology-student-stories/troy-wilkinson"
+        },
+        {
+          "title": "Megan Worrell - BSc Professional Policing | University of Wales Trinity Saint David",
+          "category": "Megan Worrell",
+          "excerpt": ". Overall, UWTSD is an excellent choice for anyone looking to pursue higher education in a dynamic and supportive setting, with ample opportunities fo",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/experience-facilities/student-stories/law-criminology-and-policing-student-stories/megan-worrell"
+        }
+      ],
+      "response": "Research opportunities at UWTSD are really varied and depend on what you're studying. At postgraduate level, you'll typically have dedicated research projects built into your course — whether that's a"
+    },
+    {
+      "query": "Study abroad opportunities",
+      "language": "en",
+      "success": true,
+      "elapsed_ms": 3814.8787021636963,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "Global Opportunities | University of Wales Trinity Saint David",
+          "category": "Global Opportunities",
+          "excerpt": "Global Opportunities Study Abroad & Exchange Travel, immerse yourself in a new culture, meet new friends, and try new foods. Funding is open to UWTSD",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/international/global-opportunities"
+        },
+        {
+          "title": "International Student Life | University of Wales Trinity Saint David",
+          "category": "International Student Life",
+          "excerpt": ". How to Apply Semester Abroad at UWTSD - Wales We also offer the opportunity for international students seeking a shorter, yet enriching study experi",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/international/international-student-life"
+        },
+        {
+          "title": "Exchange and Visiting students | University of Wales Trinity Saint David",
+          "category": "Exchange And Visiting Students",
+          "excerpt": ". Upon completing the Study Abroad programme, both you and your home institution will receive an official transcript. Contact our International Mobili",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/exchange-and-visiting-students"
+        }
+      ],
+      "response": "Great question! UWTSD has some really exciting study abroad options available to you.\n\nWe partner with universities across the globe, so you can either do a full semester or year abroad, or join short"
+    },
+    {
+      "query": "Beth yw costau'r cwrs?",
+      "language": "cy",
+      "success": true,
+      "elapsed_ms": 3097.071886062622,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "Campus Cardiff Location",
+          "category": "Cardiff",
+          "excerpt": "Mae campws Caerdydd PCYDDS yn IQ Caerdydd, yng nghanol Caerdydd. Mae modd cyrraedd yno'n hawdd ar drafnidiaeth gyhoeddus o orsaf drên Caerdydd Canolog",
+          "language": "cy",
+          "url": "https://www.uwtsd.ac.uk/cardiff"
+        },
+        {
+          "title": "Campus Carmarthen Location",
+          "category": "Carmarthen",
+          "excerpt": "Mae campws Caerfyrddin PCYDDS ar Heol y Coleg, Caerfyrddin, SA31 3EP. Mae modd cyrraedd yno ar fws ac ar drên — mae gorsaf drên Caerfyrddin gerllaw. A",
+          "language": "cy",
+          "url": "https://www.uwtsd.ac.uk/carmarthen"
+        },
+        {
+          "title": "Institute of Management and Health | University of Wales Trinity Saint David",
+          "category": "Institute Management And Health",
+          "excerpt": "Jessica Newport Lecturer Jonathan Wyatt Lecturer Julie Crossman Senior Lecturer Julie Thomas Senior Lecturer Ka Po Chong Lecturer Kalee Thomas Academi",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/about/our-institutes/institute-management-and-health"
+        }
+      ],
+      "response": "Wrth gwrs! I mi allu rhoi'r manylion costau cywir i chi, allwch chi ddweud pa gwrs rydych chi'n holi amdano? Ydych chi'n edrych ar gwrs penodol eisoes, neu ydych chi'n chwilio am gwrs newydd?"
+    },
+    {
+      "query": "Cymorth myfyrwyr",
+      "language": "cy",
+      "success": true,
+      "elapsed_ms": 3770.5328464508057,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "wellbeing_disability",
+          "category": "Disability Support",
+          "excerpt": "Mae tîm CCYA ym PCYDDS yn cefnogi myfyrwyr â: dyslecsia, ADHD, awtistiaeth, anableddau corfforol, cyflyrau iechyd meddwl, a mwy. Mae cymorth yn gyfrin",
+          "language": "cy",
+          "url": "https://www.uwtsd.ac.uk/study/experience-facilities/student-support-wellbeing/disability-support"
+        },
+        {
+          "title": "Institute of Inner City Learning | University of Wales Trinity Saint David",
+          "category": "Institute Inner City Learning",
+          "excerpt": ". Students and the provision of a friendly, supportive and tailored learning environment are at the centre of all we do, inspiring students to success",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/about/our-institutes/institute-inner-city-learning"
+        },
+        {
+          "title": "Swansea Accommodation | University of Wales Trinity Saint David",
+          "category": "Swansea Accommodation",
+          "excerpt": ". There is a diverse range of student accommodation available at our Swansea location, from stylish studios to spacious en-suits, all with bills inclu",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/experience-facilities/accommodation/swansea-accommodation"
+        }
+      ],
+      "response": "Shwmae! Croeso. Rwy'n U-Pal, cynorthwyydd myfyrwyr PCYDDS, ac rwy'n yma i'ch helpu gyda phopeth sy'n gysylltiedig â'r brifysgol — cyrsiau, ceisiadau, llety, bywyd campws, ffioedd, lles, a chwestiynau "
+    },
+    {
+      "query": "Cymhwyster mynediad",
+      "language": "cy",
+      "success": true,
+      "elapsed_ms": 3558.750867843628,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "Criminal Convictions | University of Wales Trinity Saint David",
+          "category": "Criminal Convictions",
+          "excerpt": ". Applicants who wish to enrol on regulated programmes will be required to gain a satisfactory enhanced disclosure from the Disclosure and Barring Ser",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/apply/undergraduate/criminal-convictions"
+        },
+        {
+          "title": "Study | University of Wales Trinity Saint David",
+          "category": "Study",
+          "excerpt": ". Postgraduate Certificate in Education Secondary (PGCE Secondary) / Post Compulsory Education and Training (PCET) / Post Compulsory Education (PCE) A",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study"
+        },
+        {
+          "title": "Digital Connectivity Bursary | University of Wales Trinity Saint David",
+          "category": "Undergraduate Bursaries 1",
+          "excerpt": ". Criteria/Eligibility This Digital Connectivity bursary is intended to provide support for Home students (eligible for student finance) who have no a",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/fees-and-finance/undergraduate-fees/undergraduate-funding-support/undergraduate-bursaries-1"
+        }
+      ],
+      "response": "Shwmae! Rwy'n deall eich bod chi'n holi am gymhwyster mynediad. \n\nYdych chi'n chwilio am wybodaeth am gwrs mynediad yn PCYDDS, neu ydych chi eisiau gwybod mwy am sut mae cymhwyster mynediad yn gweithi"
+    },
+    {
+      "query": "Gwybodaeth am lety myfyrwyr",
+      "language": "cy",
+      "success": true,
+      "elapsed_ms": 4083.7342739105225,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "Kirsty Jones-Higginson - BSc Criminology and Policing | University of Wales Trinity Saint David",
+          "category": "Kirsty Jones",
+          "excerpt": "Home Experience and Facilities Student Stories Law",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/experience-facilities/student-stories/law-criminology-and-policing-student-stories/kirsty-jones"
+        },
+        {
+          "title": "accommodation_general",
+          "category": "Accommodation",
+          "excerpt": "UWTSD offers student accommodation at the Swansea and Carmarthen campuses with en-suite and shared bathroom options in halls of residence. Great for f",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/accommodation"
+        },
+        {
+          "title": "Cardiff Accommodation | University of Wales Trinity Saint David",
+          "category": "Cardiff Accommodation",
+          "excerpt": ". The accommodation office will be available to support and provide advice as to where UWTSD students stay so you can be around students studying with",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/experience-facilities/accommodation/cardiff-accommodation"
+        }
+      ],
+      "response": "Shwmae! Mae'n dda gen i helpu gyda chwestiynau am lety.\n\nBeth yn union hoffech chi wybod? Ydych chi'n chwilio am:\n\n- Gwybodaeth am y llety sydd ar gael (neuaddau preswyl, tai rhannu, ac ati)\n- Sut i w"
+    },
+    {
+      "query": "Sut i wneud cais i UWTSD?",
+      "language": "cy",
+      "success": true,
+      "elapsed_ms": 4105.041742324829,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "Alumni Postgraduate Taught Discount | University of Wales Trinity Saint David",
+          "category": "Alumni Postgraduate",
+          "excerpt": ". This exclusive discount supports UWTSD graduates who choose to progress into further study with us, making your next academic step more affordable a",
+          "language": "cy",
+          "url": "https://www.uwtsd.ac.uk/study/fees-and-finance/postgraduate-fees/postgraduate-funding-and-support/alumni-postgraduate"
+        },
+        {
+          "title": "admissions_apply",
+          "category": "How Apply",
+          "excerpt": "I wneud cais i PCYDDS, gallwch wneud cais yn uniongyrchol trwy pcydds.ac.uk/study neu trwy UCAS (ucas.com) ar gyfer cyrsiau israddedig. Ewch i pcydds.",
+          "language": "cy",
+          "url": "https://www.uwtsd.ac.uk/study/how-apply"
+        },
+        {
+          "title": "Unibuddy | University of Wales Trinity Saint David",
+          "category": "Unibuddy",
+          "excerpt": "Home Experience and Facilities Why choose UWTSD? Unibuddy Unibuddy Chat to Our Students Chat with our current students below - where they’ll be honest",
+          "language": "cy",
+          "url": "https://www.uwtsd.ac.uk/experience-facilities/why-choose-uwtsd/unibuddy"
+        }
+      ],
+      "response": "Shwmae! Mae'n dda gen i helpu.\n\nI wneud cais i PCYDDS, mae gennych ddwy opsiwn:\n\n1. Cais uniongyrchol trwy pcydds.ac.uk/study — dewiswch eich cwrs a dilynnwch y broses\n2. Trwy UCAS — ar gyfer cyrsiau "
+    },
+    {
+      "query": "Cymhwystrau mynediad",
+      "language": "cy",
+      "success": true,
+      "elapsed_ms": 2883.589506149292,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "Science, Technology, Engineering and Maths (STEM) | University of Wales Trinity Saint David",
+          "category": "Stem",
+          "excerpt": ". Get in Touch Explore our Facilities Motorsport, Mechanical, and Electrical Engineering Facilities Environment",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/stem"
+        },
+        {
+          "title": "staff_contact_query",
+          "category": "Contact Us",
+          "excerpt": "Absolutely! UWTSD has great in-person support. For academic help, start with your Personal Tutor (find them on MyTSD at mytsd.uwtsd.ac.uk). For wellbe",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/contact-us"
+        },
+        {
+          "title": "Top Things to Do in London | University of Wales Trinity Saint David",
+          "category": "Top 10 Things Do London",
+          "excerpt": ". For those seeking an oasis amidst the skyscrapers, the Crossrail Place Roof Garden offers an impressive display of exotic plants sheltered within an",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/london/top-10-things-do-london"
+        }
+      ],
+      "response": "I notice you've written in Welsh, but the system instruction tells me to reply in English for this turn. However, I want to make sure I'm helping you properly.\n\nYou've asked about \"Cymhwystrau mynedia"
+    },
+    {
+      "query": "Cymorth ariannol",
+      "language": "cy",
+      "success": true,
+      "elapsed_ms": 4014.530897140503,
+      "num_sources": 2,
+      "sources": [
+        {
+          "title": "Money Support | University of Wales Trinity Saint David",
+          "category": "Money Support",
+          "excerpt": ". That’s why we’re committed to providing comprehensive financial support to help you achieve your academic goals without the burden of excessive fina",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/student-support-and-wellbeing/money-support"
+        },
+        {
+          "title": "Undergraduate Funding & Support | University of Wales Trinity Saint David",
+          "category": "Undergraduate Funding Support",
+          "excerpt": ". We offer: help with unexpected financial difficulties budgeting and money advice Get help with money and cost‑of‑living support UK Student Finance U",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/fees-and-finance/undergraduate-fees/undergraduate-funding-support"
+        }
+      ],
+      "response": "Shwmae! Mae'n dda gen i helpu gyda chwestiynau am gymorth ariannol.\n\nBeth yn benodol sydd ei angen arnoch? Ydych chi'n chwilio am:\n\n- Gwybodaeth am fenthyciadau myfyrwyr neu grant\n- Cymorth gyda'ch ca"
+    },
+    {
+      "query": "Gwasanaethau rhyngwladol",
+      "language": "cy",
+      "success": true,
+      "elapsed_ms": 3665.13729095459,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "Student Hwb | University of Wales Trinity Saint David",
+          "category": "Student Hwb",
+          "excerpt": ". The Student Services department is a collection of practical professional services designed to enable and support all our students to reach their fu",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/experience-facilities/student-support-wellbeing/student-hwb"
+        },
+        {
+          "title": "International Funding and Support | University of Wales Trinity Saint David",
+          "category": "International Funding And Support",
+          "excerpt": ". Our university offers scholarships and bursaries designed specifically for international students, and you may also be eligible to apply for externa",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/fees-and-finance/international-funding-and-support"
+        },
+        {
+          "title": "Swansea Accommodation | University of Wales Trinity Saint David",
+          "category": "Swansea Accommodation",
+          "excerpt": ". There is a diverse range of student accommodation available at our Swansea location, from stylish studios to spacious en-suits, all with bills inclu",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/experience-facilities/accommodation/swansea-accommodation"
+        }
+      ],
+      "response": "Shwmae! Sut alla i'ch helpu gyda gwasanaethau rhyngwladol? Ydych chi'n chwilio am wybodaeth am:\n\n- Cymorth gyda fisa neu faterion mudiad rhyngwladol?\n- Cynlluniau tramor neu gyfnewid astudio?\n- Cymort"
+    },
+    {
+      "query": "Cyfleoedd astudio dramor",
+      "language": "cy",
+      "success": true,
+      "elapsed_ms": 5349.829196929932,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "Rhyngwladol | Prifysgol Cymru Y Drindod Dewi Sant",
+          "category": "Rhyngwladol",
+          "excerpt": ". Ydych chi’n fyfyriwr rhyngwladol sy’n bwriadu astudio mewn gwlad wahanol? Beth am fwrw golwg ar ein hadran Bywyd Myfyrwyr Rhyngwladol lle cewch weld",
+          "language": "cy",
+          "url": "https://www.uwtsd.ac.uk/cy/profiad-chyfleusterau/rhyngwladol"
+        },
+        {
+          "title": "Summer Show: Photography | University of Wales Trinity Saint David",
+          "category": "Summer Show Photography",
+          "excerpt": ". Thanks to its interactive character, participants are encouraged to take part in the process of the installation’s disintegration by cutting away at",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/summer-degree-shows-2024/summer-show-photography"
+        },
+        {
+          "title": "Swansea Accommodation | University of Wales Trinity Saint David",
+          "category": "Swansea Accommodation",
+          "excerpt": ". There is a diverse range of student accommodation available at our Swansea location, from stylish studios to spacious en-suits, all with bills inclu",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/experience-facilities/accommodation/swansea-accommodation"
+        }
+      ],
+      "response": "Shwmae! Mae astudio dramor yn gyfle gwych i ddatblygu'n academaidd ac yn bersonol.\n\nRydym yn PCYDDS yn cynnig Cyfleoedd Astudio Dramor a Chyfnewid i fyfyrwyr sydd am dreulio cyfnod yn astudio mewn pri"
+    },
+    {
+      "query": "Ymchwil ac arloesedd",
+      "language": "cy",
+      "success": true,
+      "elapsed_ms": 4831.39705657959,
+      "num_sources": 3,
+      "sources": [
+        {
+          "title": "The AGC: What we do | University of Wales Trinity Saint David",
+          "category": "What We Do",
+          "excerpt": ". Technology Report, Margam Castle Alun Adams collaborated with David Dungworth of English Heritage on the publication of a technology report, ‘Scient",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/agc/what-we-do"
+        },
+        {
+          "title": "accommodation_general",
+          "category": "Accommodation",
+          "excerpt": "UWTSD offers student accommodation at the Swansea and Carmarthen campuses with en-suite and shared bathroom options in halls of residence. Great for f",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/accommodation"
+        },
+        {
+          "title": "Camau i'r Dyfodol – Phase 3 | University of Wales Trinity Saint David",
+          "category": "Camau Ir Dyfodol Phase 3",
+          "excerpt": "Home Research Camau i'r Dyfodol Camau i'r Dyfodol – Phase 3 Camau i'r Dyfodol – Phase 3 Call for Schools The Camau i’r Dyfodol project is a collaborat",
+          "language": "en",
+          "url": "https://www.uwtsd.ac.uk/research/camau-ir-dyfodol/camau-ir-dyfodol-phase-3"
+        }
+      ],
+      "response": "Shwmae! Mae'n dda gen i glywed eich bod chi'n diddordeb mewn ymchwil ac arloesedd. \n\nAllwch chi ddweud ychydig mwy am yr hyn rydych chi'n chwilio amdano? Ydych chi'n:\n\n- Holi am gyrsiau ymchwil neu ra"
+    }
+  ]
+}

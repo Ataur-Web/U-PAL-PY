@@ -22,7 +22,14 @@
     ],
     "answer_en": "The UWTSD SA1 campus is the IQ Building at SA1 Swansea Waterfront, Swansea, SA1 8EW. It is within walking distance of Swansea city centre and Swansea Train Station. Regular bus services run across the city — plan your journey at traveline.cymru. Free parking is available on site, and the nearest NCP is Orchard Street (SA1 5AS). For directions: enquiries@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "Mae campws SA1 PCYDDS yn yr Adeilad IQ ar SA1 Glannau Abertawe, Abertawe, SA1 8EW. Mae o fewn pellter cerdded o ganol dinas Abertawe a Gorsaf Trenau Abertawe. Gallwch gynllunio eich taith ar traveline.cymru. Am fwy o wybodaeth: enquiries@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["sa1", "iq building", "waterfront", "swansea campus", "swansea address"]
+    "keywords": [
+      "sa1",
+      "iq building",
+      "waterfront",
+      "swansea campus",
+      "swansea address"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/swansea"
   },
   {
     "id": "campus-mount-pleasant",
@@ -44,7 +51,13 @@
     ],
     "answer_en": "The UWTSD Mount Pleasant campus and Swansea College of Art are at 34 Alexandra Road, Swansea, SA1 5DU. The campus is within walking distance of Swansea city centre. For more information: enquiries@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "Mae campws Mount Pleasant a Choleg Celf Abertawe PCYDDS ar 34 Ffordd Alexandra, Abertawe, SA1 5DU. Mae'r campws o fewn pellter cerdded o ganol y ddinas. Am fwy o wybodaeth: enquiries@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["mount pleasant", "alexandra road", "art campus", "swansea college of art"]
+    "keywords": [
+      "mount pleasant",
+      "alexandra road",
+      "art campus",
+      "swansea college of art"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/swansea"
   },
   {
     "id": "campus-carmarthen-location",
@@ -62,7 +75,13 @@
     ],
     "answer_en": "The UWTSD Carmarthen campus is on College Road, Carmarthen, SA31 3EP. It is accessible by bus and train — Carmarthen train station is nearby. For directions and journey planning: traveline.cymru | enquiries@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "Mae campws Caerfyrddin PCYDDS ar Heol y Coleg, Caerfyrddin, SA31 3EP. Mae modd cyrraedd yno ar fws ac ar drên — mae gorsaf drên Caerfyrddin gerllaw. Am gynllunio taith: traveline.cymru | enquiries@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["carmarthen", "caerfyrddin", "college road", "carmarthen campus"]
+    "keywords": [
+      "carmarthen",
+      "caerfyrddin",
+      "college road",
+      "carmarthen campus"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/carmarthen"
   },
   {
     "id": "campus-lampeter-location",
@@ -80,7 +99,14 @@
     ],
     "answer_en": "The UWTSD Lampeter campus is on College Street, Lampeter, SA48 7ED. It is the historic founding campus of the university, established in 1822, and is home to the unique Founders' Library. Lampeter is accessible by bus via TrawsCymru and Traveline Cymru. For more: enquiries@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "Mae campws Llambed PCYDDS ar Stryd y Coleg, Llambed, SA48 7ED. Dyma gampws gwreiddiol hanesyddol y brifysgol, a sefydlwyd yn 1822, ac mae Llyfrgell y Sylfaenwyr unigryw yno. Mae Llambed yn hygyrch ar fws drwy TrawsCymru a Traveline Cymru. Am fwy: enquiries@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["lampeter", "llambed", "college street", "lampeter campus", "founders library"]
+    "keywords": [
+      "lampeter",
+      "llambed",
+      "college street",
+      "lampeter campus",
+      "founders library"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/campuses"
   },
   {
     "id": "campus-cardiff-location",
@@ -93,7 +119,13 @@
     ],
     "answer_en": "The UWTSD Cardiff campus is IQ Cardiff, located in central Cardiff. It is easily accessible by public transport from Cardiff Central train station. For the full address and directions: enquiries@uwtsd.ac.uk | 01792 481 111 | uwtsd.ac.uk.",
     "answer_cy": "Mae campws Caerdydd PCYDDS yn IQ Caerdydd, yng nghanol Caerdydd. Mae modd cyrraedd yno'n hawdd ar drafnidiaeth gyhoeddus o orsaf drên Caerdydd Canolog. Am gyfeiriad llawn a chyfarwyddiadau: enquiries@uwtsd.ac.uk | 01792 481 111 | uwtsd.ac.uk.",
-    "keywords": ["cardiff", "caerdydd", "iq cardiff", "cardiff campus"]
+    "keywords": [
+      "cardiff",
+      "caerdydd",
+      "iq cardiff",
+      "cardiff campus"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/cardiff"
   },
   {
     "id": "fees-general",
@@ -114,8 +146,17 @@
     ],
     "answer_en": "UWTSD tuition fees for 2025/26: UK/home undergraduate students pay £9,535 per year full-time (or £39 per credit part-time, typically 60 credits per year). International undergraduate students pay £15,525 per year full-time (or £110 per credit part-time). Home postgraduate taught: £7,800 per year on campus or £6,800 online. International postgraduate taught: £16,800 per year on campus or £10,500 online. For funding and bursary information: studentfinance@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "Ffioedd dysgu PCYDDS ar gyfer 2025/26: Myfyrwyr israddedig y DU/cartref — £9,535 y flwyddyn llawn-amser (neu £39 y credyd rhan-amser, fel arfer 60 credyd y flwyddyn). Myfyrwyr israddedig rhyngwladol — £15,525 y flwyddyn llawn-amser (neu £110 y credyd rhan-amser). Ôl-raddedig a addysgir cartref — £7,800 y flwyddyn ar gampws neu £6,800 ar-lein. Ôl-raddedig a addysgir rhyngwladol — £16,800 y flwyddyn ar gampws neu £10,500 ar-lein. Am wybodaeth ariannu: studentfinance@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["fees", "tuition", "cost", "ffioedd", "how much", "price", "fee amount"],
-    "qualifiers": []
+    "keywords": [
+      "fees",
+      "tuition",
+      "cost",
+      "ffioedd",
+      "how much",
+      "price",
+      "fee amount"
+    ],
+    "qualifiers": [],
+    "source_url": "https://www.uwtsd.ac.uk/study/fees-and-finance"
   },
   {
     "id": "fees-international-undergraduate",
@@ -137,8 +178,19 @@
     ],
     "answer_en": "International undergraduate students at UWTSD pay £15,525 per year full-time (2025/26). Part-time study is £110 per credit (typically 60 credits per year). UWTSD offers a range of international scholarships and bursaries — for details and funding options contact: internationaloffice@uwtsd.ac.uk | 01792 481 111 | uwtsd.ac.uk/international.",
     "answer_cy": "Mae myfyrwyr israddedig rhyngwladol yn PCYDDS yn talu £15,525 y flwyddyn llawn-amser (2025/26). Mae astudio rhan-amser yn £110 y credyd (fel arfer 60 credyd y flwyddyn). Mae PCYDDS yn cynnig amrywiaeth o ysgoloriaethau a bwrsarïau rhyngwladol — am fanylion a opsiynau ariannu: internationaloffice@uwtsd.ac.uk | 01792 481 111 | uwtsd.ac.uk/rhyngwladol.",
-    "keywords": ["international fees", "overseas fees", "non-uk fees", "international student cost", "international undergraduate", "ffioedd rhyngwladol"],
-    "qualifiers": ["international", "undergraduate"]
+    "keywords": [
+      "international fees",
+      "overseas fees",
+      "non-uk fees",
+      "international student cost",
+      "international undergraduate",
+      "ffioedd rhyngwladol"
+    ],
+    "qualifiers": [
+      "international",
+      "undergraduate"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/study/fees-and-finance/tuition-fee-schedule"
   },
   {
     "id": "fees-international-postgraduate",
@@ -157,8 +209,17 @@
     ],
     "answer_en": "International postgraduate taught (PGT) students at UWTSD pay £16,800 per year on campus or £10,500 per year online (2025/26). UWTSD offers international scholarships for postgraduate study — for details and funding options contact: internationaloffice@uwtsd.ac.uk | 01792 481 111 | uwtsd.ac.uk/international.",
     "answer_cy": "Mae myfyrwyr ôl-raddedig a addysgir rhyngwladol yn PCYDDS yn talu £16,800 y flwyddyn ar gampws neu £10,500 y flwyddyn ar-lein (2025/26). Mae PCYDDS yn cynnig ysgoloriaethau rhyngwladol ar gyfer astudio ôl-raddedig — am fanylion: internationaloffice@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["international postgraduate fees", "overseas masters fees", "international masters cost", "ffioedd ôl-raddedig rhyngwladol"],
-    "qualifiers": ["international", "postgraduate"]
+    "keywords": [
+      "international postgraduate fees",
+      "overseas masters fees",
+      "international masters cost",
+      "ffioedd ôl-raddedig rhyngwladol"
+    ],
+    "qualifiers": [
+      "international",
+      "postgraduate"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/study/fees-and-finance/tuition-fee-schedule"
   },
   {
     "id": "fees-uk-undergraduate",
@@ -183,8 +244,20 @@
     ],
     "answer_en": "UK/home undergraduate students at UWTSD pay £9,535 per year full-time (2025/26). Part-time study is £39 per credit (typically 60 credits per year). Student Finance Wales or Student Finance England can cover the full fee via a tuition fee loan, meaning most students pay nothing upfront. Apply at studentfinancewales.co.uk (Wales) or gov.uk/student-finance (England). Contact: studentfinance@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "Mae myfyrwyr israddedig o'r DU/cartref yn PCYDDS yn talu £9,535 y flwyddyn llawn-amser (2025/26). Mae astudio rhan-amser yn £39 y credyd (fel arfer 60 credyd y flwyddyn). Gall Cyllid Myfyrwyr Cymru neu Loegr dalu'r ffi lawn drwy fenthyciad ffioedd dysgu — nid yw'r rhan fwyaf o fyfyrwyr yn talu dim ymlaen llaw. Am wybodaeth: studentfinance@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["uk fees", "home fees", "welsh student fees", "domestic fees", "uk undergraduate cost", "ffioedd DU", "ffioedd cartref"],
-    "qualifiers": ["home", "undergraduate"]
+    "keywords": [
+      "uk fees",
+      "home fees",
+      "welsh student fees",
+      "domestic fees",
+      "uk undergraduate cost",
+      "ffioedd DU",
+      "ffioedd cartref"
+    ],
+    "qualifiers": [
+      "home",
+      "undergraduate"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/study/fees-and-finance/tuition-fee-schedule"
   },
   {
     "id": "fees-postgraduate-home",
@@ -205,8 +278,19 @@
     ],
     "answer_en": "Home/UK postgraduate taught fees at UWTSD start from £7,800 per year on campus or £6,800 per year online (2025/26). Funding options include the Postgraduate Loan (up to £13,000 from Student Finance Wales), scholarships, and employer sponsorship. For details: studentfinance@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "Mae ffioedd ôl-raddedig a addysgir cartref/DU yn PCYDDS yn dechrau o £7,800 y flwyddyn ar gampws neu £6,800 ar-lein (2025/26). Mae opsiynau ariannu ar gael gan gynnwys Benthyciad Ôl-raddedig (hyd at £13,000 drwy Gyllid Myfyrwyr Cymru). Am fanylion: studentfinance@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["postgraduate fees home", "uk masters fees", "pg fees", "postgrad cost uk", "masters tuition home", "ffioedd ôl-raddedig cartref"],
-    "qualifiers": ["postgraduate", "home"]
+    "keywords": [
+      "postgraduate fees home",
+      "uk masters fees",
+      "pg fees",
+      "postgrad cost uk",
+      "masters tuition home",
+      "ffioedd ôl-raddedig cartref"
+    ],
+    "qualifiers": [
+      "postgraduate",
+      "home"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/study/fees-and-finance/tuition-fee-schedule"
   },
   {
     "id": "fees-pgce",
@@ -236,8 +320,20 @@
     ],
     "answer_en": "PGCE (Postgraduate Certificate in Education) fees at UWTSD for 2025/26: Home students £9,535 per year. International students £15,525 per year. For funding options including the PGCE Incentive scheme contact: studentfinance@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "Ffioedd PGCE (Tystysgrif Ôl-raddedig mewn Addysg) yn PCYDDS ar gyfer 2025/26: Myfyrwyr cartref £9,535 y flwyddyn. Myfyrwyr rhyngwladol £15,525 y flwyddyn. Am opsiynau ariannu gan gynnwys cynllun Cymhelliant PGCE: studentfinance@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["pgce", "pgce fees", "teacher training", "postgraduate certificate education", "pgce cost", "tar", "hyfforddi athrawon", "teacher training course"],
-    "qualifiers": ["pgce"]
+    "keywords": [
+      "pgce",
+      "pgce fees",
+      "teacher training",
+      "postgraduate certificate education",
+      "pgce cost",
+      "tar",
+      "hyfforddi athrawon",
+      "teacher training course"
+    ],
+    "qualifiers": [
+      "pgce"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/study/fees-and-finance/tuition-fee-schedule"
   },
   {
     "id": "fees-phd",
@@ -262,8 +358,19 @@
     ],
     "answer_en": "PhD fees at UWTSD for 2025/26: Home students — £6,000 per year full-time or £3,000 per year part-time. International students — £16,500 per year full-time or £8,250 per year part-time. For MPhil, Professional Doctorates and research funding options: studentfinance@uwtsd.ac.uk | 01792 481 111 | uwtsd.ac.uk/research.",
     "answer_cy": "Ffioedd PhD yn PCYDDS ar gyfer 2025/26: Myfyrwyr cartref — £6,000 y flwyddyn llawn-amser neu £3,000 y flwyddyn rhan-amser. Myfyrwyr rhyngwladol — £16,500 y flwyddyn llawn-amser neu £8,250 y flwyddyn rhan-amser. Am MPhil, Doethuriaethau Proffesiynol ac opsiynau ariannu ymchwil: studentfinance@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["phd", "phd fees", "doctorate", "research degree", "mphil", "phd cost", "ffioedd doethuriaeth"],
-    "qualifiers": ["phd"]
+    "keywords": [
+      "phd",
+      "phd fees",
+      "doctorate",
+      "research degree",
+      "mphil",
+      "phd cost",
+      "ffioedd doethuriaeth"
+    ],
+    "qualifiers": [
+      "phd"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/study/fees-and-finance/tuition-fee-schedule"
   },
   {
     "id": "accommodation-apply",
@@ -294,7 +401,16 @@
     ],
     "answer_en": "To apply for UWTSD student accommodation, visit the HallPad portal at uwtsd.ac.uk/accommodation or contact the Accommodation team at accommodation@uwtsd.ac.uk | 01792 481 111. Applications typically open in the spring — apply early as places are limited. The deadline is usually 31 July for the following academic year.",
     "answer_cy": "I wneud cais am lety myfyrwyr PCYDDS, ewch i borth HallPad ar uwtsd.ac.uk/llety neu cysylltwch â'r tîm Llety ar accommodation@uwtsd.ac.uk | 01792 481 111. Mae ceisiadau fel arfer yn agor yn y gwanwyn — gwnewch gais yn gynnar gan fod lleoedd yn brin. Y dyddiad cau fel arfer yw 31 Gorffennaf ar gyfer y flwyddyn academaidd nesaf.",
-    "keywords": ["accommodation", "halls", "llety", "apply", "live on campus", "hallpad", "application deadline"]
+    "keywords": [
+      "accommodation",
+      "halls",
+      "llety",
+      "apply",
+      "live on campus",
+      "hallpad",
+      "application deadline"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/accommodation"
   },
   {
     "id": "library-hours",
@@ -313,7 +429,16 @@
     ],
     "answer_en": "UWTSD library opening hours vary by campus and term time. During term, libraries are typically open Monday–Friday 8am–9pm and Saturday–Sunday 10am–6pm. For exact times at your campus visit uwtsd.ac.uk/library or contact library@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "Mae oriau agor llyfrgelloedd PCYDDS yn amrywio yn ôl campws ac amser tymor. Yn ystod y tymor, mae llyfrgelloedd fel arfer yn agored Dydd Llun–Gwener 8am–9pm a Dydd Sadwrn–Sul 10am–6pm. Am amseroedd penodol yn eich campws: uwtsd.ac.uk/library | library@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["library", "opening hours", "llyfrgell", "oriau", "open", "hours", "when open"]
+    "keywords": [
+      "library",
+      "opening hours",
+      "llyfrgell",
+      "oriau",
+      "open",
+      "hours",
+      "when open"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/library"
   },
   {
     "id": "how-to-apply",
@@ -343,7 +468,18 @@
     ],
     "answer_en": "To apply for an undergraduate course at UWTSD, apply through UCAS at ucas.com using institution code T80. For postgraduate courses, apply directly at uwtsd.ac.uk/postgraduate. For help with your application: admissions@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "I wneud cais am gwrs israddedig yn PCYDDS, gwnewch gais drwy UCAS ar ucas.com gan ddefnyddio cod sefydliad T80. Ar gyfer cyrsiau ôl-raddedig, gwnewch gais yn uniongyrchol ar uwtsd.ac.uk/ol-raddedig. Am help gyda'ch cais: admissions@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["apply", "application", "ucas", "enrol", "admissions", "how to apply", "gwneud cais", "cais am gwrs", "ymgeisio"]
+    "keywords": [
+      "apply",
+      "application",
+      "ucas",
+      "enrol",
+      "admissions",
+      "how to apply",
+      "gwneud cais",
+      "cais am gwrs",
+      "ymgeisio"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/study/how-apply"
   },
   {
     "id": "student-finance",
@@ -364,7 +500,16 @@
     ],
     "answer_en": "Welsh students can apply for student finance (tuition fee loan and maintenance loan) through Student Finance Wales at studentfinancewales.co.uk. English students apply through Student Finance England at gov.uk/student-finance. Apply as early as possible — ideally before June to ensure funding arrives at the start of term. Contact UWTSD's finance team: studentfinance@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "Gall myfyrwyr o Gymru wneud cais am gyllid myfyrwyr (benthyciad ffioedd dysgu a benthyciad cynhaliaeth) drwy Cyllid Myfyrwyr Cymru ar studentfinancewales.co.uk. Gwnewch gais cyn gynted â phosibl — cyn Mehefin yn ddelfrydol. Cysylltwch â thîm cyllid PCYDDS: studentfinance@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["student finance", "loan", "maintenance", "funding", "cyllid", "benthyciad", "student finance wales"]
+    "keywords": [
+      "student finance",
+      "loan",
+      "maintenance",
+      "funding",
+      "cyllid",
+      "benthyciad",
+      "student finance wales"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/study/fees-and-finance/undergraduate-fees/undergraduate-funding-support"
   },
   {
     "id": "financial-hardship",
@@ -387,7 +532,18 @@
     ],
     "answer_en": "If you're in financial difficulty, UWTSD runs a Student Hardship Fund that can help with essential living costs, rent, or emergency expenses. Eligibility and application forms are available from the Student Services team or on the MyTSD portal. Contact studentfunding@uwtsd.ac.uk or Student Services on 01792 481 111. Apply as early as possible — awards are not automatic and funds are limited.",
     "answer_cy": "Os wyt ti mewn trafferth ariannol, mae PCYDDS yn rhedeg Cronfa Caledi Myfyrwyr sy'n gallu helpu gyda chostau byw hanfodol, rhent, neu wariant argyfwng. Mae'r meini prawf a'r ffurflenni ar gael gan dîm Gwasanaethau Myfyrwyr neu ar borth MyTSD. Cysyllta â studentfunding@uwtsd.ac.uk neu Wasanaethau Myfyrwyr ar 01792 481 111. Gwna gais cyn gynted â phosib — nid yw dyfarniadau yn awtomatig ac mae'r cyllid yn gyfyngedig.",
-    "keywords": ["hardship fund", "emergency fund", "financial difficulty", "financial emergency", "caledi", "cronfa caledi", "cronfa argyfwng", "trafferth ariannol", "hardship grant"]
+    "keywords": [
+      "hardship fund",
+      "emergency fund",
+      "financial difficulty",
+      "financial emergency",
+      "caledi",
+      "cronfa caledi",
+      "cronfa argyfwng",
+      "trafferth ariannol",
+      "hardship grant"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/study/fees-and-finance/undergraduate-fees/undergraduate-funding-support"
   },
   {
     "id": "wellbeing-support",
@@ -431,12 +587,28 @@
     "answer_en": "UWTSD's free Wellbeing Service is available to all students — no referral needed. Whether you're feeling anxious, stressed, overwhelmed, or just finding things hard, the team is here to help. Contact them at wellbeingsupport@uwtsd.ac.uk or visit uwtsd.ac.uk/wellbeing. You can also drop in to the Wellbeing Hub on your campus or speak to your Personal Tutor as a first step. If you are in immediate crisis, call Samaritans on 116 123 (free, 24/7).",
     "answer_cy": "Mae Gwasanaeth Lles am ddim PCYDDS ar gael i bob myfyriwr — nid oes angen atgyfeiriad. Os ydych chi'n teimlo'n bryderus, dan straen, wedi llethu, neu'n cael hi'n anodd, mae'r tîm yno i helpu. Cysylltwch ar wellbeingsupport@uwtsd.ac.uk neu ewch i uwtsd.ac.uk/lles. Gallwch hefyd alw heibio i'r Hwb Lles ar eich campws neu siarad â'ch Tiwtor Personol fel cam cyntaf. Os ydych chi mewn argyfwng ar unwaith, ffoniwch y Samariaid ar 116 123 (am ddim, 24/7).",
     "keywords": [
-      "wellbeing", "mental health", "counselling", "lles", "support",
-      "anxious", "anxiety", "stressed", "stress", "overwhelmed",
-      "worried", "struggling", "burnout", "low mood",
-      "pryder", "straen", "poeni", "llethu",
-      "mental health support", "student wellbeing"
-    ]
+      "wellbeing",
+      "mental health",
+      "counselling",
+      "lles",
+      "support",
+      "anxious",
+      "anxiety",
+      "stressed",
+      "stress",
+      "overwhelmed",
+      "worried",
+      "struggling",
+      "burnout",
+      "low mood",
+      "pryder",
+      "straen",
+      "poeni",
+      "llethu",
+      "mental health support",
+      "student wellbeing"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/student-support-and-wellbeing"
   },
   {
     "id": "academic-support",
@@ -475,11 +647,27 @@
     "answer_en": "Great that you're reaching out for support — that's exactly what your tutors and the academic team are here for! Your first point of contact is your **Personal Tutor** (find their details on Moodle or MyTSD at mytsd.uwtsd.ac.uk). For dissertation-specific guidance, your **dissertation supervisor** is the right person. If you're unsure who to contact or haven't heard back, Student Services can point you in the right direction: studentservices@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "Da iawn am gyrraedd am gymorth — dyna'n union y mae eich tiwtoriaid a'r tîm academaidd yma ar ei gyfer! Eich pwynt cyswllt cyntaf yw eich **Tiwtor Personol** (gweld eu manylion ar Moodle neu MyTSD yn mytsd.uwtsd.ac.uk). Ar gyfer arweiniad penodol ar draethawd hir, eich **goruchwyliwr traethawd hir** yw'r person iawn. Os nad ydych chi'n siŵr pwy i gysylltu neu os nad oes ymateb, gall Gwasanaethau Myfyrwyr eich cyfeirio: studentservices@uwtsd.ac.uk | 01792 481 111.",
     "keywords": [
-      "dissertation", "project", "supervisor", "coursework", "assignment", "academic support",
-      "personal tutor", "study skills", "falling behind", "academic guidance",
-      "staff member", "feedback on work", "check my work", "struggling with studies",
-      "traethawd hir", "goruchwyliwr", "cymorth academaidd", "aseiniad", "tiwtor personol"
-    ]
+      "dissertation",
+      "project",
+      "supervisor",
+      "coursework",
+      "assignment",
+      "academic support",
+      "personal tutor",
+      "study skills",
+      "falling behind",
+      "academic guidance",
+      "staff member",
+      "feedback on work",
+      "check my work",
+      "struggling with studies",
+      "traethawd hir",
+      "goruchwyliwr",
+      "cymorth academaidd",
+      "aseiniad",
+      "tiwtor personol"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/student-support-and-wellbeing"
   },
   {
     "id": "wellbeing-crisis",
@@ -504,11 +692,25 @@
     "answer_en": "I'm really sorry you're feeling like this — you're not alone and help is available right now. Please contact Samaritans on 116 123 (free, 24/7, English & Welsh) or text SHOUT to 85258. If you or someone else is in immediate danger, call 999. UWTSD's Wellbeing team can also support you — wellbeingsupport@uwtsd.ac.uk or 01792 481 111 (Mon–Fri). Togetherall (togetherall.com) offers anonymous peer support 24/7 and is free for UWTSD students.",
     "answer_cy": "Mae'n wir ddrwg gen i dy fod yn teimlo fel hyn — dwyt ti ddim ar dy ben dy hun ac mae cymorth ar gael nawr. Cysyllta â'r Samariaid ar 116 123 (am ddim, 24/7, Cymraeg a Saesneg) neu anfon SHOUT i 85258. Os wyt ti neu rywun arall mewn perygl ar unwaith, ffonia 999. Mae tîm Lles PCYDDS hefyd yn gallu dy gefnogi — wellbeingsupport@uwtsd.ac.uk neu 01792 481 111 (Llun–Gwener). Mae Togetherall (togetherall.com) yn cynnig cefnogaeth gyfoedion ddienw 24/7 yn rhad ac am ddim i fyfyrwyr PCYDDS.",
     "keywords": [
-      "crisis", "hopeless", "suicidal", "self-harm", "samaritans",
-      "ending my life", "kill myself", "hurt myself", "breakdown", "cant cope",
-      "no reason to live", "losing my mind",
-      "anobeithiol", "lladd fy hun", "argyfwng difrifol", "marw", "brifo fy hun"
-    ]
+      "crisis",
+      "hopeless",
+      "suicidal",
+      "self-harm",
+      "samaritans",
+      "ending my life",
+      "kill myself",
+      "hurt myself",
+      "breakdown",
+      "cant cope",
+      "no reason to live",
+      "losing my mind",
+      "anobeithiol",
+      "lladd fy hun",
+      "argyfwng difrifol",
+      "marw",
+      "brifo fy hun"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/student-support-and-wellbeing"
   },
   {
     "id": "students-union-activities",
@@ -541,7 +743,22 @@
     ],
     "answer_en": "UWTSD's Students' Union (SU) is the hub for student life. What's on offer: Clubs and Societies, from sports teams and drama to academic and cultural groups, join at uwtsd.ac.uk/su or contact the SU directly. Sports, UWTSD competes in BUCS and has teams in rugby, football, netball and many more. Events, Freshers' Week, social events and union activities throughout the year. Student Voice, student reps, elections and welfare officers represent you. The UWTSD SU website is at uwtsd.ac.uk/su, email su@uwtsd.ac.uk or call 01792 481 111.",
     "answer_cy": "Mae Undeb y Myfyrwyr PCYDDS (UM) yn ganolbwynt bywyd myfyrwyr. Dyma'r hyn sydd ar gael: Clybiau a Chymdeithasau, o dimau chwaraeon a drama i grwpiau academaidd a diwylliannol, ymunwch ar uwtsd.ac.uk/undeb neu cysylltwch â'r UM yn uniongyrchol. Chwaraeon, mae PCYDDS yn cystadlu yn BUCS ac mae ganddo dimau mewn rygbi, pêl-droed, pêl rwyd a llawer mwy. Digwyddiadau, Wythnos y Gwyrddion, digwyddiadau cymdeithasol a gweithgareddau undeb drwy'r flwyddyn. Llais Myfyrwyr, mae cynrychiolwyr myfyrwyr, etholiadau a swyddogion lles yn eich cynrychioli. Gwefan UM PCYDDS: uwtsd.ac.uk/undeb, e-bost su@uwtsd.ac.uk neu ffoniwch 01792 481 111.",
-    "keywords": ["activities", "students union", "clubs", "societies", "sports", "freshers", "social", "volunteering", "events", "gweithgareddau", "undeb myfyrwyr", "clybiau", "chwaraeon"]
+    "keywords": [
+      "activities",
+      "students union",
+      "clubs",
+      "societies",
+      "sports",
+      "freshers",
+      "social",
+      "volunteering",
+      "events",
+      "gweithgareddau",
+      "undeb myfyrwyr",
+      "clybiau",
+      "chwaraeon"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/experience-facilities/students-union"
   },
   {
     "id": "it-support",
@@ -571,7 +788,18 @@
     ],
     "answer_en": "UWTSD IT Services can be reached at itservices@uwtsd.ac.uk or 01792 481 111. For account issues, password resets, and Wi-Fi access, visit the IT Services portal at MyTSD (mytsd.uwtsd.ac.uk). The IT helpdesk is open Monday–Friday during term time.",
     "answer_cy": "Gellir cysylltu â Gwasanaethau TG PCYDDS ar itservices@uwtsd.ac.uk neu 01792 481 111. Ar gyfer problemau cyfrif, ailosod cyfrinair a mynediad Wi-Fi, ewch i borth Gwasanaethau TG ar MyTSD (mytsd.uwtsd.ac.uk). Mae'r Ddesg Gymorth TG ar agor Dydd Llun–Gwener yn ystod y tymor.",
-    "keywords": ["IT", "helpdesk", "password", "login", "wifi", "TG", "mytsd", "it support", "it services"]
+    "keywords": [
+      "IT",
+      "helpdesk",
+      "password",
+      "login",
+      "wifi",
+      "TG",
+      "mytsd",
+      "it support",
+      "it services"
+    ],
+    "source_url": null
   },
   {
     "id": "inter-campus-travel",
@@ -591,7 +819,16 @@
     ],
     "answer_en": "You can travel between UWTSD campuses by car or public transport. TrawsCymru and Stagecoach operate bus services connecting Swansea, Carmarthen, and Lampeter. By car, Swansea to Lampeter is approximately 45–60 minutes. Plan your journey at traveline.cymru or use UWTSD's MyUniJourney Planner. For further help: enquiries@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "Gallwch deithio rhwng campysau PCYDDS mewn car neu ar drafnidiaeth gyhoeddus. Mae TrawsCymru a Stagecoach yn rhedeg gwasanaethau bws sy'n cysylltu Abertawe, Caerfyrddin a Llambed. Mewn car, mae Abertawe i Llambed tua 45–60 munud. Cynlluniwch eich taith ar traveline.cymru neu defnyddiwch Gynlluniwr MyUniJourney PCYDDS. Am help pellach: enquiries@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["inter-campus", "between campuses", "swansea lampeter", "travel", "bus", "trawscymru", "teithio rhwng"]
+    "keywords": [
+      "inter-campus",
+      "between campuses",
+      "swansea lampeter",
+      "travel",
+      "bus",
+      "trawscymru",
+      "teithio rhwng"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/campuses"
   },
   {
     "id": "personal-tutor",
@@ -612,7 +849,13 @@
     ],
     "answer_en": "Your personal tutor's contact details are available on Moodle under your module pages, and on the MyTSD portal (mytsd.uwtsd.ac.uk). If you can't find them, contact your programme administrator or Student Services at studentservices@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "Mae manylion cyswllt eich tiwtor personol ar gael ar Moodle o dan dudalennau eich modiwl, ac ar borth MyTSD (mytsd.uwtsd.ac.uk). Os na allwch ddod o hyd iddynt, cysylltwch â gweinyddwr eich rhaglen neu Wasanaethau Myfyrwyr: studentservices@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["personal tutor", "tiwtor personol", "my tutor", "my personal tutor"]
+    "keywords": [
+      "personal tutor",
+      "tiwtor personol",
+      "my tutor",
+      "my personal tutor"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/study/experience-and-facilities/student-support-and-wellbeing"
   },
   {
     "id": "graduation",
@@ -650,7 +893,19 @@
     ],
     "answer_en": "Congratulations on graduating! UWTSD holds graduation ceremonies in summer (July) and winter (December/January). Once you've completed your degree you'll be invited to register via the MyTSD portal (mytsd.uwtsd.ac.uk) — registration covers ceremony attendance, gown hire, and guest tickets (typically 2–3 guests per graduate). For ceremony dates, venues, and full details see uwtsd.ac.uk/graduation. Any questions: graduation@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "Llongyfarchiadau ar raddio! Mae PCYDDS yn cynnal seremonïau graddio yn yr haf (Gorffennaf) a'r gaeaf (Rhagfyr/Ionawr). Pan fyddi wedi cwblhau dy radd, cei wahoddiad i gofrestru drwy borth MyTSD (mytsd.uwtsd.ac.uk) — mae hyn yn cynnwys bod yn bresennol, llogi gŵn, a thocynnau i westeion (fel arfer 2–3 gwestai y graddedig). Am ddyddiadau, lleoliadau a manylion llawn, ewch i uwtsd.ac.uk/graddio. Cwestiynau: graduation@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["graduation", "graduating", "grad", "graduate ceremony", "graddio", "seremoni raddio", "gown hire", "graduation ticket", "guest tickets", "degree ceremony"]
+    "keywords": [
+      "graduation",
+      "graduating",
+      "grad",
+      "graduate ceremony",
+      "graddio",
+      "seremoni raddio",
+      "gown hire",
+      "graduation ticket",
+      "guest tickets",
+      "degree ceremony"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/graduation"
   },
   {
     "id": "extenuating-circumstances",
@@ -670,7 +925,14 @@
     ],
     "answer_en": "To submit extenuating circumstances at UWTSD, complete the Extenuating Circumstances form available on Moodle or from your programme administrator. Submit it as soon as possible — before the deadline if at all possible. Contact your personal tutor or Student Services for guidance: studentservices@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "I gyflwyno amgylchiadau esgusodol yn PCYDDS, llenwch y ffurflen Amgylchiadau Esgusodol sydd ar gael ar Moodle neu gan weinyddwr eich rhaglen. Cyflwynwch hi cyn gynted â phosibl — cyn y dyddiad cau os yn bosibl. Cysylltwch â'ch tiwtor personol neu Wasanaethau Myfyrwyr: studentservices@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["extenuating circumstances", "amgylchiadau esgusodol", "extension", "missed deadline", "assignment deadline"]
+    "keywords": [
+      "extenuating circumstances",
+      "amgylchiadau esgusodol",
+      "extension",
+      "missed deadline",
+      "assignment deadline"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/about/governance-and-management/academic-office"
   },
   {
     "id": "open-day",
@@ -690,6 +952,14 @@
     ],
     "answer_en": "UWTSD holds open days throughout the year at all campuses. To see upcoming dates and book your place, visit uwtsd.ac.uk/opendays. You can also contact admissions for a personalised campus visit: admissions@uwtsd.ac.uk | 01792 481 111.",
     "answer_cy": "Mae PCYDDS yn cynnal diwrnodau agored drwy gydol y flwyddyn ym mhob campws. I weld dyddiadau sydd ar y gweill a chadw'ch lle, ewch i uwtsd.ac.uk/dyddiau-agored. Gallwch hefyd gysylltu â derbyniadau am ymweliad campws personol: admissions@uwtsd.ac.uk | 01792 481 111.",
-    "keywords": ["open day", "diwrnod agored", "visit", "campus visit", "booking", "dates"]
+    "keywords": [
+      "open day",
+      "diwrnod agored",
+      "visit",
+      "campus visit",
+      "booking",
+      "dates"
+    ],
+    "source_url": "https://www.uwtsd.ac.uk/open-days"
   }
 ]

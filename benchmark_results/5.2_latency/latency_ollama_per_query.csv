@@ -1,0 +1,31 @@
+language,query,latency_s,status,reply_lang,n_sources,reply_chars
+en,Where is the SA1 campus?,2.204,200,en,2,333
+cy,Ble mae campws SA1?,7.763,200,cy,2,393
+en,How much are the tuition fees?,3.239,200,en,3,345
+cy,Faint yw'r ffioedd dysgu?,7.047,200,cy,3,332
+en,How do I apply for accommodation?,4.095,200,en,3,535
+cy,Sut ydw i'n gwneud cais am lety?,10.15,200,cy,3,685
+en,What are the library opening hours?,3.807,200,en,1,453
+cy,Beth yw oriau agor y llyfrgell?,7.352,200,cy,1,335
+en,How do I apply to UWTSD?,3.813,200,en,3,469
+cy,Sut mae gwneud cais i PCYDDS?,10.183,200,cy,2,677
+en,How do I apply for student finance?,3.515,200,en,2,464
+cy,Sut mae gwneud cais am gyllid myfyrwyr?,13.575,200,cy,3,1008
+en,When is graduation?,3.459,200,en,2,372
+cy,Pryd mae'r seremoni raddio?,8.3,200,cy,3,426
+en,How do I travel between campuses?,3.524,200,en,3,364
+cy,Sut allaf deithio rhwng campysau?,7.495,200,cy,3,366
+en,What wellbeing support is available?,4.2,200,en,2,899
+cy,Pa gefnogaeth lles sydd ar gael?,12.746,200,cy,3,1192
+en,What courses does the university offer?,3.239,200,en,3,370
+cy,Pa gyrsiau mae'r brifysgol yn eu cynnig?,6.899,200,cy,3,290
+en,How do I contact my personal tutor?,3.35,200,en,2,359
+cy,Sut ydw i'n cysylltu â'm tiwtor personol?,6.296,200,cy,3,268
+en,What can I do at the students' union?,4.496,200,en,2,694
+cy,Beth alla i ei wneud yn undeb y myfyrwyr?,5.488,200,cy,3,155
+en,How do I get IT support?,3.374,200,en,3,379
+cy,Sut ydw i'n cael cymorth TG?,7.164,200,cy,2,363
+en,What financial hardship support exists?,3.963,200,en,2,604
+cy,Pa gymorth caledi ariannol sydd ar gael?,8.273,200,cy,2,477
+en,How do I report extenuating circumstances?,3.683,200,en,3,491
+cy,Sut ydw i'n rhoi gwybod am amgylchiadau esgusodol?,8.845,200,cy,3,542

@@ -1,0 +1,372 @@
+{
+  "top_k": 5,
+  "n_queries": 20,
+  "summary": {
+    "strict": {
+      "All (n=20)": {
+        "Dense-only (ChromaDB)": {
+          "Hit@1": 0.05,
+          "Hit@3": 0.3,
+          "Hit@5": 0.5,
+          "MRR": 0.2058333333333333
+        },
+        "Sparse-only (BM25)": {
+          "Hit@1": 0.1,
+          "Hit@3": 0.35,
+          "Hit@5": 0.5,
+          "MRR": 0.25416666666666665
+        },
+        "Hybrid (EnsembleRetriever, RRF)": {
+          "Hit@1": 0.15,
+          "Hit@3": 0.4,
+          "Hit@5": 0.55,
+          "MRR": 0.3075
+        }
+      },
+      "English (n=10)": {
+        "Dense-only (ChromaDB)": {
+          "Hit@1": 0.1,
+          "Hit@3": 0.4,
+          "Hit@5": 0.7,
+          "MRR": 0.30333333333333334
+        },
+        "Sparse-only (BM25)": {
+          "Hit@1": 0.1,
+          "Hit@3": 0.4,
+          "Hit@5": 0.5,
+          "MRR": 0.275
+        },
+        "Hybrid (EnsembleRetriever, RRF)": {
+          "Hit@1": 0.2,
+          "Hit@3": 0.4,
+          "Hit@5": 0.6,
+          "MRR": 0.34500000000000003
+        }
+      },
+      "Welsh (n=10)": {
+        "Dense-only (ChromaDB)": {
+          "Hit@1": 0.0,
+          "Hit@3": 0.2,
+          "Hit@5": 0.3,
+          "MRR": 0.10833333333333332
+        },
+        "Sparse-only (BM25)": {
+          "Hit@1": 0.1,
+          "Hit@3": 0.3,
+          "Hit@5": 0.5,
+          "MRR": 0.23333333333333334
+        },
+        "Hybrid (EnsembleRetriever, RRF)": {
+          "Hit@1": 0.1,
+          "Hit@3": 0.4,
+          "Hit@5": 0.5,
+          "MRR": 0.27
+        }
+      }
+    },
+    "relaxed": {
+      "All (n=20)": {
+        "Dense-only (ChromaDB)": {
+          "Hit@1": 0.4,
+          "Hit@3": 0.55,
+          "Hit@5": 0.75,
+          "MRR": 0.5116666666666666
+        },
+        "Sparse-only (BM25)": {
+          "Hit@1": 0.35,
+          "Hit@3": 0.7,
+          "Hit@5": 0.75,
+          "MRR": 0.5291666666666667
+        },
+        "Hybrid (EnsembleRetriever, RRF)": {
+          "Hit@1": 0.5,
+          "Hit@3": 0.8,
+          "Hit@5": 0.9,
+          "MRR": 0.6558333333333334
+        }
+      },
+      "English (n=10)": {
+        "Dense-only (ChromaDB)": {
+          "Hit@1": 0.6,
+          "Hit@3": 0.8,
+          "Hit@5": 0.9,
+          "MRR": 0.7083333333333333
+        },
+        "Sparse-only (BM25)": {
+          "Hit@1": 0.3,
+          "Hit@3": 0.6,
+          "Hit@5": 0.7,
+          "MRR": 0.475
+        },
+        "Hybrid (EnsembleRetriever, RRF)": {
+          "Hit@1": 0.5,
+          "Hit@3": 0.8,
+          "Hit@5": 1.0,
+          "MRR": 0.6616666666666666
+        }
+      },
+      "Welsh (n=10)": {
+        "Dense-only (ChromaDB)": {
+          "Hit@1": 0.2,
+          "Hit@3": 0.3,
+          "Hit@5": 0.6,
+          "MRR": 0.315
+        },
+        "Sparse-only (BM25)": {
+          "Hit@1": 0.4,
+          "Hit@3": 0.8,
+          "Hit@5": 0.8,
+          "MRR": 0.5833333333333333
+        },
+        "Hybrid (EnsembleRetriever, RRF)": {
+          "Hit@1": 0.5,
+          "Hit@3": 0.8,
+          "Hit@5": 0.8,
+          "MRR": 0.65
+        }
+      }
+    }
+  },
+  "per_query": [
+    {
+      "fact_id": "campus-sa1-location",
+      "gold_title": "Campus SA1 Location",
+      "language": "en",
+      "query": "Where is the SA1 campus?",
+      "strict::Dense-only (ChromaDB)": 2,
+      "relaxed::Dense-only (ChromaDB)": 1,
+      "strict::Sparse-only (BM25)": 2,
+      "relaxed::Sparse-only (BM25)": 2,
+      "strict::Hybrid (EnsembleRetriever, RRF)": 2,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 1
+    },
+    {
+      "fact_id": "campus-sa1-location",
+      "gold_title": "Campus SA1 Location",
+      "language": "cy",
+      "query": "ble mae campws SA1",
+      "strict::Dense-only (ChromaDB)": 2,
+      "relaxed::Dense-only (ChromaDB)": 1,
+      "strict::Sparse-only (BM25)": 3,
+      "relaxed::Sparse-only (BM25)": 2,
+      "strict::Hybrid (EnsembleRetriever, RRF)": 2,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 1
+    },
+    {
+      "fact_id": "campus-carmarthen-location",
+      "gold_title": "Campus Carmarthen Location",
+      "language": "en",
+      "query": "Where is the Carmarthen campus?",
+      "strict::Dense-only (ChromaDB)": 2,
+      "relaxed::Dense-only (ChromaDB)": 2,
+      "strict::Sparse-only (BM25)": null,
+      "relaxed::Sparse-only (BM25)": 1,
+      "strict::Hybrid (EnsembleRetriever, RRF)": null,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 3
+    },
+    {
+      "fact_id": "campus-carmarthen-location",
+      "gold_title": "Campus Carmarthen Location",
+      "language": "cy",
+      "query": "ble mae campws Caerfyrddin",
+      "strict::Dense-only (ChromaDB)": 3,
+      "relaxed::Dense-only (ChromaDB)": 1,
+      "strict::Sparse-only (BM25)": 2,
+      "relaxed::Sparse-only (BM25)": 2,
+      "strict::Hybrid (EnsembleRetriever, RRF)": 2,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 1
+    },
+    {
+      "fact_id": "fees-general",
+      "gold_title": "Fees General",
+      "language": "en",
+      "query": "How much are the tuition fees?",
+      "strict::Dense-only (ChromaDB)": 5,
+      "relaxed::Dense-only (ChromaDB)": 1,
+      "strict::Sparse-only (BM25)": null,
+      "relaxed::Sparse-only (BM25)": null,
+      "strict::Hybrid (EnsembleRetriever, RRF)": null,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 3
+    },
+    {
+      "fact_id": "fees-general",
+      "gold_title": "Fees General",
+      "language": "cy",
+      "query": "faint yw'r ffioedd dysgu?",
+      "strict::Dense-only (ChromaDB)": null,
+      "relaxed::Dense-only (ChromaDB)": null,
+      "strict::Sparse-only (BM25)": null,
+      "relaxed::Sparse-only (BM25)": null,
+      "strict::Hybrid (EnsembleRetriever, RRF)": null,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": null
+    },
+    {
+      "fact_id": "fees-international-undergraduate",
+      "gold_title": "Fees International Undergraduate",
+      "language": "en",
+      "query": "How much are the fees for international students?",
+      "strict::Dense-only (ChromaDB)": 4,
+      "relaxed::Dense-only (ChromaDB)": 4,
+      "strict::Sparse-only (BM25)": null,
+      "relaxed::Sparse-only (BM25)": 1,
+      "strict::Hybrid (EnsembleRetriever, RRF)": null,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 5
+    },
+    {
+      "fact_id": "fees-international-undergraduate",
+      "gold_title": "Fees International Undergraduate",
+      "language": "cy",
+      "query": "faint yw ffioedd myfyrwyr rhyngwladol?",
+      "strict::Dense-only (ChromaDB)": null,
+      "relaxed::Dense-only (ChromaDB)": 5,
+      "strict::Sparse-only (BM25)": null,
+      "relaxed::Sparse-only (BM25)": 3,
+      "strict::Hybrid (EnsembleRetriever, RRF)": null,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": null
+    },
+    {
+      "fact_id": "accommodation-apply",
+      "gold_title": "Accommodation Apply",
+      "language": "en",
+      "query": "How do I apply for accommodation?",
+      "strict::Dense-only (ChromaDB)": null,
+      "relaxed::Dense-only (ChromaDB)": 3,
+      "strict::Sparse-only (BM25)": 4,
+      "relaxed::Sparse-only (BM25)": 4,
+      "strict::Hybrid (EnsembleRetriever, RRF)": 1,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 1
+    },
+    {
+      "fact_id": "accommodation-apply",
+      "gold_title": "Accommodation Apply",
+      "language": "cy",
+      "query": "sut ydw i'n gwneud cais am lety?",
+      "strict::Dense-only (ChromaDB)": null,
+      "relaxed::Dense-only (ChromaDB)": null,
+      "strict::Sparse-only (BM25)": null,
+      "relaxed::Sparse-only (BM25)": null,
+      "strict::Hybrid (EnsembleRetriever, RRF)": null,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 1
+    },
+    {
+      "fact_id": "library-hours",
+      "gold_title": "Library Hours",
+      "language": "en",
+      "query": "What are the library opening hours?",
+      "strict::Dense-only (ChromaDB)": 1,
+      "relaxed::Dense-only (ChromaDB)": 1,
+      "strict::Sparse-only (BM25)": 1,
+      "relaxed::Sparse-only (BM25)": 1,
+      "strict::Hybrid (EnsembleRetriever, RRF)": 1,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 1
+    },
+    {
+      "fact_id": "library-hours",
+      "gold_title": "Library Hours",
+      "language": "cy",
+      "query": "oriau agor y llyfrgell",
+      "strict::Dense-only (ChromaDB)": null,
+      "relaxed::Dense-only (ChromaDB)": 2,
+      "strict::Sparse-only (BM25)": null,
+      "relaxed::Sparse-only (BM25)": 1,
+      "strict::Hybrid (EnsembleRetriever, RRF)": 5,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 1
+    },
+    {
+      "fact_id": "how-to-apply",
+      "gold_title": "How To Apply",
+      "language": "en",
+      "query": "How do I apply to UWTSD?",
+      "strict::Dense-only (ChromaDB)": 3,
+      "relaxed::Dense-only (ChromaDB)": 1,
+      "strict::Sparse-only (BM25)": null,
+      "relaxed::Sparse-only (BM25)": null,
+      "strict::Hybrid (EnsembleRetriever, RRF)": 5,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 1
+    },
+    {
+      "fact_id": "how-to-apply",
+      "gold_title": "How To Apply",
+      "language": "cy",
+      "query": "sut mae gwneud cais i PCYDDS?",
+      "strict::Dense-only (ChromaDB)": null,
+      "relaxed::Dense-only (ChromaDB)": null,
+      "strict::Sparse-only (BM25)": null,
+      "relaxed::Sparse-only (BM25)": 1,
+      "strict::Hybrid (EnsembleRetriever, RRF)": null,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 2
+    },
+    {
+      "fact_id": "student-finance",
+      "gold_title": "Student Finance",
+      "language": "en",
+      "query": "How do I apply for student finance?",
+      "strict::Dense-only (ChromaDB)": null,
+      "relaxed::Dense-only (ChromaDB)": 1,
+      "strict::Sparse-only (BM25)": 2,
+      "relaxed::Sparse-only (BM25)": 2,
+      "strict::Hybrid (EnsembleRetriever, RRF)": 2,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 2
+    },
+    {
+      "fact_id": "student-finance",
+      "gold_title": "Student Finance",
+      "language": "cy",
+      "query": "sut mae gwneud cais am gyllid myfyrwyr?",
+      "strict::Dense-only (ChromaDB)": 4,
+      "relaxed::Dense-only (ChromaDB)": 4,
+      "strict::Sparse-only (BM25)": 4,
+      "relaxed::Sparse-only (BM25)": 2,
+      "strict::Hybrid (EnsembleRetriever, RRF)": 2,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 2
+    },
+    {
+      "fact_id": "inter-campus-travel",
+      "gold_title": "Inter Campus Travel",
+      "language": "en",
+      "query": "How do I travel between campuses?",
+      "strict::Dense-only (ChromaDB)": null,
+      "relaxed::Dense-only (ChromaDB)": null,
+      "strict::Sparse-only (BM25)": 2,
+      "relaxed::Sparse-only (BM25)": 2,
+      "strict::Hybrid (EnsembleRetriever, RRF)": 4,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 4
+    },
+    {
+      "fact_id": "inter-campus-travel",
+      "gold_title": "Inter Campus Travel",
+      "language": "cy",
+      "query": "sut allaf deithio rhwng campysau?",
+      "strict::Dense-only (ChromaDB)": null,
+      "relaxed::Dense-only (ChromaDB)": 5,
+      "strict::Sparse-only (BM25)": 1,
+      "relaxed::Sparse-only (BM25)": 1,
+      "strict::Hybrid (EnsembleRetriever, RRF)": 1,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 1
+    },
+    {
+      "fact_id": "graduation",
+      "gold_title": "Graduation",
+      "language": "en",
+      "query": "When is graduation?",
+      "strict::Dense-only (ChromaDB)": 4,
+      "relaxed::Dense-only (ChromaDB)": 1,
+      "strict::Sparse-only (BM25)": null,
+      "relaxed::Sparse-only (BM25)": null,
+      "strict::Hybrid (EnsembleRetriever, RRF)": null,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 1
+    },
+    {
+      "fact_id": "graduation",
+      "gold_title": "Graduation",
+      "language": "cy",
+      "query": "pryd mae'r seremoni raddio?",
+      "strict::Dense-only (ChromaDB)": null,
+      "relaxed::Dense-only (ChromaDB)": null,
+      "strict::Sparse-only (BM25)": 4,
+      "relaxed::Sparse-only (BM25)": 1,
+      "strict::Hybrid (EnsembleRetriever, RRF)": null,
+      "relaxed::Hybrid (EnsembleRetriever, RRF)": 2
+    }
+  ]
+}

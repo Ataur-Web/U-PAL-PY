@@ -1,0 +1,101 @@
+﻿Query ID,Query,Query language,Intent,Sources displayed,HTTP status
+1,my assignment is not going well who do I contact,en,contact_general,3,200
+2,Swansea College of Art location,en,campuses_swansea,3,200
+3,ffioedd y flwyddyn,cy,fees_tuition,2,200
+4,cymorth dyslecsia,cy,wellbeing_disability,2,200
+5,when does applications close,en,admissions_deadline,3,200
+6,sut mae ymgeisio,cy,greeting,0,200
+7,can I talk to a staff member about my assignment,en,human_agent,3,200
+8,campws Llambed PCYDDS,cy,campuses_lampeter,3,200
+9,I need to speak to someone at UWTSD,en,human_agent,3,200
+10,pa swydd,cy,career_services,3,200
+11,ailosod cyfrinair PCYDDS,cy,it_portal,3,200
+12,ble alla i fyw fel myfyriwr yn PCYDDS,cy,accommodation_general,3,200
+13,ble alla i ddod o hyd i e-bost,cy,contact_general,3,200
+14,password reset,en,it_portal,2,200
+15,yn teimlo'n bryderus,cy,wellbeing_general,3,200
+16,pa gyrsiau ôl raddedig sydd ar gael yn PCYDDS,cy,courses_general,3,200
+17,sports scholarship,en,fees_scholarships,3,200
+18,I need money urgently,en,financial_support,3,200
+19,where can I print,en,printing,2,200
+20,a oes gan PCYDDS flwyddyn sylfaen,cy,admissions_foundation,3,200
+21,virtual learning environment,en,it_moodle,2,200
+22,oes llety ar gampws Caerfyrddin,cy,accommodation_general,3,200
+23,dont want to be alive,en,wellbeing_crisis,3,200
+24,how do I get feedback on my project,en,admissions_apply,3,200
+25,how much are the fees for home students?,en,fees_tuition,2,200
+26,can I still get into university,en,admissions_foundation,3,200
+27,student wellbeing service,en,wellbeing_general,2,200
+28,sut mae cael mynediad i bopeth ar lein,cy,greeting,2,200
+29,beth sy'n digwydd os dw i'n teimlo fel lladd fy hun heno?,cy,wellbeing_crisis,2,200
+30,I don't know what to do after uni,en,career_services,3,200
+31,who can I talk to if I am struggling,en,wellbeing_general,3,200
+32,ardderchog diolch,cy,thanks,0,200
+33,year in industry,en,career_services,3,200
+34,how do I apply for my graduation ceremony,en,admissions_apply,2,200
+35,ymgeisio am gwrs,cy,admissions_apply,3,200
+36,sut mae talu r ffioedd dysgu fel myfyriwr o Gymru,cy,greeting,2,200
+37,sut mae cysylltu â fy ngoruchwyliwr traethawd hir,cy,greeting,3,200
+38,sut i wneud cais,cy,admissions_apply,2,200
+39,sut i reoli pryder yn ystod cyfnod arholiadau,cy,student_stress,3,200
+40,rwy'n graddio eleni — sut mae cofrestru ar gyfer y seremoni raddio,cy,greeting,3,200
+41,beth sydd ar gampws Llambed,cy,campuses_lampeter,3,200
+42,sut i argraffu,cy,printing,3,200
+43,pwy all fy helpu gyda fy ngradd,cy,academic_support,3,200
+44,study schedule help,en,student_stress,3,200
+45,support for dyspraxia,en,wellbeing_disability,2,200
+46,How much are postgraduate fees for home students?,en,fees_tuition,3,200
+47,pa mor ddrud yw astudio yn PCYDDS fel myfyriwr rhyngwladol,cy,admissions_international,3,200
+48,gwneud cais am gwrs PCYDDS,cy,admissions_apply,3,200
+49,beth yw llawn enw PCYDDS,cy,uwtsd_about,3,200
+50,pam alla i ddim gweld fy modiwlau ar Moodle,cy,it_moodle,2,200
+51,a allaf ymgeisio am fenthyciad cynhaliaeth,cy,fees_student_loan,2,200
+52,sut mae ymgeisio am gwrs TAR,cy,greeting,2,200
+53,sut mae gwneud cais i gronfa galedi,cy,greeting,3,200
+54,pwy ddylwn i gysylltu â nhw,cy,staff_contact_query,3,200
+55,sut mae ad dalu benthyciad myfyrwyr,cy,greeting,3,200
+56,gap year then apply,en,admissions_foundation,3,200
+57,dw i n cael trafferth ymdopi â r llwyth gwaith,cy,wellbeing_general,3,200
+58,sut hwyl,cy,greeting,0,200
+59,a oes ariannu ar gael ar gyfer ôl raddedigion,cy,postgraduate_courses,3,200
+60,carmarthen library address,en,campuses_carmarthen,1,200
+61,how to apply for scholarship,en,fees_scholarships,3,200
+62,nice one,en,thanks,0,200
+63,dyddiadau seremoni raddio PCYDDS,cy,graduation,3,200
+64,I am graduating this year — how do I register for the ceremony,en,graduation,2,200
+65,sut mae dechrau cais UCAS,cy,greeting,3,200
+66,dw i n cael trafferth gyda deunydd y cwrs,cy,academic_support,3,200
+67,I want to check if I have done my project correctly,en,academic_support,3,200
+68,ble mae r llyfrgell,cy,library,1,200
+69,gofynion lefel a,cy,admissions_requirements,3,200
+70,I want to hurt myself,en,wellbeing_crisis,3,200
+71,sut mae cyrraedd Abertawe ar drên,cy,greeting,3,200
+72,llyfrgell,cy,library,1,200
+73,is there a human I can talk to,en,human_agent,3,200
+74,how much does a masters cost for UK students?,en,postgraduate_courses,3,200
+75,dissertation support,en,dissertation_support,3,200
+76,sut mae archebu lle ar ddiwrnod agored PCYDDS,cy,greeting,3,200
+77,tuition fees Wales England,en,fees_tuition,2,200
+78,speak with an agent,en,human_agent,3,200
+79,bywyd cymdeithasol PCYDDS,cy,students_union,3,200
+80,dychwelyd i addysg,cy,admissions_foundation,3,200
+81,citation help,en,english_language_support,3,200
+82,oriau llyfrgell Abertawe,cy,library,1,200
+83,faint yw llety,cy,accommodation_general,2,200
+84,a allaf siarad ag aelod o staff am fy aseiniad,cy,academic_support,3,200
+85,library at carmarthen campus,en,campuses_carmarthen,1,200
+86,How much are the fees for international postgraduate students?,en,admissions_international,3,200
+87,cais tramor,cy,admissions_international,3,200
+88,pa gyrsiau ôl-raddedig sydd ar gael yn PCYDDS,cy,courses_general,3,200
+89,campws dinas abertawe,cy,campuses_swansea,2,200
+90,sut mae cysylltu â gwasanaethau myfyrwyr,cy,greeting,3,200
+91,angen siarad â rhywun am fy iechyd meddwl,cy,wellbeing_general,3,200
+92,study in wales as international,en,admissions_international,3,200
+93,dw i eisiau siarad â rhywun byw,cy,human_agent,3,200
+94,what do you know about,en,capabilities,3,200
+95,cyrsiau amser llawn PCYDDS,cy,courses_general,3,200
+96,how much are halls,en,accommodation_cost,3,200
+97,dw i n teimlo n llethu,cy,wellbeing_general,3,200
+98,cymorth argyfwng,cy,wellbeing_crisis,2,200
+99,a oes llety hunangynhwysol ar gael,cy,accommodation_general,2,200
+100,amserlen myfyrwyr PCYDDS,cy,timetable,3,200

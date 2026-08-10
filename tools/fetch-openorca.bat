@@ -5,6 +5,10 @@ rem extra general-knowledge Q&A to fall back on.
 title Fetch OpenOrca Education Q&A
 setlocal
 
+rem this launcher lives in tools/ but every path below is relative to the
+rem project root, so step up one level first.
+cd /d "%~dp0.."
+
 set "VENV_PY=.venv\Scripts\python.exe"
 
 if not exist "%VENV_PY%" (

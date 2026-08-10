@@ -61,6 +61,27 @@ SPLITTER = RecursiveCharacterTextSplitter(
 )
 
 
+# a split can leave fragments that carry no information: the scraper's text
+# extraction produces chunks such as ";" or ", MSc" from list markup and table
+# cells. these are actively harmful rather than merely useless - a near-empty
+# string embeds to a vector that sits spuriously close to any short query, so
+# they surfaced as the top dense hit for "thanks", "wow" and "ok" alike, and
+# were then shown to students as cited sources with real UWTSD urls attached.
+#
+# corpus chunks average 375 characters, so requiring 40 letters and 6 words
+# discards the fragments without touching genuine content. the filter is
+# applied only to split corpus text; the Welsh bootstrap entries are short by
+# design ("cwrs (Saesneg: course)") and are not passed through it.
+_MIN_CHUNK_LETTERS = 40
+_MIN_CHUNK_WORDS = 6
+
+
+def _is_substantive(text: str) -> bool:
+    letters = sum(1 for c in text if c.isalnum())
+    words = [w for w in text.split() if any(c.isalnum() for c in w)]
+    return letters >= _MIN_CHUNK_LETTERS and len(words) >= _MIN_CHUNK_WORDS
+
+
 def _detect_lang(text: str) -> str:
     # tag each chunk with its language so the cy-filter in rag.retrieve
     # can find Welsh passages when a Welsh query lands. uses the same
@@ -81,6 +102,7 @@ def _load_corpus() -> list[Document]:
     data = json.loads(path.read_text(encoding="utf-8"))
     entries = data if isinstance(data, list) else data.get("passages", [])
     docs: list[Document] = []
+    dropped = 0
     for i, e in enumerate(entries):
         if not isinstance(e, dict):
             continue
@@ -91,6 +113,9 @@ def _load_corpus() -> list[Document]:
         # Extract actual URL from corpus (for verified source attribution)
         source_url = e.get("url") or e.get("source") or "uwtsd-corpus"
         for chunk in SPLITTER.split_text(text):
+            if not _is_substantive(chunk):
+                dropped += 1
+                continue
             docs.append(Document(
                 page_content=chunk,
                 metadata={
@@ -99,11 +124,25 @@ def _load_corpus() -> list[Document]:
                     "lang":   _detect_lang(chunk),
                 },
             ))
-    log.info("corpus -> %d chunks", len(docs))
+    log.info("corpus -> %d chunks (dropped %d empty fragments)", len(docs), dropped)
     return docs
 
 
 def _load_facts() -> list[Document]:
+    """Load the curated fact entries, one Document per language.
+
+    uwtsd-facts.json stores each fact as
+        {"id", "questions", "answer_en", "answer_cy", "keywords", "source_url"}
+    An earlier version of this loader read "topic" and "fact"/"answer", keys
+    which the file has never contained, so every entry failed the emptiness
+    check and the whole layer was silently dropped from the index. The bug was
+    invisible because the loader logged "facts -> 0 docs" and ingestion carried
+    on with the remaining sources.
+
+    The answer text is used as page_content rather than the question list, so
+    the excerpt surfaced in the source panel reads as an answer. Facts are
+    short by construction and are not passed through the splitter.
+    """
     path = DATA_DIR / "uwtsd-facts.json"
     if not path.exists():
         log.warning("skip: %s not found", path)
@@ -114,18 +153,28 @@ def _load_facts() -> list[Document]:
     for i, e in enumerate(entries):
         if not isinstance(e, dict):
             continue
-        topic = e.get("topic") or f"fact_{i}"
-        fact  = (e.get("fact") or e.get("answer") or "").strip()
-        if not fact:
-            continue
-        docs.append(Document(
-            page_content=fact,
-            metadata={
-                "title":  topic,
-                "source": "uwtsd-facts",
-                "lang":   _detect_lang(fact),
-            },
-        ))
+        fid = e.get("id") or f"fact_{i}"
+        # "campus-sa1-location" -> "Campus SA1 Location"
+        title = " ".join(
+            w.upper() if len(w) <= 3 and any(c.isdigit() for c in w) else w.capitalize()
+            for w in str(fid).replace("-", " ").replace("_", " ").split()
+        )
+        # entries with no crawled equivalent keep the internal marker rather
+        # than a guessed url. see scripts/map_source_urls.py
+        source = e.get("source_url") or "uwtsd-facts"
+
+        for lang_tag, key in (("en", "answer_en"), ("cy", "answer_cy")):
+            text = (e.get(key) or "").strip()
+            if not text:
+                continue
+            docs.append(Document(
+                page_content=text,
+                metadata={
+                    "title":  title,
+                    "source": source,
+                    "lang":   lang_tag,
+                },
+            ))
     log.info("facts -> %d docs", len(docs))
     return docs
 
@@ -143,6 +192,11 @@ def _load_knowledge() -> list[Document]:
         if not isinstance(entry, dict):
             continue
         tag = entry.get("tag") or entry.get("name") or "intent"
+        # institutional page this intent's content derives from, assigned and
+        # validated against the crawl by scripts/map_source_urls.py. purely
+        # conversational intents (greeting, thanks) and intents covering
+        # authenticated systems with no public page keep the internal marker.
+        source = entry.get("source_url") or "knowledge"
 
         # the knowledge file may store responses two ways:
         #   1. a flat list of strings (legacy single-language)
@@ -170,7 +224,7 @@ def _load_knowledge() -> list[Document]:
                     page_content=text,
                     metadata={
                         "title":  tag,
-                        "source": "knowledge",
+                        "source": source,
                         "lang":   tag_lang or _detect_lang(text),
                     },
                 ))
@@ -246,6 +300,9 @@ _WELSH_BOOTSTRAP_KEYWORDS = re.compile(
 )
 
 
+_BYDTERMCYMRU_URL = "https://termau.cymru/"
+
+
 def _load_welsh_bootstrap() -> list[Document]:
     """Bootstrap academic Welsh-tagged docs from the bilingual map.
 
@@ -318,7 +375,12 @@ def _load_welsh_bootstrap() -> list[Document]:
             page_content=text,
             metadata={
                 "title":  cy[:80],
-                "source": "welsh-bootstrap",
+                # these terms come from BydTermCymru, the Welsh Government
+                # terminology service, not from UWTSD. pointing at the real
+                # originating service makes them externally verifiable while
+                # keeping them distinguishable from institutional sources in
+                # the evaluation.
+                "source": _BYDTERMCYMRU_URL,
                 "lang":   "cy",
             },
         ))

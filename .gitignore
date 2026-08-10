@@ -62,3 +62,6 @@ frontend/.vercel/
 frontend/feedback.json
 frontend/start-ollama.bat
 frontend/demo-setup.bat
+
+# editor / tooling
+.claude/

@@ -18,6 +18,7 @@ from __future__ import annotations
 from unittest.mock import MagicMock, patch
 
 import pytest
+from langchain_core.documents import Document
 
 from app.services import rag
 
@@ -35,10 +36,11 @@ def _doc(text: str, lang: str | None = None, source: str = "test") -> MagicMock:
 
 @pytest.fixture
 def _no_bm25(monkeypatch):
-    # disable BM25 for tests that focus on the dense path. the dedicated
-    # BM25 tests further down in the file don't apply this fixture so
-    # they can exercise the real _bm25_search code.
-    monkeypatch.setattr(rag, "_bm25_search", lambda *args, **kwargs: [])
+    # disable the sparse pass for tests that focus on the dense path. with no
+    # sparse retriever, retrieve() degrades to dense-only, so these tests
+    # observe the Chroma filter directly. the dedicated sparse and fusion
+    # tests further down don't apply this fixture.
+    monkeypatch.setattr(rag, "_get_sparse_retriever", lambda *args, **kwargs: None)
 
 
 @pytest.mark.asyncio
@@ -59,7 +61,14 @@ async def test_english_query_uses_ne_cy_filter(_no_bm25):
         out = await rag.retrieve("What are the fees?", top_k=2, lang="en")
 
     call_kwargs = fake_store.similarity_search_with_score.call_args.kwargs
-    assert call_kwargs.get("filter") == {"lang": {"$ne": "cy"}}
+    # the cy exclusion is paired with the conversational-intent exclusion,
+    # which applies in both languages. see rag._CONVERSATIONAL_TITLES.
+    assert call_kwargs.get("filter") == {
+        "$and": [
+            {"lang": {"$ne": "cy"}},
+            {"title": {"$nin": rag._CONVERSATIONAL_TITLES}},
+        ]
+    }
     assert len(out) == 2
 
 
@@ -75,8 +84,48 @@ async def test_welsh_query_uses_eq_cy_filter(_no_bm25):
         out = await rag.retrieve("Beth yw'r ffioedd?", top_k=3, lang="cy")
 
     first_call = fake_store.similarity_search_with_score.call_args_list[0]
-    assert first_call.kwargs.get("filter") == {"lang": "cy"}
+    # cy is constrained to Welsh passages AND excludes the BydTermCymru
+    # glosses, which are 84% of the Welsh slice and were taking over half the
+    # dense top-5 slots. they remain available to the BM25 pass.
+    # ...and the conversational intents, which crowded the Welsh ranking for
+    # the same reason: the cy content slice is small, so a handful of short
+    # greeting strings is a large share of the candidate pool.
+    assert first_call.kwargs.get("filter") == {
+        "$and": [
+            {"lang": "cy"},
+            {"source": {"$ne": "https://termau.cymru/"}},
+            {"title": {"$nin": rag._CONVERSATIONAL_TITLES}},
+        ]
+    }
     assert any(d["lang"] == "cy" for d in out)
+
+
+def test_sparse_bucket_drops_conversational_intents(monkeypatch):
+    """The BM25 pool must exclude the conversational intents too.
+
+    The dense filter alone is not enough: a greeting shares common function
+    words with short Welsh questions ("sut", "am", "i"), so BM25 ranked
+    how_are_you above the curated fact for several benchmark queries. Unlike
+    the BydTermCymru glosses, which BM25 keeps because exact term overlap is
+    what a glossary is for, a greeting has no terms worth matching.
+    """
+    pool = [
+        Document(page_content="Shwmae! Croeso i U-Pal",
+                 metadata={"title": "greeting", "lang": "cy"}),
+        Document(page_content="Mae oriau agor llyfrgelloedd PCYDDS yn amrywio",
+                 metadata={"title": "Library Hours", "lang": "cy"}),
+    ]
+    monkeypatch.setattr(rag, "_collection_documents", lambda: pool)
+    rag._sparse_cache.clear()
+    try:
+        retriever = rag._get_sparse_retriever("cy", 5)
+        assert retriever is not None, "rank_bm25 unavailable"
+        titles = [d.metadata.get("title") for d in retriever.invoke("oriau agor y llyfrgell")]
+        assert "greeting" not in titles
+        assert "Library Hours" in titles
+    finally:
+        # the cache is process-wide, so leave it clean for later tests
+        rag._sparse_cache.clear()
 
 
 @pytest.mark.asyncio
@@ -134,50 +183,86 @@ async def test_empty_query_returns_empty_list(_no_bm25):
     fake_store.similarity_search_with_score.assert_not_called()
 
 
-# ── BM25 + RRF fusion ────────────────────────────────────────────
-def test_rrf_fuse_combines_two_ranked_lists():
-    """Reciprocal Rank Fusion should give higher rank to docs that appear
-    in BOTH lists than to docs that appear in only one."""
-    dense = [
-        ({"text": "doc-A"}, 0.9),
-        ({"text": "doc-B"}, 0.7),
-        ({"text": "doc-C"}, 0.5),
+# ── BM25 bucketing + EnsembleRetriever fusion ────────────────────
+def test_sparse_retriever_buckets_by_language(monkeypatch):
+    """BM25 has no metadata filter, so the language boundary is enforced by
+    building one index per bucket. cy takes only cy docs; en excludes cy but
+    keeps untagged docs, mirroring the Chroma $ne filter."""
+    docs = [
+        Document(page_content="tuition fees for undergraduate study",
+                 metadata={"lang": "en", "title": "en-doc"}),
+        Document(page_content="ffioedd dysgu israddedig",
+                 metadata={"lang": "cy", "title": "cy-doc"}),
+        Document(page_content="an untagged passage mentioning fees",
+                 metadata={"title": "untagged-doc"}),
     ]
-    sparse = [
-        ({"text": "doc-B"}, 5.0),  # appears in both
-        ({"text": "doc-D"}, 4.0),
-        ({"text": "doc-A"}, 3.0),  # appears in both
+    rag._sparse_cache.clear()
+    monkeypatch.setattr(rag, "_collection_documents", lambda: docs)
+
+    cy_retriever = rag._get_sparse_retriever("cy", k=3)
+    en_retriever = rag._get_sparse_retriever("en", k=3)
+
+    assert [d.metadata.get("lang") for d in cy_retriever.docs] == ["cy"]
+    # en bucket keeps the en doc and the untagged doc, drops the cy one
+    en_langs = [d.metadata.get("lang") for d in en_retriever.docs]
+    assert "cy" not in en_langs
+    assert len(en_retriever.docs) == 2
+
+    rag._sparse_cache.clear()
+
+
+def test_sparse_retriever_returns_none_for_empty_bucket(monkeypatch):
+    """An empty language bucket must degrade to dense-only, not crash."""
+    rag._sparse_cache.clear()
+    monkeypatch.setattr(rag, "_collection_documents", lambda: [])
+    assert rag._get_sparse_retriever("cy", k=3) is None
+    rag._sparse_cache.clear()
+
+
+@pytest.mark.asyncio
+async def test_ensemble_fuses_dense_and_sparse_with_rrf_constant():
+    """Both retrievers must reach EnsembleRetriever, which fuses them with
+    reciprocal rank fusion at the canonical c=60."""
+    fake_store = MagicMock()
+    fake_store.similarity_search_with_score.return_value = [
+        (_doc("Tuition fees are GBP 9,250", "en"), 0.1),
     ]
-    out = rag._rrf_fuse(dense, sparse, top_k=4)
-    texts = [d["text"] for d in out]
-    # doc-B appears at rank 2 in dense AND rank 1 in sparse, should
-    # outrank doc-A which is rank 1 in dense + rank 3 in sparse.
-    assert texts[0] == "doc-B"
-    assert "doc-A" in texts
-    assert "doc-D" in texts
+    fake_sparse = MagicMock()
+    captured: dict = {}
+
+    class _FakeEnsemble:
+        def __init__(self, retrievers, weights, c):
+            captured["retrievers"] = retrievers
+            captured["weights"] = weights
+            captured["c"] = c
+
+        def invoke(self, _query):
+            return [_doc("Tuition fees are GBP 9,250", "en")]
+
+    with patch.object(rag, "_get_store", return_value=fake_store), \
+         patch.object(rag, "_get_sparse_retriever", return_value=fake_sparse), \
+         patch.object(rag, "EnsembleRetriever", _FakeEnsemble):
+        out = await rag.retrieve("What are the fees?", top_k=2, lang="en")
+
+    assert captured["c"] == 60
+    assert captured["weights"] == [0.5, 0.5]
+    assert len(captured["retrievers"]) == 2
+    assert captured["retrievers"][1] is fake_sparse
+    assert out and out[0]["text"].startswith("Tuition fees")
 
 
-def test_bm25_search_zeroes_other_language():
-    """When lang=cy is requested, BM25 should return zero matches for
-    en-tagged docs even if their term overlap is high."""
-    rag._bm25_state.clear()
-
-    class _FakeBM25:
-        def get_scores(self, _toks):
-            import numpy as np
-            return np.array([1.0, 1.0])
-
-    rag._bm25_state.bm25 = _FakeBM25()
-    rag._bm25_state.docs = [
-        {"text": "tuition fees", "lang": "en", "title": "en-doc"},
-        {"text": "ffioedd dysgu", "lang": "cy", "title": "cy-doc"},
+@pytest.mark.asyncio
+async def test_falls_back_to_dense_when_ensemble_unavailable(monkeypatch):
+    """If EnsembleRetriever is missing, retrieval must still return dense
+    results rather than failing the request."""
+    fake_store = MagicMock()
+    fake_store.similarity_search_with_score.return_value = [
+        (_doc("Apply via UCAS", "en"), 0.2),
     ]
-    rag._bm25_state.built = True
+    monkeypatch.setattr(rag, "EnsembleRetriever", None)
+    monkeypatch.setattr(rag, "_get_sparse_retriever", lambda *a, **kw: MagicMock())
 
-    en_only = rag._bm25_search("fees", k=2, lang="en")
-    cy_only = rag._bm25_search("ffioedd", k=2, lang="cy")
+    with patch.object(rag, "_get_store", return_value=fake_store):
+        out = await rag.retrieve("How do I apply?", top_k=2, lang="en")
 
-    assert len(en_only) == 1 and en_only[0][0]["lang"] == "en"
-    assert len(cy_only) == 1 and cy_only[0][0]["lang"] == "cy"
-
-    rag._bm25_state.clear()
+    assert out and out[0]["text"] == "Apply via UCAS"

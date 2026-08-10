@@ -18,7 +18,7 @@ import re
 from functools import lru_cache
 from typing import Any
 
-from rapidfuzz import fuzz
+from rapidfuzz import fuzz, utils as fuzz_utils
 
 from app.config import DATA_DIR
 
@@ -100,9 +100,16 @@ def _score_entry(message: str, entry: dict[str, Any]) -> float:
     # token_set_ratio handles word-order differences and gives a score
     # 0-100. we take the max over all patterns for this intent.
     # ref: https://github.com/rapidfuzz/RapidFuzz#token-set-ratio
+    # processor=default_process lower-cases, strips punctuation and trims
+    # before comparing. without it rapidfuzz compares raw strings, so the
+    # capitalisation students naturally use changed the result: "Thanks for
+    # that" scored below the threshold and matched nothing, while the
+    # identical "thanks for that!" scored 100. this affected every intent in
+    # the knowledge base, not just the conversational ones.
+    # ref: https://rapidfuzz.github.io/RapidFuzz/Usage/utils.html
     best = 0.0
     for p in entry.get("patterns", []):
-        s = fuzz.token_set_ratio(message, p)
+        s = fuzz.token_set_ratio(message, p, processor=fuzz_utils.default_process)
         if s > best:
             best = float(s)
     return best
@@ -161,16 +168,24 @@ def classify(
     lang: str = "en",                 # noqa: ARG001  (reserved for future CY tuning)
     history: list[dict[str, Any]] | None = None,
     min_score: float = 45.0,
+    use_history_boost: bool = True,
 ) -> dict[str, Any] | None:
     # returns the top-scoring knowledge entry or None if nothing crosses
     # the threshold. min_score 45 came from eyeballing scores on the
     # test set, see tests/test_intent_emotion.py.
+    #
+    # use_history_boost=False disables the topic carry-over described in
+    # _apply_history_boost. the caller needs this for conversational messages
+    # ("thanks", "ok"), where the boost is actively harmful: it multiplies the
+    # previous topic's intents by up to 2.5 and drowns out the chit-chat
+    # intent the message actually expresses.
     entries = _load_knowledge()
     if not entries or not message:
         return None
 
     scored = [(e, _score_entry(message, e)) for e in entries]
-    scored = _apply_history_boost(scored, history or [])
+    if use_history_boost:
+        scored = _apply_history_boost(scored, history or [])
     scored.sort(key=lambda t: t[1], reverse=True)
 
     if not scored or scored[0][1] < min_score:

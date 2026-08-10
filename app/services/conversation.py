@@ -61,8 +61,27 @@ _CAMPUS_RE = re.compile(
 # topic the user is currently talking about. used to build topic_stack
 # which the LLM prompt checks when resolving pronouns ("is it expensive?").
 _TOPIC_SIGNALS: list[tuple[re.Pattern, str]] = [
+    # "courses" had no signal at all, so "what courses are available?" left an
+    # empty topic stack and a follow-up "is it expensive?" had nothing to
+    # resolve against. \b stops these matching "coursework", which belongs to
+    # assessment below.
+    # the Welsh forms include their soft-mutated variants: initial c- becomes
+    # g- after certain words, so "pa gyrsiau sydd ar gael?" carries "gyrsiau"
+    # rather than "cyrsiau", and gradd- becomes radd-. matching only the radical
+    # form silently misses the most natural phrasing of the question. this is
+    # the incomplete mutation handling noted in the Welsh NLP literature.
+    (re.compile(
+        r"\b(course|courses|programme|programmes|degree|degrees|"
+        r"cwrs|cyrsiau|gwrs|gyrsiau|gradd|graddau|radd|raddau)\b", re.I,
+    ), "courses"),
     (re.compile(r"\b(accommodation|halls|residence|neuadd|llety)\b", re.I), "accommodation"),
-    (re.compile(r"\b(fee|tuition|cost|price|bursary|scholarship)\b", re.I), "fees"),
+    # plurals matter here: \bfee\b does not match "fees", which is how students
+    # actually phrase it. same for costs and bursaries. ffi/ffioedd are the
+    # Welsh singular and plural.
+    (re.compile(
+        r"\b(fee|fees|tuition|cost|costs|price|prices|"
+        r"bursary|bursaries|scholarship|scholarships|ffi|ffioedd)\b", re.I,
+    ), "fees"),
     (re.compile(r"\b(library|llyfrgell|study\s+space)\b", re.I),            "library"),
     (re.compile(r"\b(wellbeing|stress|mental|support|counsel)\b", re.I),    "wellbeing"),
     (re.compile(r"\b(wifi|moodle|mytsd|password|login|portal)\b", re.I),    "it"),
@@ -110,36 +129,79 @@ def _find_name(history: list[dict[str, Any]]) -> str | None:
     return None
 
 
+# how many past user turns count as "recent" when resolving a reference.
+# beyond this the topic is treated as closed.
+_HISTORY_WINDOW = 2
+
+# a message that refers back to something rather than naming it. only these
+# inherit the previous turn's topic. english and welsh anaphora plus the
+# common continuation words ("more", "else", "mwy").
+_ANAPHORA_RE = re.compile(
+    r"\b(it|its|it's|that|this|they|them|those|these|one|there|"
+    r"more|another|else|both|"
+    r"hwn|hwnnw|hynny|honno|nhw|fe|hi|mwy|arall|hefyd)\b",
+    re.I,
+)
+
+
+def is_anaphoric(message: str) -> bool:
+    return bool(_ANAPHORA_RE.search(message or ""))
+
+
+def mentions_topic(message: str) -> bool:
+    """True when the message names a subject the chatbot can answer about.
+
+    Used to keep genuine questions out of the conversational path: a message
+    that mentions courses, fees, accommodation and so on is asking about
+    something, however briefly it is phrased.
+    """
+    return bool(_detect_topics(message or ""))
+
+
 def build_state(message: str, history: list[dict[str, Any]]) -> dict[str, Any]:
-    # concatenate all past user text plus the current message so the
-    # regex searches have the full context in one string.
-    combined_user = " ".join(
-        (h.get("text") or "")
-        for h in history
-        if h.get("role") == "user"
-    ) + " " + message
+    user_turns = [h for h in history if h.get("role") == "user"]
 
-    topic_stack: list[str] = []
-    for t in _detect_topics(combined_user):
-        if t not in topic_stack:
-            topic_stack.append(t)
+    # DURABLE profile signals. a student who says "I'm a second-year Computing
+    # student" is still one ten turns later, so these are read from the whole
+    # conversation.
+    combined_user = " ".join((h.get("text") or "") for h in user_turns) + " " + message
 
-    # the anchor is whatever concrete thing the user last mentioned. we
-    # walk history backwards so "do you want accommodation?" -> "yes"
-    # -> anchor stays "accommodation" and we know what "it" refers to.
-    anchor = None
-    for t in reversed(history + [{"role": "user", "text": message}]):
-        if t.get("role") != "user":
-            continue
-        text = t.get("text") or ""
-        course = _detect_course(text)
-        if course:
-            anchor = course
-            break
-        topics = _detect_topics(text)
-        if topics:
-            anchor = topics[0]
-            break
+    # TRANSIENT conversational focus. this previously came from the same
+    # concatenation, which meant a topic mentioned once was never released:
+    # after "what courses are available?", every later turn - "thanks", "wow",
+    # even "where is the SA1 campus?" - still carried topic=courses, and the
+    # prompt duly steered the model back to courses every time.
+    #
+    # topics now come from the current message. history is consulted only when
+    # the message actually refers back to something ("is it expensive?"), and
+    # then only within a short window.
+    current_topics = _detect_topics(message)
+    if current_topics:
+        topic_stack = current_topics
+    elif is_anaphoric(message):
+        window = " ".join(
+            (h.get("text") or "") for h in user_turns[-_HISTORY_WINDOW:]
+        )
+        topic_stack = _detect_topics(window)
+    else:
+        topic_stack = []
+
+    # the anchor is the concrete thing "it" would refer to. same rule: prefer
+    # what the current message names, fall back only for genuine references.
+    anchor = _detect_course(message)
+    if not anchor and current_topics:
+        anchor = current_topics[0]
+    if not anchor and is_anaphoric(message):
+        for t in reversed(user_turns[-_HISTORY_WINDOW:]):
+            text = t.get("text") or ""
+            course = _detect_course(text)
+            if course:
+                anchor = course
+                break
+            topics = _detect_topics(text)
+            if topics:
+                anchor = topics[0]
+                break
 
     return {
         "name":        _find_name(history),

@@ -1,0 +1,21 @@
+Fact ID,Ground-truth title,Language,Query,Strict rank (dense),Strict rank (sparse),Strict rank (hybrid),Relaxed rank (dense),Relaxed rank (sparse),Relaxed rank (hybrid)
+campus-sa1-location,Campus SA1 Location,en,Where is the SA1 campus?,2,2,2,1,2,1
+campus-sa1-location,Campus SA1 Location,cy,ble mae campws SA1,2,3,2,1,2,1
+campus-carmarthen-location,Campus Carmarthen Location,en,Where is the Carmarthen campus?,2,not retrieved,not retrieved,2,1,3
+campus-carmarthen-location,Campus Carmarthen Location,cy,ble mae campws Caerfyrddin,3,2,2,1,2,1
+fees-general,Fees General,en,How much are the tuition fees?,5,not retrieved,not retrieved,1,not retrieved,3
+fees-general,Fees General,cy,faint yw'r ffioedd dysgu?,not retrieved,not retrieved,not retrieved,not retrieved,not retrieved,not retrieved
+fees-international-undergraduate,Fees International Undergraduate,en,How much are the fees for international students?,4,not retrieved,not retrieved,4,1,4
+fees-international-undergraduate,Fees International Undergraduate,cy,faint yw ffioedd myfyrwyr rhyngwladol?,not retrieved,not retrieved,not retrieved,not retrieved,3,not retrieved
+accommodation-apply,Accommodation Apply,en,How do I apply for accommodation?,not retrieved,4,1,3,4,1
+accommodation-apply,Accommodation Apply,cy,sut ydw i'n gwneud cais am lety?,not retrieved,not retrieved,not retrieved,not retrieved,not retrieved,not retrieved
+library-hours,Library Hours,en,What are the library opening hours?,1,1,1,1,1,1
+library-hours,Library Hours,cy,oriau agor y llyfrgell,not retrieved,not retrieved,not retrieved,3,2,1
+how-to-apply,How To Apply,en,How do I apply to UWTSD?,3,not retrieved,5,1,not retrieved,1
+how-to-apply,How To Apply,cy,sut mae gwneud cais i PCYDDS?,not retrieved,not retrieved,not retrieved,not retrieved,1,2
+student-finance,Student Finance,en,How do I apply for student finance?,not retrieved,2,2,1,2,2
+student-finance,Student Finance,cy,sut mae gwneud cais am gyllid myfyrwyr?,not retrieved,4,2,not retrieved,2,2
+inter-campus-travel,Inter Campus Travel,en,How do I travel between campuses?,not retrieved,2,4,not retrieved,2,4
+inter-campus-travel,Inter Campus Travel,cy,sut allaf deithio rhwng campysau?,not retrieved,1,1,not retrieved,1,1
+graduation,Graduation,en,When is graduation?,4,not retrieved,not retrieved,1,not retrieved,1
+graduation,Graduation,cy,pryd mae'r seremoni raddio?,not retrieved,4,not retrieved,not retrieved,1,2
